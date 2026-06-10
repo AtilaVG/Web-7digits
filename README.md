@@ -6,16 +6,30 @@ refurbished, destrucción certificada de datos, logística inversa (ITAD) y rent
 ## Estructura
 
 ```
-├── index.html                  Inicio (hero con rack 3D, marcas, claves, teaser de servicios)
-├── actividad.html              Actividad: servicios + economía circular (RAEE/WEEE)
-├── productos.html              Catálogo con filtros, búsqueda y ordenación
-├── destruccion-de-datos.html   Métodos de borrado, proceso paso a paso y certificado
-├── renting.html                Simulador de cuota de renting
-├── contacto.html               Formulario de presupuesto + datos de contacto
+├── index.html                    Inicio (hero con rack 3D, marcas, claves, teaser de servicios)
+├── pages/
+│   ├── actividad.html            Actividad: servicios + economía circular (RAEE/WEEE)
+│   ├── productos.html            Catálogo con filtros, búsqueda y ordenación
+│   ├── destruccion-de-datos.html Métodos de borrado, proceso paso a paso y certificado
+│   ├── renting.html              Simulador de cuota de renting
+│   └── contacto.html             Formulario de presupuesto + datos de contacto
 └── assets/
-    ├── css/style.css           Hoja de estilos global (design system completo)
-    └── js/main.js              JavaScript global (cada módulo se autoactiva por página)
+    ├── css/
+    │   ├── base.css              Tokens de diseño, reset, tipografía, botones, utilidades
+    │   ├── layout.css            Topbar, cabecera/nav, page-header, footer, menú móvil
+    │   ├── components.css        Secciones, FAQ, CTA, animaciones de aparición
+    │   └── pages/                Estilos exclusivos de cada página
+    │       ├── home.css          ├── actividad.css   ├── productos.css
+    │       ├── destruccion.css   ├── renting.css     └── contacto.css
+    └── js/
+        ├── core.js               Núcleo común: nav, progreso, menú, FAQ, reveals, contadores
+        └── pages/                Módulo exclusivo de cada página
+            ├── home.js           ├── actividad.js    ├── productos.js
+            ├── destruccion.js    ├── renting.js      └── contacto.js
 ```
+
+Cada página carga solo 4 hojas de estilo (3 comunes + la suya) y 2 scripts (núcleo + el suyo):
+los archivos comunes quedan cacheados por el navegador y el peso por página es mínimo.
 
 Sitio 100% estático: se puede desplegar en cualquier hosting, CDN o servidor
 (Netlify, Vercel, Cloudflare Pages, Apache, Nginx...) sin proceso de build.
