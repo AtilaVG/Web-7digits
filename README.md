@@ -65,8 +65,8 @@ El JS enviará los campos por `POST` (`FormData`) y mostrará el estado de éxit
 
 ## Personalización rápida
 
-- **Colores y tipografías**: variables CSS en `:root` al inicio de `assets/css/style.css`.
-- **Catálogo**: array `PRODUCTS` en `assets/js/main.js` (hasta integrar el e-commerce real).
+- **Colores y tipografías**: variables CSS en `:root` al inicio de `assets/css/base.css`.
+- **Catálogo**: array `PRODUCTS` en `assets/js/pages/productos.js` (hasta integrar el e-commerce real).
 - **Datos de contacto**: aparecen en topbar, página de contacto y footer de cada página.
 
 ## Pendiente antes de publicar
