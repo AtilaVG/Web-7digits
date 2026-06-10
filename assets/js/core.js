@@ -89,6 +89,7 @@ const cio = new IntersectionObserver(es => es.forEach(en => {
     if (p < 1) requestAnimationFrame(tick);
   })();
 }), { threshold: .5 });
-$$('[data-count]').forEach(el => cio.observe(el));
+if (reduceMotion) $$('[data-count]').forEach(el => { el.textContent = fmt(+el.dataset.count); });
+else $$('[data-count]').forEach(el => cio.observe(el));
 
 })();
