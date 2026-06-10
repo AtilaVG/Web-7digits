@@ -35,3 +35,7 @@ form button[type=submit]{width:100%;justify-content:center}
   .fgrid{grid-template-columns:1fr}
   form{padding:28px}
 }
+
+/* mapa de situación */
+.map{margin-top:60px;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);line-height:0}
+.map iframe{width:100%;height:380px;border:0;filter:saturate(.85)}

@@ -38,3 +38,13 @@
 @media(max-width:760px){
   .sec{padding:68px 0}
 }
+
+/* ════════ PÁGINAS LEGALES ════════ */
+.legal{max-width:840px}
+.legal h2{font-size:1.6rem;margin:42px 0 14px}
+.legal h2:first-child{margin-top:0}
+.legal p,.legal li{color:var(--muted);font-size:.98rem;margin-bottom:12px}
+.legal b{color:var(--navy-2)}
+.legal ul{padding-left:22px;margin-bottom:14px}
+.legal .box{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:18px 0}
+.legal .box p{margin-bottom:4px}

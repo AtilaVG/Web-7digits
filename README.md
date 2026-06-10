@@ -7,12 +7,16 @@ refurbished, destrucción certificada de datos, logística inversa (ITAD) y rent
 
 ```
 ├── index.html                    Inicio (hero con rack 3D, marcas, claves, teaser de servicios)
+├── 404.html                      Página de error personalizada
+├── sitemap.xml · robots.txt      SEO técnico
 ├── pages/
 │   ├── actividad.html            Actividad: servicios + economía circular (RAEE/WEEE)
 │   ├── productos.html            Catálogo con filtros, búsqueda y ordenación
 │   ├── destruccion-de-datos.html Métodos de borrado, proceso paso a paso y certificado
 │   ├── renting.html              Simulador de cuota de renting
-│   └── contacto.html             Formulario de presupuesto + datos de contacto
+│   ├── contacto.html             Formulario de presupuesto + datos + mapa
+│   ├── aviso-legal.html          Aviso legal y condiciones (noindex)
+│   └── privacidad.html           Política de privacidad RGPD (noindex)
 └── assets/
     ├── css/
     │   ├── base.css              Tokens de diseño, reset, tipografía, botones, utilidades
@@ -43,7 +47,8 @@ Sitio 100% estático: se puede desplegar en cualquier hosting, CDN o servidor
   formulario** — sin cookies ni almacenamiento en el navegador, con URLs compartibles.
 - **Simulador de renting** cuyo CTA traslada la simulación al formulario por parámetros de URL.
 - Animaciones de aparición, contadores, acordeones FAQ, marquee de marcas, micro-interacciones.
-- SEO: JSON-LD (LocalBusiness), Open Graph, títulos y descripciones únicos por página.
+- SEO: JSON-LD (LocalBusiness, FAQPage por página, BreadcrumbList), Open Graph, canonical,
+  sitemap.xml y robots.txt, títulos y descripciones únicos por página.
 - Accesibilidad: skip-link, ARIA, foco visible y soporte completo de `prefers-reduced-motion`.
 
 ## Conectar el formulario
@@ -63,3 +68,11 @@ El JS enviará los campos por `POST` (`FormData`) y mostrará el estado de éxit
 - **Colores y tipografías**: variables CSS en `:root` al inicio de `assets/css/style.css`.
 - **Catálogo**: array `PRODUCTS` en `assets/js/main.js` (hasta integrar el e-commerce real).
 - **Datos de contacto**: aparecen en topbar, página de contacto y footer de cada página.
+
+## Pendiente antes de publicar
+
+- **Textos legales**: `aviso-legal.html` y `privacidad.html` son plantillas redactadas con los
+  datos de la empresa; deben revisarse por un asesor legal antes de publicar.
+- **Formulario**: configurar `data-endpoint` (ver sección anterior).
+- **Imagen Open Graph**: añadir una imagen `og:image` (1200×630 px) cuando haya fotografía corporativa.
+- **Fotografías reales**: el diseño está preparado para incorporar fotos del almacén/instalaciones.
