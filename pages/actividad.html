@@ -77,6 +77,20 @@
  ]
 }
 </script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "name": "Logística inversa y ITAD",
+ "description": "Retirada de hardware empresarial, borrado certificado, reacondicionado y reciclaje RAEE.",
+ "provider": {
+  "@type": "Organization",
+  "name": "7Digits España",
+  "telephone": "+34915458992"
+ },
+ "areaServed": "ES"
+}
+</script>
 </head>
 <body>
 
@@ -121,7 +135,7 @@
       </a>
       <div class="nav-links">
         <a href="../index.html">Inicio</a>
-        <a href="actividad.html" class="active">Actividad</a>
+        <a href="actividad.html" class="active" aria-current="page">Actividad</a>
         <a href="productos.html">Productos</a>
         <a href="destruccion-de-datos.html">Destrucción de datos</a>
         <a href="renting.html">Renting</a>
@@ -136,7 +150,7 @@
 </header>
 <div class="overlay" id="overlay"></div>
 <div class="mobile-menu" id="mmenu" aria-label="Menú móvil">
-  <a href="../index.html">Inicio</a><a href="actividad.html" class="active">Actividad</a><a href="productos.html">Productos</a><a href="destruccion-de-datos.html">Destrucción de datos</a><a href="renting.html">Renting</a><a href="contacto.html">Contacto</a>
+  <a href="../index.html">Inicio</a><a href="actividad.html" class="active" aria-current="page">Actividad</a><a href="productos.html">Productos</a><a href="destruccion-de-datos.html">Destrucción de datos</a><a href="renting.html">Renting</a><a href="contacto.html">Contacto</a>
   <a href="contacto.html" class="btn btn-primary">Solicitar presupuesto</a>
 </div>
 <main id="main">
@@ -185,10 +199,53 @@
   </div>
 </section>
 
+
+<!-- ════════ VALORADOR DE RETIRADA ════════ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="tag"><span class="num">02</span> Compramos tu hardware</span>
+      <h2>¿Renuevas tu CPD? Tu material antiguo tiene valor</h2>
+      <p>Cuéntanos qué tienes y te enviamos una oferta económica en menos de 24 horas. La retirada, en la mayoría de los casos, es gratuita.</p>
+    </div>
+    <div class="sell-wrap">
+      <div class="sell reveal rv-l">
+        <div class="fg"><label for="s-tipo">Tipo de material</label>
+          <select id="s-tipo">
+            <option>Servidores</option><option>Equipos de red (switching, routing)</option>
+            <option>Almacenamiento (cabinas, discos)</option><option>Racks completos</option>
+            <option>Equipos de usuario</option><option>Material mixto / lote completo</option>
+          </select></div>
+        <div class="fg"><label for="s-uds">Unidades aproximadas</label>
+          <select id="s-uds"><option>1 – 10</option><option>10 – 50</option><option>50 – 200</option><option>Más de 200</option></select></div>
+        <div class="fg" style="margin-bottom:0"><label>Antigüedad aproximada</label>
+          <div class="opts" id="s-edad">
+            <button class="active" data-v="Menos de 3 años">&lt; 3 años</button>
+            <button data-v="Entre 3 y 6 años">3 – 6 años</button>
+            <button data-v="Más de 6 años">&gt; 6 años</button>
+          </div></div>
+      </div>
+      <div class="sell-out reveal rv-r">
+        <span class="tag">Valoración orientativa</span>
+        <h3 id="s-title">Tu material puede tener valor de recompra</h3>
+        <p class="msg" id="s-msg">Los equipos de menos de 3 años suelen conservar un valor de reventa significativo: te haremos una oferta económica por ellos.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg>Retirada gratuita en la mayoría de los casos</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg>Borrado certificado de datos incluido</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg>Oferta económica en menos de 24 h</li>
+          <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg>Reciclaje RAEE de lo no reutilizable</li>
+        </ul>
+        <a href="contacto.html?tipo=retirada" id="s-cta" class="btn btn-primary" style="width:100%">Recibir oferta sin compromiso
+          <svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="sec soft-bg">
   <div class="wrap">
     <div class="shead reveal">
-      <span class="tag"><span class="num">02</span> Economía circular</span>
+      <span class="tag"><span class="num">03</span> Economía circular</span>
       <h2>Máxima reutilización del material TIC</h2>
       <p>Alargamos la vida útil del hardware y gestionamos lo no reutilizable con recicladores autorizados.</p>
     </div>
@@ -224,7 +281,7 @@
 <section class="sec">
   <div class="wrap">
     <div class="shead center reveal">
-      <span class="tag"><span class="num">03</span> Preguntas frecuentes</span>
+      <span class="tag"><span class="num">04</span> Preguntas frecuentes</span>
       <h2>Dudas sobre la retirada de hardware</h2>
       <p>Lo que nos preguntan los responsables de IT antes de encargarnos su material.</p>
     </div>
@@ -271,7 +328,7 @@
       </div>
       <div class="foot-col"><h5>Información interesante</h5>
         <a href="contacto.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg>Contacto</a>
-        <a href="productos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg>¿Qué son los servidores refurbished?</a>
+        <a href="servidores-refurbished.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg>¿Qué son los servidores refurbished?</a>
         <a href="productos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg>Servidores, redes y componentes</a>
         <a href="actividad.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg>Compramos servidores y componentes</a>
         <a href="renting.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg>Renting tecnológico</a>

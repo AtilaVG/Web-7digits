@@ -22,6 +22,9 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     msg.value = `Solicito estudio de renting:\n· Importe: ${fmt(+qs.get('importe'))} €\n· Plazo: ${qs.get('plazo')} meses\n· Cuota estimada: ${fmt(+qs.get('cuota'))} €${qs.get('periodicidad') === 'trimestral' ? '/trimestre' : '/mes'}`;
   } else if (qs.get('tipo') === 'retirada') {
     tipo.value = 'Venta / retirada de hardware';
+    if (qs.get('material')) {
+      msg.value = `Solicito oferta por retirada de hardware:\n· Material: ${qs.get('material')}\n· Unidades: ${qs.get('unidades')}\n· Antigüedad: ${qs.get('antiguedad')}`;
+    }
   } else if (qs.get('tipo') === 'datos') {
     tipo.value = 'Destrucción de datos';
   }

@@ -63,3 +63,27 @@
   .onode{width:74px;height:74px;margin:-37px}
   .onode span{font-size:.55rem}
 }
+
+/* ════════ VALORADOR DE RETIRADA ════════ */
+.sell-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:stretch}
+.sell{background:#fff;border:1px solid var(--line);border-radius:18px;padding:42px;box-shadow:var(--shadow)}
+.sell .fg{margin-bottom:24px}
+.sell label{display:block;font-family:'Barlow Semi Condensed';font-weight:700;font-size:.84rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+.sell select{width:100%;background:var(--soft);border:1.5px solid var(--line);border-radius:10px;padding:13px 15px;font-family:'Mulish';font-size:.95rem;color:var(--ink);outline:none;transition:.3s;cursor:pointer}
+.sell select:focus{border-color:var(--green);background:#fff;box-shadow:0 0 0 3px rgba(140,198,63,.15)}
+.sell .opts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sell .opts button{font-family:'Barlow Semi Condensed';font-weight:600;font-size:.9rem;padding:12px 8px;border-radius:10px;border:1.5px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:.3s var(--ease)}
+.sell .opts button:hover{border-color:var(--sky)}
+.sell .opts button.active{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 8px 18px -8px rgba(43,127,196,.6)}
+.sell-out{background:linear-gradient(160deg,var(--navy-2),var(--navy));border-radius:18px;padding:42px;color:#fff;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.sell-out::after{content:'';position:absolute;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(140,198,63,.2),transparent 70%)}
+.sell-out>*{position:relative;z-index:1}
+.sell-out .tag{color:var(--lime)}.sell-out .tag::before{background:var(--lime)}
+.sell-out h3{color:#fff;font-size:1.7rem;margin:14px 0 10px}
+.sell-out p.msg{color:#b9c6db;font-size:1rem;margin-bottom:22px}
+.sell-out ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:28px}
+.sell-out li{display:flex;gap:10px;align-items:center;font-size:.94rem;color:#dce6f4;font-weight:600}
+.sell-out li svg{width:16px;height:16px;color:var(--lime);flex-shrink:0}
+.sell-out .btn{margin-top:auto}
+@media(max-width:980px){.sell-wrap{grid-template-columns:1fr;gap:40px}}
+@media(max-width:760px){.sell,.sell-out{padding:28px}.sell .opts{grid-template-columns:1fr 1fr}}
