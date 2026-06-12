@@ -198,9 +198,10 @@
 /* ════════ SCROLLYTELLING: ASÍ RENACE UN SERVIDOR ════════ */
 .story{background:linear-gradient(180deg,#fff 0%,var(--soft) 100%);overflow:visible}
 .story .shead{padding-top:100px}
-.story-track{height:380vh;position:relative;margin-top:-9vh}
-.story-sticky{position:sticky;top:0;height:100vh;display:flex;align-items:center;overflow:hidden}
+.story-track{height:320vh;position:relative;margin-top:-9vh}
+.story-sticky{position:sticky;top:0;height:100vh;height:100dvh;display:flex;align-items:center;overflow:hidden;padding-top:72px}
 .story-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;width:100%}
+.story-grid>*{min-width:0}
 
 /* escena */
 .story-scene{position:relative;height:520px;perspective:1150px;display:flex;align-items:center;justify-content:center}
@@ -290,6 +291,13 @@
 .sstep p{color:var(--muted);font-size:.93rem}
 .sstep.on{opacity:1;background:#fff;border-color:var(--line);box-shadow:var(--shadow)}
 
+@media(min-width:981px) and (max-height:820px){
+  .story-scene{height:430px}
+  .sstep{padding:12px 16px}
+  .sstep h3{font-size:1.1rem}
+  .sstep p{font-size:.85rem}
+}
+
 /* fallback estático (reduced motion) */
 .story.static .story-track{height:auto}
 .story.static .story-sticky{position:static;height:auto;padding:40px 0 90px}
@@ -298,23 +306,24 @@
 .story.static .story-scene{height:auto;min-height:420px;flex-direction:column;gap:10px}
 
 @media(max-width:980px){
-  .story-grid{grid-template-columns:1fr;gap:10px}
-  .story-scene{height:360px}
+  .story-grid{grid-template-columns:1fr;gap:8px}
+  .story-scene{height:340px}
   .srv3d{transform:scale(.72) rotateX(16deg) rotateY(-34deg)}
-  .story-steps{padding-left:22px}
-  .sstep{padding:12px 14px}.sstep h3{font-size:1.1rem}.sstep p{font-size:.85rem}
   .co-3,.co-4{display:none}
-  .story-track{height:330vh}
+  .story-track{height:280vh}
+  /* un paso visible a la vez: nunca se corta */
+  .story-steps{display:grid;padding-left:0;gap:0}
+  .story-steps::before,.sprog{display:none}
+  .sstep{grid-area:1/1;opacity:0;transform:translateY(16px);pointer-events:none;
+    background:#fff;border-color:var(--line);box-shadow:var(--shadow);min-height:150px}
+  .sstep.on{opacity:1;transform:none}
+  .sstep h3{font-size:1.15rem}.sstep p{font-size:.88rem}
 }
 @media(max-width:760px){
   .story .shead{padding-top:68px}
-  .story-scene{height:290px;margin-top:60px}
+  .story-scene{height:280px;margin-top:50px}
   .srv3d{transform:scale(.48) rotateX(16deg) rotateY(-34deg)}
-  .story-steps{gap:6px}
-  .sstep{padding:10px 12px}
-  .sstep span{font-size:.68rem}
-  .sstep h3{font-size:1.02rem;margin:2px 0 4px}
-  .sstep p{font-size:.8rem;line-height:1.5}
+  .story-track{height:240vh}
   .callout{font-size:.68rem;padding:7px 11px;max-width:86vw}
   .co-2{right:auto;left:4%}
   .gstamp{width:74px;height:74px}.gstamp b{font-size:1.6rem}

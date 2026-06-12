@@ -75,10 +75,10 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     const p = clamp(-r.top / total);
 
     /* rotación: presentación → giro de inspección → vuelta al frente */
-    const ry = lerp(-34, 16, ease(seg(p, 0, .3))) + lerp(0, -50, ease(seg(p, .72, .98)));
+    const ry = lerp(-56, 16, ease(seg(p, 0, .28))) + lerp(0, -50, ease(seg(p, .72, .98)));
     const rx = 16 + lerp(0, 9, ease(seg(p, .2, .45))) - lerp(0, 9, ease(seg(p, .72, .95)));
     /* la tapa se eleva durante el diagnóstico y se cierra al final */
-    const open = ease(seg(p, .22, .42)) * (1 - ease(seg(p, .72, .92)));
+    const open = ease(seg(p, .18, .4)) * (1 - ease(seg(p, .72, .92)));
     const scale = matchMedia('(max-width: 980px)').matches ? (matchMedia('(max-width: 760px)').matches ? .48 : .72) : 1;
     srv.style.transform = `scale(${scale}) rotateX(${rx}deg) rotateY(${ry}deg)`;
     lid.style.transform = `translateY(${-130 * open}px) rotateX(90deg) translateZ(48px)`;
@@ -150,10 +150,10 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     const p = clamp(-r.top / total);
 
     /* rotación: presentación → giro de inspección → vuelta al frente */
-    const ry = lerp(-34, 16, ease(seg(p, 0, .3))) + lerp(0, -50, ease(seg(p, .72, .98)));
+    const ry = lerp(-56, 16, ease(seg(p, 0, .28))) + lerp(0, -50, ease(seg(p, .72, .98)));
     const rx = 16 + lerp(0, 9, ease(seg(p, .2, .45))) - lerp(0, 9, ease(seg(p, .72, .95)));
     /* la tapa se eleva durante el diagnóstico y se cierra al final */
-    const open = ease(seg(p, .22, .42)) * (1 - ease(seg(p, .72, .92)));
+    const open = ease(seg(p, .18, .4)) * (1 - ease(seg(p, .72, .92)));
     const scale = matchMedia('(max-width: 980px)').matches ? (matchMedia('(max-width: 760px)').matches ? .48 : .72) : 1;
     srv.style.transform = `scale(${scale}) rotateX(${rx}deg) rotateY(${ry}deg)`;
     lid.style.transform = `translateY(${-130 * open}px) rotateX(90deg) translateZ(48px)`;
@@ -213,10 +213,10 @@ $$('.glowcard').forEach(c => c.addEventListener('mousemove', e => {
     const p = clamp(-r.top / total);
 
     /* rotación: presentación → giro de inspección → vuelta al frente */
-    const ry = lerp(-34, 16, ease(seg(p, 0, .3))) + lerp(0, -50, ease(seg(p, .72, .98)));
+    const ry = lerp(-56, 16, ease(seg(p, 0, .28))) + lerp(0, -50, ease(seg(p, .72, .98)));
     const rx = 16 + lerp(0, 9, ease(seg(p, .2, .45))) - lerp(0, 9, ease(seg(p, .72, .95)));
     /* la tapa se eleva durante el diagnóstico y se cierra al final */
-    const open = ease(seg(p, .22, .42)) * (1 - ease(seg(p, .72, .92)));
+    const open = ease(seg(p, .18, .4)) * (1 - ease(seg(p, .72, .92)));
     const scale = matchMedia('(max-width: 980px)').matches ? (matchMedia('(max-width: 760px)').matches ? .48 : .72) : 1;
     srv.style.transform = `scale(${scale}) rotateX(${rx}deg) rotateY(${ry}deg)`;
     lid.style.transform = `translateY(${-130 * open}px) rotateX(90deg) translateZ(48px)`;
