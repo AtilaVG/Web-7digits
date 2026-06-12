@@ -61,7 +61,15 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
   const prog = document.getElementById('sProg');
   const steps = sec.querySelectorAll('.sstep');
   const callouts = sec.querySelectorAll('[data-r]');
+  const scene = sec.querySelector('.story-scene');
   const clamp = t => Math.min(Math.max(t, 0), 1);
+  /* escala fluida: el servidor se ajusta al hueco real disponible, sin breakpoints */
+  let fit = 1;
+  function measure() {
+    const r = scene.getBoundingClientRect();
+    fit = Math.max(.34, Math.min(1, (r.width - 50) / 560, (r.height - 20) / 430));
+  }
+  measure();
   const seg = (p, a, b) => clamp((p - a) / (b - a));
   const lerp = (a, b, t) => a + (b - a) * t;
   const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
@@ -79,8 +87,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     const rx = 16 + lerp(0, 9, ease(seg(p, .2, .45))) - lerp(0, 9, ease(seg(p, .72, .95)));
     /* la tapa se eleva durante el diagnóstico y se cierra al final */
     const open = ease(seg(p, .18, .4)) * (1 - ease(seg(p, .72, .92)));
-    const scale = matchMedia('(max-width: 980px)').matches ? (matchMedia('(max-width: 760px)').matches ? .48 : .72) : 1;
-    srv.style.transform = `scale(${scale}) rotateX(${rx}deg) rotateY(${ry}deg)`;
+    srv.style.transform = `scale(${fit}) rotateX(${rx}deg) rotateY(${ry}deg)`;
     lid.style.transform = `translateY(${-130 * open}px) rotateX(90deg) translateZ(48px)`;
     lid.style.opacity = 1 - .3 * open;
     inside.style.opacity = .25 + .75 * open;
@@ -98,7 +105,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     prog.style.height = (p * 100) + '%';
   }
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
-  addEventListener('resize', frame, { passive: true });
+  addEventListener('resize', () => { measure(); frame(); }, { passive: true });
   frame();
 })();
 
@@ -136,7 +143,15 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
   const prog = document.getElementById('sProg');
   const steps = sec.querySelectorAll('.sstep');
   const callouts = sec.querySelectorAll('[data-r]');
+  const scene = sec.querySelector('.story-scene');
   const clamp = t => Math.min(Math.max(t, 0), 1);
+  /* escala fluida: el servidor se ajusta al hueco real disponible, sin breakpoints */
+  let fit = 1;
+  function measure() {
+    const r = scene.getBoundingClientRect();
+    fit = Math.max(.34, Math.min(1, (r.width - 50) / 560, (r.height - 20) / 430));
+  }
+  measure();
   const seg = (p, a, b) => clamp((p - a) / (b - a));
   const lerp = (a, b, t) => a + (b - a) * t;
   const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
@@ -154,8 +169,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     const rx = 16 + lerp(0, 9, ease(seg(p, .2, .45))) - lerp(0, 9, ease(seg(p, .72, .95)));
     /* la tapa se eleva durante el diagnóstico y se cierra al final */
     const open = ease(seg(p, .18, .4)) * (1 - ease(seg(p, .72, .92)));
-    const scale = matchMedia('(max-width: 980px)').matches ? (matchMedia('(max-width: 760px)').matches ? .48 : .72) : 1;
-    srv.style.transform = `scale(${scale}) rotateX(${rx}deg) rotateY(${ry}deg)`;
+    srv.style.transform = `scale(${fit}) rotateX(${rx}deg) rotateY(${ry}deg)`;
     lid.style.transform = `translateY(${-130 * open}px) rotateX(90deg) translateZ(48px)`;
     lid.style.opacity = 1 - .3 * open;
     inside.style.opacity = .25 + .75 * open;
@@ -173,7 +187,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     prog.style.height = (p * 100) + '%';
   }
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
-  addEventListener('resize', frame, { passive: true });
+  addEventListener('resize', () => { measure(); frame(); }, { passive: true });
   frame();
 })();
 
@@ -199,7 +213,15 @@ $$('.glowcard').forEach(c => c.addEventListener('mousemove', e => {
   const prog = document.getElementById('sProg');
   const steps = sec.querySelectorAll('.sstep');
   const callouts = sec.querySelectorAll('[data-r]');
+  const scene = sec.querySelector('.story-scene');
   const clamp = t => Math.min(Math.max(t, 0), 1);
+  /* escala fluida: el servidor se ajusta al hueco real disponible, sin breakpoints */
+  let fit = 1;
+  function measure() {
+    const r = scene.getBoundingClientRect();
+    fit = Math.max(.34, Math.min(1, (r.width - 50) / 560, (r.height - 20) / 430));
+  }
+  measure();
   const seg = (p, a, b) => clamp((p - a) / (b - a));
   const lerp = (a, b, t) => a + (b - a) * t;
   const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
@@ -217,8 +239,7 @@ $$('.glowcard').forEach(c => c.addEventListener('mousemove', e => {
     const rx = 16 + lerp(0, 9, ease(seg(p, .2, .45))) - lerp(0, 9, ease(seg(p, .72, .95)));
     /* la tapa se eleva durante el diagnóstico y se cierra al final */
     const open = ease(seg(p, .18, .4)) * (1 - ease(seg(p, .72, .92)));
-    const scale = matchMedia('(max-width: 980px)').matches ? (matchMedia('(max-width: 760px)').matches ? .48 : .72) : 1;
-    srv.style.transform = `scale(${scale}) rotateX(${rx}deg) rotateY(${ry}deg)`;
+    srv.style.transform = `scale(${fit}) rotateX(${rx}deg) rotateY(${ry}deg)`;
     lid.style.transform = `translateY(${-130 * open}px) rotateX(90deg) translateZ(48px)`;
     lid.style.opacity = 1 - .3 * open;
     inside.style.opacity = .25 + .75 * open;
@@ -236,7 +257,7 @@ $$('.glowcard').forEach(c => c.addEventListener('mousemove', e => {
     prog.style.height = (p * 100) + '%';
   }
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
-  addEventListener('resize', frame, { passive: true });
+  addEventListener('resize', () => { measure(); frame(); }, { passive: true });
   frame();
 })();
 
