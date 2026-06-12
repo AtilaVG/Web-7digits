@@ -20,11 +20,12 @@
 <link rel="apple-touch-icon" href="../assets/img/touch-icon.png">
 <link rel="preload" href="../assets/fonts/barlowsc-800-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/mulish-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/css/fonts.css?v=9">
-<link rel="stylesheet" href="../assets/css/base.css?v=9">
-<link rel="stylesheet" href="../assets/css/layout.css?v=9">
-<link rel="stylesheet" href="../assets/css/components.css?v=9">
-<link rel="stylesheet" href="../assets/css/pages/destruccion.css?v=9">
+<link rel="stylesheet" href="../assets/css/fonts.css?v=10">
+<link rel="stylesheet" href="../assets/css/base.css?v=10">
+<link rel="stylesheet" href="../assets/css/layout.css?v=10">
+<link rel="stylesheet" href="../assets/css/components.css?v=10">
+<link rel="stylesheet" href="../assets/css/scrolly.css?v=10">
+<link rel="stylesheet" href="../assets/css/pages/destruccion.css?v=10">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -192,19 +193,51 @@
   </div>
 </section>
 
-<section class="sec soft-bg">
+<!-- ════════ SCROLLYTELLING: EL VIAJE DE UN DISCO ════════ -->
+<section class="story dd" id="viaje">
   <div class="wrap">
-    <div class="shead center reveal">
-      <span class="tag"><span class="num">02</span> Proceso</span>
-      <h2>Así trabajamos, paso a paso</h2>
-      <p>Un circuito cerrado y documentado de principio a fin.</p>
+    <div class="shead center reveal" style="margin-bottom:0">
+      <span class="tag"><span class="num">02</span> El proceso, en directo</span>
+      <h2>El viaje de un disco con datos</h2>
+      <p>Sigue desplazándote: esto es lo que le ocurre a cada soporte desde que llega hasta que emitimos su certificado.</p>
     </div>
-    <div class="flow reveal">
-      <div class="step"><div class="dot">01</div><div><h4>Solicitud y alcance</h4><p>Analizamos tipo de soportes, volumen y nivel de sensibilidad de la información para recomendarte el método adecuado.</p></div></div>
-      <div class="step"><div class="dot">02</div><div><h4>Recogida o intervención on-site</h4><p>Nuestros técnicos se desplazan a tu empresa o CPD, o trasladamos los soportes a nuestras instalaciones con custodia.</p></div></div>
-      <div class="step"><div class="dot">03</div><div><h4>Destrucción de los datos</h4><p>Ejecución del método elegido: borrado por software, trituración o desmagnetización, registrando cada número de serie.</p></div></div>
-      <div class="step"><div class="dot">04</div><div><h4>Certificado individual</h4><p>Emitimos un certificado nominal por unidad tratada, con método, fecha y trazabilidad completa.</p></div></div>
-      <div class="step"><div class="dot">05</div><div><h4>Informe final y reciclaje</h4><p>Recibes el informe del lote completo; los soportes destruidos se gestionan con recicladores autorizados (RAEE).</p></div></div>
+  </div>
+  <div class="story-track" id="ddTrack">
+    <div class="story-sticky">
+      <div class="wrap story-grid">
+        <div class="story-scene" aria-hidden="true">
+          <div class="ddrig">
+            <div class="hdd3d" id="hdd">
+              <div class="hdd-body">
+                <i class="scr s1"></i><i class="scr s2"></i><i class="scr s3"></i><i class="scr s4"></i>
+                <div class="platter"><span class="shine"></span><span class="hub"></span></div>
+                <div class="arm" id="ddArm"><span class="head"></span></div>
+                <span class="hdd-led"></span>
+                <span class="hdd-tag">SAS 12G · 1.92 TB · SN WX41-0093</span>
+              </div>
+            </div>
+            <div class="hud map"><b>Mapa de sectores</b><div class="cells" id="ddCells"></div></div>
+            <div class="hud pass"><b>Sobrescritura</b><span id="ddPassLabel">Pasada 0 / 3</span><div class="pbar"><i id="ddPassBar"></i></div></div>
+            <div class="ddcert" id="ddCert" data-r="0.84,1">
+              <span class="doc-tag">CERTIFICADO</span>
+              <h4>Borrado verificado</h4>
+              <div><span>Soporte</span><b>SAS 12G · SN WX41-0093</b></div>
+              <div><span>Método</span><b>NIST 800-88 · 3 pasadas</b></div>
+              <div><span>Estado</span><b class="okk">DATOS DESTRUIDOS · VERIFICADO</b></div>
+            </div>
+          </div>
+          <div class="callout co-1" data-r="0.02,0.2"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Inventariado por <b>nº de serie</b></span></div>
+          <div class="callout co-2" data-r="0.26,0.48"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Análisis <b>SMART</b> y mapa completo del soporte</span></div>
+          <div class="callout co-5" data-r="0.54,0.8"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Patrones <b>NIST 800-88</b> sobre cada sector</span></div>
+        </div>
+        <div class="story-steps">
+          <div class="sprog" aria-hidden="true"><i id="ddProg"></i></div>
+          <div class="sstep on"><span>PASO 01</span><h3>Recepción e inventariado</h3><p>Cada soporte se registra individualmente por número de serie. Desde este momento, todo el proceso queda trazado.</p></div>
+          <div class="sstep"><span>PASO 02</span><h3>Análisis del soporte</h3><p>Lectura SMART y mapeo completo de sectores para elegir el tratamiento adecuado y documentar el estado de partida.</p></div>
+          <div class="sstep"><span>PASO 03</span><h3>Sobrescritura multipaso</h3><p>Patrones de borrado conforme a NIST 800-88 sobre cada sector del disco, en varias pasadas completas.</p></div>
+          <div class="sstep"><span>PASO 04</span><h3>Verificación y certificado</h3><p>Lectura de comprobación final y emisión del certificado nominal: soporte, método, fecha y número de serie.</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -284,7 +317,7 @@
   </div>
 </footer>
 <button class="totop" id="totop" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
-<script src="../assets/js/core.js?v=9"></script>
-<script src="../assets/js/pages/destruccion.js?v=9"></script>
+<script src="../assets/js/core.js?v=10"></script>
+<script src="../assets/js/pages/destruccion.js?v=10"></script>
 </body>
 </html>

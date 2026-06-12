@@ -107,6 +107,38 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
   addEventListener('resize', () => { measure(); frame(); }, { passive: true });
   frame();
+
+/* ══════ Parallax del hero al hacer scroll ══════ */
+(() => {
+  const hero = $('.hero'), stage = $('#stage');
+  if (!hero || !stage || reduceMotion) return;
+  let raf = null;
+  function frame() {
+    raf = null;
+    const h = hero.offsetHeight || 1;
+    const hp = Math.min(Math.max(scrollY / h, 0), 1);
+    stage.style.translate = `0 ${hp * 90}px`;
+    stage.style.opacity = 1 - hp * .5;
+  }
+  addEventListener('scroll', () => { if (!raf && scrollY < hero.offsetHeight) raf = requestAnimationFrame(frame); }, { passive: true });
+})();
+
+})();
+
+
+/* ══════ Parallax del hero al hacer scroll ══════ */
+(() => {
+  const hero = $('.hero'), stage = $('#stage');
+  if (!hero || !stage || reduceMotion) return;
+  let raf = null;
+  function frame() {
+    raf = null;
+    const h = hero.offsetHeight || 1;
+    const hp = Math.min(Math.max(scrollY / h, 0), 1);
+    stage.style.translate = `0 ${hp * 90}px`;
+    stage.style.opacity = 1 - hp * .5;
+  }
+  addEventListener('scroll', () => { if (!raf && scrollY < hero.offsetHeight) raf = requestAnimationFrame(frame); }, { passive: true });
 })();
 
 })();
@@ -189,6 +221,38 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
   addEventListener('resize', () => { measure(); frame(); }, { passive: true });
   frame();
+
+/* ══════ Parallax del hero al hacer scroll ══════ */
+(() => {
+  const hero = $('.hero'), stage = $('#stage');
+  if (!hero || !stage || reduceMotion) return;
+  let raf = null;
+  function frame() {
+    raf = null;
+    const h = hero.offsetHeight || 1;
+    const hp = Math.min(Math.max(scrollY / h, 0), 1);
+    stage.style.translate = `0 ${hp * 90}px`;
+    stage.style.opacity = 1 - hp * .5;
+  }
+  addEventListener('scroll', () => { if (!raf && scrollY < hero.offsetHeight) raf = requestAnimationFrame(frame); }, { passive: true });
+})();
+
+})();
+
+
+/* ══════ Parallax del hero al hacer scroll ══════ */
+(() => {
+  const hero = $('.hero'), stage = $('#stage');
+  if (!hero || !stage || reduceMotion) return;
+  let raf = null;
+  function frame() {
+    raf = null;
+    const h = hero.offsetHeight || 1;
+    const hp = Math.min(Math.max(scrollY / h, 0), 1);
+    stage.style.translate = `0 ${hp * 90}px`;
+    stage.style.opacity = 1 - hp * .5;
+  }
+  addEventListener('scroll', () => { if (!raf && scrollY < hero.offsetHeight) raf = requestAnimationFrame(frame); }, { passive: true });
 })();
 
 })();
@@ -259,6 +323,38 @@ $$('.glowcard').forEach(c => c.addEventListener('mousemove', e => {
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
   addEventListener('resize', () => { measure(); frame(); }, { passive: true });
   frame();
+
+/* ══════ Parallax del hero al hacer scroll ══════ */
+(() => {
+  const hero = $('.hero'), stage = $('#stage');
+  if (!hero || !stage || reduceMotion) return;
+  let raf = null;
+  function frame() {
+    raf = null;
+    const h = hero.offsetHeight || 1;
+    const hp = Math.min(Math.max(scrollY / h, 0), 1);
+    stage.style.translate = `0 ${hp * 90}px`;
+    stage.style.opacity = 1 - hp * .5;
+  }
+  addEventListener('scroll', () => { if (!raf && scrollY < hero.offsetHeight) raf = requestAnimationFrame(frame); }, { passive: true });
+})();
+
+})();
+
+
+/* ══════ Parallax del hero al hacer scroll ══════ */
+(() => {
+  const hero = $('.hero'), stage = $('#stage');
+  if (!hero || !stage || reduceMotion) return;
+  let raf = null;
+  function frame() {
+    raf = null;
+    const h = hero.offsetHeight || 1;
+    const hp = Math.min(Math.max(scrollY / h, 0), 1);
+    stage.style.translate = `0 ${hp * 90}px`;
+    stage.style.opacity = 1 - hp * .5;
+  }
+  addEventListener('scroll', () => { if (!raf && scrollY < hero.offsetHeight) raf = requestAnimationFrame(frame); }, { passive: true });
 })();
 
 })();
