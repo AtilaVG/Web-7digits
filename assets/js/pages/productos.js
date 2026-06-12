@@ -5,10 +5,13 @@
 const { $, $$, reduceMotion, fmt, eur } = window.SD;
 
 /* ══════ Catálogo de productos ══════ */
-(() => {
+(async () => {
   const grid = $('#products');
   if (!grid) return;
-  const PRODUCTS = [
+  /* Catálogo de demostración: se usa si assets/data/products.json no está
+     disponible (p. ej. previsualización local). En producción, products.json
+     se genera desde WooCommerce con tools/sync-woocommerce.mjs */
+  const FALLBACK = [
     { t: 'PowerEdge R740', b: 'Dell', cat: 'server', type: 'Servidor 2U', badge: 'Refurbished', grade: 4, price: 1890, specs: [['CPU', '2× Xeon Gold 6130'], ['RAM', '128 GB DDR4'], ['Discos', '8× 1.2TB SAS']] },
     { t: 'ProLiant DL380 Gen10', b: 'HPE', cat: 'server', type: 'Servidor 2U', badge: 'Refurbished', grade: 5, price: 2350, specs: [['CPU', '2× Xeon Silver 4210'], ['RAM', '192 GB DDR4'], ['Discos', 'Sin discos']] },
     { t: 'Catalyst 9300 48P', b: 'Cisco', cat: 'network', type: 'Switch L3', badge: 'Refurbished', grade: 5, price: 1450, specs: [['Puertos', '48× 1G PoE+'], ['Uplink', '4× 10G SFP+'], ['Stack', '480 Gbps']] },
@@ -22,6 +25,18 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     { t: 'StoreEver MSL2024', b: 'HPE', cat: 'storage', type: 'Librería LTO', badge: 'Refurbished', grade: 3, price: 1340, specs: [['Tipo', 'LTO-8'], ['Slots', '24'], ['Capacidad', '720 TB']] },
     { t: 'UCS C220 M5', b: 'Cisco', cat: 'server', type: 'Servidor 1U', badge: 'Refurbished', grade: 4, price: 1680, specs: [['CPU', '2× Xeon Gold 5118'], ['RAM', '96 GB DDR4'], ['Discos', '4× 960GB SSD']] },
   ];
+  let PRODUCTS = FALLBACK;
+  const src = grid.dataset.src;
+  if (src) {
+    try {
+      const res = await fetch(src);
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data) && data.length) PRODUCTS = data;
+      }
+    } catch (e) { /* sin red o file://: catálogo de demostración */ }
+  }
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const gradeName = ['', 'E', 'D', 'C', 'B', 'A'];
   let activeFilter = 'all', searchTerm = '', sortMode = 'rel';
   const gradeBar = g => {
@@ -43,13 +58,14 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
       return;
     }
     grid.innerHTML = f.map((p, i) => `<article class="prod" style="animation-delay:${Math.min(i * 45, 400)}ms">
-      <div class="top"><span class="ptype">${p.type}</span><span class="badge">${p.badge}</span></div>
-      <h4>${p.t}</h4><div class="brand">${p.b}</div>
+      ${p.img ? `<div class="pimg"><img src="${esc(p.img)}" alt="${esc(p.t)}" loading="lazy"></div>` : ''}
+      <div class="top"><span class="ptype">${esc(p.type)}</span><span class="badge">${esc(p.badge)}</span></div>
+      <h4>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)}</a>` : esc(p.t)}</h4><div class="brand">${esc(p.b)}</div>
       ${gradeBar(p.grade)}
-      <div class="specs">${p.specs.map(s => `<div><span>${s[0]}</span><b>${s[1]}</b></div>`).join('')}</div>
+      <div class="specs">${(p.specs || []).map(s => `<div><span>${esc(s[0])}</span><b>${esc(s[1])}</b></div>`).join('')}</div>
       <div class="pfoot"><div class="price"><b>${eur(p.price)}</b><span>+ IVA · refurbished</span></div>
         <a class="add" href="contacto.html?tipo=compra&producto=${encodeURIComponent(p.t + ' (' + p.b + ')')}"
-           aria-label="Pedir presupuesto de ${p.t}" title="Pedir presupuesto">
+           aria-label="Pedir presupuesto de ${esc(p.t)}" title="Pedir presupuesto">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></a></div>
     </article>`).join('');
   }

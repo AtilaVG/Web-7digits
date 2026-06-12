@@ -1,0 +1,55 @@
+# 7DIGITS · Sincronización nocturna del catálogo desde WooCommerce
+#
+# Requiere 3 secrets en el repositorio (Settings → Secrets and variables → Actions):
+#   WC_URL    → https://www.7digits.es (la web WordPress del cliente)
+#   WC_KEY    → consumer key de la REST API de WooCommerce (solo lectura)
+#   WC_SECRET → consumer secret
+#
+# Sin los secrets configurados, el workflow termina sin hacer nada
+# y el front sigue mostrando el catálogo de demostración.
+
+name: Sincronizar catálogo WooCommerce
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # cada día a las 05:00 UTC
+  workflow_dispatch:        # y bajo demanda desde la pestaña Actions
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Comprobar configuración
+        id: cfg
+        env:
+          WC_URL: ${{ secrets.WC_URL }}
+        run: |
+          if [ -z "$WC_URL" ]; then
+            echo "Secrets de WooCommerce sin configurar; nada que sincronizar."
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Sincronizar productos
+        if: steps.cfg.outputs.configured == 'true'
+        env:
+          WC_URL: ${{ secrets.WC_URL }}
+          WC_KEY: ${{ secrets.WC_KEY }}
+          WC_SECRET: ${{ secrets.WC_SECRET }}
+        run: node tools/sync-woocommerce.mjs
+
+      - name: Publicar cambios
+        if: steps.cfg.outputs.configured == 'true'
+        run: |
+          git config user.name "catalogo-bot"
+          git config user.email "actions@github.com"
+          git add assets/data/products.json
+          git diff --cached --quiet && echo "Catálogo sin cambios." && exit 0
+          git commit -m "Actualizar catálogo desde WooCommerce ($(date -u +%F))"
+          git push

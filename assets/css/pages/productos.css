@@ -55,3 +55,9 @@
 @media(max-width:760px){
   .products{grid-template-columns:1fr}
 }
+
+/* imagen de producto (cuando el catálogo viene de WooCommerce) */
+.prod .pimg{height:150px;margin:-26px -26px 16px;border-radius:var(--r) var(--r) 0 0;overflow:hidden;background:var(--soft);border-bottom:1px solid var(--line-soft)}
+.prod .pimg img{width:100%;height:100%;object-fit:contain;padding:12px;mix-blend-mode:multiply}
+.prod h4 a{transition:.25s}
+.prod h4 a:hover{color:var(--blue)}

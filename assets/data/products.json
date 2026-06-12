@@ -1,0 +1,302 @@
+[
+ {
+  "t": "PowerEdge R740",
+  "b": "Dell",
+  "cat": "server",
+  "type": "Servidor 2U",
+  "badge": "Refurbished",
+  "grade": 4,
+  "price": 1890,
+  "specs": [
+   [
+    "CPU",
+    "2× Xeon Gold 6130"
+   ],
+   [
+    "RAM",
+    "128 GB DDR4"
+   ],
+   [
+    "Discos",
+    "8× 1.2TB SAS"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "ProLiant DL380 Gen10",
+  "b": "HPE",
+  "cat": "server",
+  "type": "Servidor 2U",
+  "badge": "Refurbished",
+  "grade": 5,
+  "price": 2350,
+  "specs": [
+   [
+    "CPU",
+    "2× Xeon Silver 4210"
+   ],
+   [
+    "RAM",
+    "192 GB DDR4"
+   ],
+   [
+    "Discos",
+    "Sin discos"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "Catalyst 9300 48P",
+  "b": "Cisco",
+  "cat": "network",
+  "type": "Switch L3",
+  "badge": "Refurbished",
+  "grade": 5,
+  "price": 1450,
+  "specs": [
+   [
+    "Puertos",
+    "48× 1G PoE+"
+   ],
+   [
+    "Uplink",
+    "4× 10G SFP+"
+   ],
+   [
+    "Stack",
+    "480 Gbps"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "Nexus 9336C-FX2",
+  "b": "Cisco",
+  "cat": "network",
+  "type": "Switch Spine",
+  "badge": "Refurbished",
+  "grade": 4,
+  "price": 3200,
+  "specs": [
+   [
+    "Puertos",
+    "36× 100G"
+   ],
+   [
+    "Latencia",
+    "< 1 µs"
+   ],
+   [
+    "Throughput",
+    "7.2 Tbps"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "PowerVault ME4024",
+  "b": "Dell",
+  "cat": "storage",
+  "type": "Cabina SAN",
+  "badge": "Refurbished",
+  "grade": 4,
+  "price": 2780,
+  "specs": [
+   [
+    "Bahías",
+    "24× 2.5\""
+   ],
+   [
+    "Conexión",
+    "16G FC"
+   ],
+   [
+    "Controladoras",
+    "Dual"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "G620 SAN Switch",
+  "b": "Brocade",
+  "cat": "network",
+  "type": "Switch FC",
+  "badge": "Refurbished",
+  "grade": 5,
+  "price": 1120,
+  "specs": [
+   [
+    "Puertos",
+    "64× 32G FC"
+   ],
+   [
+    "Latencia",
+    "700 ns"
+   ],
+   [
+    "Agregado",
+    "2 Tbps"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "DGS-3630-28PC",
+  "b": "D-Link",
+  "cat": "network",
+  "type": "Switch L3",
+  "badge": "Refurbished",
+  "grade": 4,
+  "price": 690,
+  "specs": [
+   [
+    "Puertos",
+    "24× 1G PoE"
+   ],
+   [
+    "Uplink",
+    "4× 10G"
+   ],
+   [
+    "PoE",
+    "370 W"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "32GB RDIMM DDR4",
+  "b": "Samsung",
+  "cat": "components",
+  "type": "Memoria",
+  "badge": "Testado",
+  "grade": 5,
+  "price": 78,
+  "specs": [
+   [
+    "Capacidad",
+    "32 GB"
+   ],
+   [
+    "Velocidad",
+    "2933 MHz"
+   ],
+   [
+    "ECC",
+    "Registered"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "1.92TB SSD SAS",
+  "b": "Intel",
+  "cat": "components",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": 4,
+  "price": 215,
+  "specs": [
+   [
+    "Capacidad",
+    "1.92 TB"
+   ],
+   [
+    "Interfaz",
+    "12G SAS"
+   ],
+   [
+    "Formato",
+    "2.5\""
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "Xeon Gold 6248R",
+  "b": "Intel",
+  "cat": "components",
+  "type": "Procesador",
+  "badge": "Refurbished",
+  "grade": 5,
+  "price": 460,
+  "specs": [
+   [
+    "Núcleos",
+    "24c / 48t"
+   ],
+   [
+    "Frecuencia",
+    "3.0 GHz"
+   ],
+   [
+    "TDP",
+    "205 W"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "StoreEver MSL2024",
+  "b": "HPE",
+  "cat": "storage",
+  "type": "Librería LTO",
+  "badge": "Refurbished",
+  "grade": 3,
+  "price": 1340,
+  "specs": [
+   [
+    "Tipo",
+    "LTO-8"
+   ],
+   [
+    "Slots",
+    "24"
+   ],
+   [
+    "Capacidad",
+    "720 TB"
+   ]
+  ],
+  "img": null,
+  "url": null
+ },
+ {
+  "t": "UCS C220 M5",
+  "b": "Cisco",
+  "cat": "server",
+  "type": "Servidor 1U",
+  "badge": "Refurbished",
+  "grade": 4,
+  "price": 1680,
+  "specs": [
+   [
+    "CPU",
+    "2× Xeon Gold 5118"
+   ],
+   [
+    "RAM",
+    "96 GB DDR4"
+   ],
+   [
+    "Discos",
+    "4× 960GB SSD"
+   ]
+  ],
+  "img": null,
+  "url": null
+ }
+]

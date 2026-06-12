@@ -69,6 +69,28 @@ El JS enviará los campos por `POST` (`FormData`) y mostrará el estado de éxit
 - **Catálogo**: array `PRODUCTS` en `assets/js/pages/productos.js` (hasta integrar el e-commerce real).
 - **Datos de contacto**: aparecen en topbar, página de contacto y footer de cada página.
 
+## Conectar el catálogo real (manteniendo su WordPress)
+
+El cliente **sigue gestionando sus productos en WooCommerce** como siempre; este front
+solo los muestra. La página de productos carga `assets/data/products.json` (con un
+catálogo de demostración embebido como respaldo) y ese JSON se regenera desde la
+tienda real:
+
+1. En su WordPress: WooCommerce → Ajustes → Avanzado → REST API → crear clave de **lectura**.
+2. En GitHub: Settings → Secrets → Actions → añadir `WC_URL`, `WC_KEY` y `WC_SECRET`.
+3. Listo: `.github/workflows/sync-catalog.yml` sincroniza cada noche (o al instante desde
+   la pestaña Actions). El script es `tools/sync-woocommerce.mjs`.
+
+Cada producto enlaza a su ficha real de la tienda (`permalink`), por lo que la compra
+se completa en su WooCommerce actual: arquitectura híbrida sin migrar el checkout.
+
+### Dónde alojar el front
+
+- **Mismo hosting**: subir estos archivos a `public_html` y mover WordPress a un
+  subdominio (p. ej. `tienda.7digits.es`), o
+- **CDN estático** (Cloudflare Pages / Netlify / GitHub Pages) apuntando el dominio
+  `www.7digits.es` al front y dejando WordPress donde está, accesible para el equipo.
+
 ## Pendiente antes de publicar
 
 - **Textos legales**: `aviso-legal.html` y `privacidad.html` son plantillas redactadas con los
