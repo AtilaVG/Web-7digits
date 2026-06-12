@@ -48,6 +48,60 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     cancelAnimationFrame(raf);
     if (visible) tick();
   }).observe(cv);
+
+/* ══════ Scrollytelling: así renace un servidor ══════ */
+(() => {
+  const sec = document.getElementById('proceso');
+  if (!sec) return;
+  if (reduceMotion) { sec.classList.add('static'); return; }
+  const track = document.getElementById('storyTrack');
+  const srv = document.getElementById('srv3d');
+  const lid = document.getElementById('sLid');
+  const inside = document.getElementById('sInside');
+  const prog = document.getElementById('sProg');
+  const steps = sec.querySelectorAll('.sstep');
+  const callouts = sec.querySelectorAll('[data-r]');
+  const clamp = t => Math.min(Math.max(t, 0), 1);
+  const seg = (p, a, b) => clamp((p - a) / (b - a));
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  let ticking = false;
+
+  function frame() {
+    ticking = false;
+    const r = track.getBoundingClientRect();
+    const total = r.height - innerHeight;
+    if (total <= 0) return;
+    const p = clamp(-r.top / total);
+
+    /* rotación: presentación → giro de inspección → vuelta al frente */
+    const ry = lerp(-34, 16, ease(seg(p, 0, .3))) + lerp(0, -50, ease(seg(p, .72, .98)));
+    const rx = 16 + lerp(0, 9, ease(seg(p, .2, .45))) - lerp(0, 9, ease(seg(p, .72, .95)));
+    /* la tapa se eleva durante el diagnóstico y se cierra al final */
+    const open = ease(seg(p, .22, .42)) * (1 - ease(seg(p, .72, .92)));
+    const scale = matchMedia('(max-width: 980px)').matches ? (matchMedia('(max-width: 760px)').matches ? .48 : .72) : 1;
+    srv.style.transform = `scale(${scale}) rotateX(${rx}deg) rotateY(${ry}deg)`;
+    lid.style.transform = `translateY(${-130 * open}px) rotateX(90deg) translateZ(48px)`;
+    lid.style.opacity = 1 - .3 * open;
+    inside.style.opacity = .25 + .75 * open;
+
+    /* LEDs verdes desde el test de carga */
+    srv.classList.toggle('ok', p > .52);
+
+    /* pasos y callouts */
+    const idx = p < .25 ? 0 : p < .5 ? 1 : p < .75 ? 2 : 3;
+    steps.forEach((s, i) => s.classList.toggle('on', i === idx));
+    callouts.forEach(c => {
+      const [a, b] = c.dataset.r.split(',').map(Number);
+      c.classList.toggle('on', p >= a && p <= b);
+    });
+    prog.style.height = (p * 100) + '%';
+  }
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
+  addEventListener('resize', frame, { passive: true });
+  frame();
+})();
+
 })();
 
 /* ══════ Hero: rack 3D que sigue al ratón ══════ */
@@ -69,6 +123,60 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     if (!raf) raf = requestAnimationFrame(lerp);
   });
   hero.addEventListener('mouseleave', () => { tx = -24; ty = 8; if (!raf) raf = requestAnimationFrame(lerp); });
+
+/* ══════ Scrollytelling: así renace un servidor ══════ */
+(() => {
+  const sec = document.getElementById('proceso');
+  if (!sec) return;
+  if (reduceMotion) { sec.classList.add('static'); return; }
+  const track = document.getElementById('storyTrack');
+  const srv = document.getElementById('srv3d');
+  const lid = document.getElementById('sLid');
+  const inside = document.getElementById('sInside');
+  const prog = document.getElementById('sProg');
+  const steps = sec.querySelectorAll('.sstep');
+  const callouts = sec.querySelectorAll('[data-r]');
+  const clamp = t => Math.min(Math.max(t, 0), 1);
+  const seg = (p, a, b) => clamp((p - a) / (b - a));
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  let ticking = false;
+
+  function frame() {
+    ticking = false;
+    const r = track.getBoundingClientRect();
+    const total = r.height - innerHeight;
+    if (total <= 0) return;
+    const p = clamp(-r.top / total);
+
+    /* rotación: presentación → giro de inspección → vuelta al frente */
+    const ry = lerp(-34, 16, ease(seg(p, 0, .3))) + lerp(0, -50, ease(seg(p, .72, .98)));
+    const rx = 16 + lerp(0, 9, ease(seg(p, .2, .45))) - lerp(0, 9, ease(seg(p, .72, .95)));
+    /* la tapa se eleva durante el diagnóstico y se cierra al final */
+    const open = ease(seg(p, .22, .42)) * (1 - ease(seg(p, .72, .92)));
+    const scale = matchMedia('(max-width: 980px)').matches ? (matchMedia('(max-width: 760px)').matches ? .48 : .72) : 1;
+    srv.style.transform = `scale(${scale}) rotateX(${rx}deg) rotateY(${ry}deg)`;
+    lid.style.transform = `translateY(${-130 * open}px) rotateX(90deg) translateZ(48px)`;
+    lid.style.opacity = 1 - .3 * open;
+    inside.style.opacity = .25 + .75 * open;
+
+    /* LEDs verdes desde el test de carga */
+    srv.classList.toggle('ok', p > .52);
+
+    /* pasos y callouts */
+    const idx = p < .25 ? 0 : p < .5 ? 1 : p < .75 ? 2 : 3;
+    steps.forEach((s, i) => s.classList.toggle('on', i === idx));
+    callouts.forEach(c => {
+      const [a, b] = c.dataset.r.split(',').map(Number);
+      c.classList.toggle('on', p >= a && p <= b);
+    });
+    prog.style.height = (p * 100) + '%';
+  }
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
+  addEventListener('resize', frame, { passive: true });
+  frame();
+})();
+
 })();
 
 /* ══════ Tarjetas con brillo que sigue al cursor ══════ */
@@ -77,5 +185,59 @@ $$('.glowcard').forEach(c => c.addEventListener('mousemove', e => {
   c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
   c.style.setProperty('--my', (e.clientY - r.top) + 'px');
 }));
+
+
+/* ══════ Scrollytelling: así renace un servidor ══════ */
+(() => {
+  const sec = document.getElementById('proceso');
+  if (!sec) return;
+  if (reduceMotion) { sec.classList.add('static'); return; }
+  const track = document.getElementById('storyTrack');
+  const srv = document.getElementById('srv3d');
+  const lid = document.getElementById('sLid');
+  const inside = document.getElementById('sInside');
+  const prog = document.getElementById('sProg');
+  const steps = sec.querySelectorAll('.sstep');
+  const callouts = sec.querySelectorAll('[data-r]');
+  const clamp = t => Math.min(Math.max(t, 0), 1);
+  const seg = (p, a, b) => clamp((p - a) / (b - a));
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  let ticking = false;
+
+  function frame() {
+    ticking = false;
+    const r = track.getBoundingClientRect();
+    const total = r.height - innerHeight;
+    if (total <= 0) return;
+    const p = clamp(-r.top / total);
+
+    /* rotación: presentación → giro de inspección → vuelta al frente */
+    const ry = lerp(-34, 16, ease(seg(p, 0, .3))) + lerp(0, -50, ease(seg(p, .72, .98)));
+    const rx = 16 + lerp(0, 9, ease(seg(p, .2, .45))) - lerp(0, 9, ease(seg(p, .72, .95)));
+    /* la tapa se eleva durante el diagnóstico y se cierra al final */
+    const open = ease(seg(p, .22, .42)) * (1 - ease(seg(p, .72, .92)));
+    const scale = matchMedia('(max-width: 980px)').matches ? (matchMedia('(max-width: 760px)').matches ? .48 : .72) : 1;
+    srv.style.transform = `scale(${scale}) rotateX(${rx}deg) rotateY(${ry}deg)`;
+    lid.style.transform = `translateY(${-130 * open}px) rotateX(90deg) translateZ(48px)`;
+    lid.style.opacity = 1 - .3 * open;
+    inside.style.opacity = .25 + .75 * open;
+
+    /* LEDs verdes desde el test de carga */
+    srv.classList.toggle('ok', p > .52);
+
+    /* pasos y callouts */
+    const idx = p < .25 ? 0 : p < .5 ? 1 : p < .75 ? 2 : 3;
+    steps.forEach((s, i) => s.classList.toggle('on', i === idx));
+    callouts.forEach(c => {
+      const [a, b] = c.dataset.r.split(',').map(Number);
+      c.classList.toggle('on', p >= a && p <= b);
+    });
+    prog.style.height = (p * 100) + '%';
+  }
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, { passive: true });
+  addEventListener('resize', frame, { passive: true });
+  frame();
+})();
 
 })();
