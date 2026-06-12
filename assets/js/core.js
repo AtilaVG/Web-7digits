@@ -42,6 +42,8 @@ if (burger) {
   burger.addEventListener('click', () => setMenu(!mm.classList.contains('open')));
   mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
   ov.addEventListener('click', () => setMenu(false));
+  const mmClose = $('#mmClose');
+  if (mmClose) mmClose.addEventListener('click', () => setMenu(false));
   addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 }
 
