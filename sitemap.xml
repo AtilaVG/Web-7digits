@@ -34,4 +34,12 @@
     <loc>https://www.7digits.es/pages/servidores-refurbished.html</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.7digits.es/pages/compramos-servidores.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.7digits.es/pages/medio-ambiente.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

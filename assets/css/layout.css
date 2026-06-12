@@ -22,8 +22,8 @@ header.shrink nav{height:68px}
 .logo .wm{font-family:'Barlow';font-weight:800;font-size:1.7rem;line-height:.9;letter-spacing:-.02em;color:var(--navy-2)}
 .logo .wm .d{color:var(--green)}
 .logo .wm small{display:block;font-family:'Barlow Semi Condensed';font-weight:600;font-size:.62rem;letter-spacing:.18em;color:var(--green);text-transform:uppercase;margin-top:3px}
-.nav-links{display:flex;align-items:center;gap:34px}
-.nav-links a{font-family:'Barlow';font-weight:600;font-size:1rem;color:var(--navy-3);position:relative;padding:6px 0;transition:.25s}
+.nav-links{display:flex;align-items:center;gap:clamp(14px,1.5vw,26px)}
+.nav-links a{font-family:'Barlow';font-weight:600;font-size:.95rem;white-space:nowrap;color:var(--navy-3);position:relative;padding:6px 0;transition:.25s}
 .nav-links a::after{content:'';position:absolute;left:0;right:100%;bottom:0;height:2.5px;border-radius:2px;background:linear-gradient(90deg,var(--sky),var(--lime));transition:.35s var(--ease)}
 .nav-links a:hover{color:var(--blue)}
 .nav-links a:hover::after,.nav-links a.active::after{right:0}
@@ -89,7 +89,7 @@ footer{background:var(--footer);color:var(--navy-2);padding:68px 0 28px}
 .mm-close svg{width:16px;height:16px}
 .overlay{position:fixed;inset:0;background:rgba(12,20,36,.5);z-index:140;opacity:0;pointer-events:none;transition:.35s;backdrop-filter:blur(2px)}
 .overlay.open{opacity:1;pointer-events:auto}
-@media(max-width:980px){
+@media(max-width:1180px){
   .nav-links,.nav-r .btn{display:none}.burger{display:flex}
 }
 @media(max-width:760px){

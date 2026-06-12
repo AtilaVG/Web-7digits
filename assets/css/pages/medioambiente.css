@@ -1,0 +1,28 @@
+/* ═══ 7DIGITS · Medio ambiente: escalera de Lansink ═══ */
+
+.lansink{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.lstep{display:flex;align-items:center;gap:18px;border-radius:14px;padding:18px 24px;border:1.5px solid var(--line);
+  background:#fff;transition:.35s var(--ease);position:relative;overflow:hidden}
+.lstep:hover{transform:translateX(6px);box-shadow:var(--shadow)}
+.lstep .ln{font-family:'Barlow';font-weight:900;font-size:1.5rem;width:46px;height:46px;border-radius:12px;
+  display:grid;place-items:center;flex-shrink:0;background:var(--soft);color:var(--muted)}
+.lstep h3{font-size:1.15rem;font-weight:700;margin-bottom:2px}
+.lstep p{color:var(--muted);font-size:.9rem}
+.lstep .tagok{margin-left:auto;flex-shrink:0;font-family:'Barlow Semi Condensed';font-weight:700;font-size:.7rem;
+  letter-spacing:.1em;text-transform:uppercase;padding:6px 13px;border-radius:20px;background:var(--soft-2);color:var(--muted)}
+.lstep.good{border-color:rgba(95,174,39,.45);background:linear-gradient(90deg,rgba(140,198,63,.07),#fff 60%)}
+.lstep.good .ln{background:var(--grad-green);color:#fff;box-shadow:0 10px 20px -8px rgba(95,174,39,.6)}
+.lstep.good .tagok{background:rgba(140,198,63,.18);color:var(--green)}
+.lstep.bad{opacity:.62}
+/* anchura escalonada: de más deseable (ancha) a menos (estrecha) */
+.lstep:nth-child(1){margin-right:0}
+.lstep:nth-child(2){margin-right:6%}
+.lstep:nth-child(3){margin-right:12%}
+.lstep:nth-child(4){margin-right:18%}
+.lstep:nth-child(5){margin-right:24%}
+.lstep:nth-child(6){margin-right:30%}
+@media(max-width:760px){
+  .lstep{padding:14px 16px;gap:12px}
+  .lstep:nth-child(n){margin-right:0}
+  .lstep .tagok{display:none}
+}
