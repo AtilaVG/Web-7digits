@@ -37,5 +37,12 @@ form button[type=submit]{width:100%;justify-content:center}
 }
 
 /* mapa de situación */
-.map{margin-top:60px;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);line-height:0}
-.map iframe{width:100%;height:380px;border:0;filter:saturate(.85)}
+.map{position:relative;margin-top:60px;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);line-height:0;
+  background:linear-gradient(160deg,var(--navy-2),var(--navy))}
+.map::before{content:'Mapa de situación';position:absolute;inset:0;z-index:0;display:grid;place-items:center;
+  font-family:'Barlow Semi Condensed';font-weight:600;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;color:#7e90ad}
+.map iframe{position:relative;z-index:1;width:100%;height:380px;border:0;filter:saturate(.85)}
+.map-note{margin-top:14px;line-height:1.6;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.92rem;color:var(--muted)}
+.map-note svg{width:16px;height:16px;color:var(--green);flex-shrink:0}
+.map-note a{color:var(--blue);font-weight:700;border-bottom:1.5px solid var(--sky);transition:.25s}
+.map-note a:hover{color:var(--green);border-color:var(--green)}

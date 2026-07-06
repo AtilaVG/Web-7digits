@@ -35,6 +35,8 @@
 .reveal.rv-r{transform:translateX(36px)}
 .reveal.rv-s{transform:scale(.92)}
 .reveal.in{opacity:1;transform:none}
+/* En columnas apiladas (≤980px) el desplazamiento lateral sobra y provoca overflow horizontal: entrada vertical */
+@media(max-width:980px){.reveal.rv-l,.reveal.rv-r{transform:translateY(28px)}}
 @media(max-width:760px){
   .sec{padding:68px 0}
 }

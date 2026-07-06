@@ -32,6 +32,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:'Mulish',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* Destinos de anclaje: compensa la cabecera fija para que el título no quede oculto */
+#main,#contact-form,:target{scroll-margin-top:104px}
 ::selection{background:var(--lime);color:#fff}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
