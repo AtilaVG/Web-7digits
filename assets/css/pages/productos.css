@@ -26,8 +26,8 @@
 .prod .ptype{font-family:'Barlow Semi Condensed';font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .prod .badge{font-family:'Barlow Semi Condensed';font-weight:700;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;
   padding:4px 11px;border-radius:20px;background:var(--soft-2);color:var(--blue-deep)}
-.prod h4{font-size:1.24rem;font-weight:700;margin-bottom:3px}
-.prod .brand{font-size:.9rem;color:var(--green);font-weight:700;margin-bottom:14px;font-family:'Barlow Semi Condensed';letter-spacing:.02em}
+.prod h3{font-size:1.24rem;font-weight:700;margin-bottom:3px}
+.prod .brand{font-size:.9rem;color:var(--green-text);font-weight:700;margin-bottom:14px;font-family:'Barlow Semi Condensed';letter-spacing:.02em}
 .prod .specs{border-top:1px solid var(--line-soft);padding-top:13px;margin-bottom:14px;display:flex;flex-direction:column;gap:6px}
 .prod .specs div{display:flex;justify-content:space-between;font-size:.84rem}
 .prod .specs span{color:var(--muted)}
@@ -39,9 +39,9 @@
 .prod .pfoot{display:flex;align-items:flex-end;justify-content:space-between}
 .prod .price b{font-family:'Barlow';font-size:1.5rem;font-weight:800;color:var(--navy-2)}
 .prod .price span{font-size:.72rem;color:var(--muted);display:block}
-.prod .add{width:44px;height:44px;border-radius:11px;border:1.5px solid var(--line);background:#fff;color:var(--blue);
-  cursor:pointer;display:grid;place-items:center;transition:.3s var(--ease)}
-.prod .add:hover{background:var(--blue);border-color:var(--blue);color:#fff;transform:scale(1.08)}
+.prod .add{height:44px;padding:0 16px;border-radius:11px;border:1.5px solid var(--line);background:#fff;color:var(--blue-text);
+  cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-family:'Barlow';font-weight:700;font-size:.86rem;transition:.3s var(--ease)}
+.prod .add:hover{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateY(-2px)}
 .prod .add.done{background:var(--green);border-color:var(--green);color:#fff}
 .prod .add svg{width:18px;height:18px}
 .empty{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--muted);font-family:'Barlow Semi Condensed';font-weight:600}
@@ -59,5 +59,5 @@
 /* imagen de producto (cuando el catálogo viene de WooCommerce) */
 .prod .pimg{height:150px;margin:-26px -26px 16px;border-radius:var(--r) var(--r) 0 0;overflow:hidden;background:var(--soft);border-bottom:1px solid var(--line-soft)}
 .prod .pimg img{width:100%;height:100%;object-fit:contain;padding:12px;mix-blend-mode:multiply}
-.prod h4 a{transition:.25s}
-.prod h4 a:hover{color:var(--blue)}
+.prod h3 a{transition:.25s}
+.prod h3 a:hover{color:var(--blue)}

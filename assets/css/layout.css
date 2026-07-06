@@ -56,7 +56,7 @@ header.shrink nav{height:68px}
 footer{background:var(--footer);color:var(--navy-2);padding:68px 0 28px}
 .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
 .foot-grid>div>p{color:var(--navy-3);font-size:.92rem;margin-top:16px;max-width:290px}
-.foot-col h5{font-family:'Barlow Semi Condensed';font-weight:800;font-size:.84rem;letter-spacing:.1em;text-transform:uppercase;color:var(--navy-2);margin-bottom:16px}
+.foot-col h2{font-family:'Barlow Semi Condensed';font-weight:800;font-size:.84rem;letter-spacing:.1em;text-transform:uppercase;color:var(--navy-2);margin-bottom:16px}
 .foot-col a{display:flex;align-items:center;gap:8px;color:var(--navy-3);font-size:.92rem;padding:6px 0;transition:.25s}
 .foot-col a svg{width:13px;height:13px;color:var(--green);flex-shrink:0}
 .foot-col a:hover{color:var(--blue);transform:translateX(4px)}

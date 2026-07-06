@@ -60,20 +60,22 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     grid.innerHTML = f.map((p, i) => `<article class="prod" style="animation-delay:${Math.min(i * 45, 400)}ms">
       ${p.img ? `<div class="pimg"><img src="${esc(p.img)}" alt="${esc(p.t)}" loading="lazy"></div>` : ''}
       <div class="top"><span class="ptype">${esc(p.type)}</span><span class="badge">${esc(p.badge)}</span></div>
-      <h4>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)}</a>` : esc(p.t)}</h4><div class="brand">${esc(p.b)}</div>
+      <h3>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)}</a>` : esc(p.t)}</h3><div class="brand">${esc(p.b)}</div>
       ${gradeBar(p.grade)}
       <div class="specs">${(p.specs || []).map(s => `<div><span>${esc(s[0])}</span><b>${esc(s[1])}</b></div>`).join('')}</div>
       <div class="pfoot"><div class="price"><b>${eur(p.price)}</b><span>+ IVA · refurbished</span></div>
         <a class="add" href="contacto.html?tipo=compra&producto=${encodeURIComponent(p.t + ' (' + p.b + ')')}"
            aria-label="Pedir presupuesto de ${esc(p.t)}" title="Pedir presupuesto">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></a></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg><span>Pedir presupuesto</span></a></div>
     </article>`).join('');
   }
   render();
+  $$('.filter').forEach(b => b.setAttribute('aria-pressed', b.classList.contains('active') ? 'true' : 'false'));
   $('#filters').addEventListener('click', e => {
     if (!e.target.classList.contains('filter')) return;
-    $$('.filter').forEach(b => b.classList.remove('active'));
+    $$('.filter').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
     e.target.classList.add('active');
+    e.target.setAttribute('aria-pressed', 'true');
     activeFilter = e.target.dataset.f;
     render();
   });

@@ -67,18 +67,63 @@ Descartadas por estar **ya resueltas upstream**: topbar móvil y botón de cierr
 - **Mapa:** fondo `linear-gradient` navy + placeholder "Mapa de situación" + enlace "Cómo llegar"; el iframe carga encima con red.
 - **Sin regresiones:** 0 errores de consola, 0 4xx, scrollytelling/parallax/View Transitions y todos los flujos intactos.
 
-### Puntuación MVP (sobre 100)
-| Categoría | Puntos |
-|-----------|-------:|
-| Jerarquía visual y coherencia | 18/20 |
-| Confianza y percepción B2B | 18/20 |
-| Conversión y claridad de CTAs | 18/20 |
-| Responsive y accesibilidad | 18/20 |
-| Calidad técnica y mantenibilidad | 18/20 |
-| **Total** | **90/100** |
+## Segunda ronda — Tier A (seguras) + Tier B (contraste WCAG AA) + Tier C (accesibilidad técnica)
+
+Tras los 4 arreglos base se abrió una segunda ronda de mejoras, seleccionada explícitamente por el cliente
+(«Tier A + B + C»), con foco en **defendibilidad ante cliente**, **contraste AA** y **accesibilidad técnica**.
+No se inventó ningún dato: los contadores muestran las mismas cifras que ya existían y se marca como *estimación
+orientativa a confirmar* la única métrica no verificable (CO₂ evitado).
+
+### Tier A — Mejoras seguras (sin riesgo visual)
+| # | Cambio | Archivos | Beneficio |
+|---|--------|----------|-----------|
+| A1 | Footer: se retira «Prototipo de rediseño — 7digits.es» → «Gestión responsable del fin de vida del hardware empresarial.» | 12 HTML | Elimina la etiqueta de «prototipo» que restaba credibilidad ante el cliente |
+| A2 | Contadores con el valor real ya escrito en el HTML (fallback si falla JS) y animación que arranca de 0 | `core.js`, index/actividad/medio-ambiente | Si JS falla, se ven **10.000 / 24 / 100…** en vez de «0»; sin dato inventado |
+| A3 | Enlace «Medio ambiente» que faltaba en la navegación de Contacto (nav + menú móvil) | `contacto.html` | Navegación consistente (8 enlaces en todas las páginas) |
+| A4 | Nota al pie del asterisco «CO₂ evitado*»: estimación orientativa a confirmar | actividad/medio-ambiente + `.stat-note` | Honestidad de datos: no se presenta como cifra propia verificada |
+| A5 | CTA de cada producto pasa de icono 44×44 a botón con texto «Pedir presupuesto» | `productos.js` + `productos.css` | CTA reconocible y accesible; mejora conversión del catálogo |
+| A6 | Nota de privacidad junto al botón de envío del formulario | `contacto.html` + `contacto.css` | Cumplimiento/transparencia; enlace a política de privacidad |
+
+### Tier B — Contraste WCAG AA (verificado por cálculo de ratio)
+| # | Cambio | Antes → Después | Ratio |
+|---|--------|-----------------|------:|
+| B1 | Texto de `.btn-primary` (verde) pasa de blanco a `navy-2` | 2.05 (FAIL) → **5.00–6.78** | PASS AA |
+| B2 | Token `--green-text #3d7d18` para verde sobre blanco (`.tag`, `.prod .brand`); `.num` a `blue-deep`; overrides lime/sky en secciones oscuras | 2.77 (FAIL) → **5.07** | PASS AA |
+| B3 | Banda `.cta`: overlay navy al 34% sobre el degradado verde→azul | 2.77 (FAIL) → **5.18–7.12** | PASS AA |
+
+Verificación: script de contraste (fórmula WCAG 2.x). **Todos los pares AA-normal ≥ 4.5.**
+
+### Tier C — Accesibilidad técnica
+| # | Cambio | Archivos |
+|---|--------|----------|
+| C1 | Menú móvil = `role="dialog"` + `aria-modal`, **trampa de foco** (foco al abrir, Tab cíclico, Escape devuelve el foco al botón) | `core.js` |
+| C2 | `aria-pressed` en los grupos de botones toggle (filtros de catálogo, periodicidad de renting, antigüedad de compras) | `productos.js`, `renting.js`, `compras.js` |
+| C3 | Orden de encabezados: footer `h5`→`h2`, tarjetas de producto `h4`→`h3`, `h2` de catálogo para lectores de pantalla | 12 HTML, `productos.js/.css`, `layout.css` |
+| C4 | Prerelleno del formulario también con `tipo=compra` y `tipo=renting` sin parámetros extra | `contacto.js` |
+
+### Validación de la segunda ronda (localhost + Chrome headless)
+- **Consola/red:** 0 errores y 0 recursos 4xx en las 12 páginas; **sin overflow** en 375/768/1440.
+- **Contraste:** los 8 pares nuevos + la banda CTA pasan **AA-normal (≥4.5)** por cálculo de ratio.
+- **Accesibilidad runtime:** `aria-pressed` conmuta correctamente; menú con `role=dialog`, foco al abrir en el botón de
+  cierre, Tab cíclico dentro del panel y Escape que **devuelve el foco al botón**; contadores animan desde 0 con la cifra
+  real como *fallback*.
+- **Conversión:** el prerelleno de Contacto responde a `tipo=compra`/`tipo=renting`; el CTA de producto muestra texto.
+- **Sin regresiones:** scrollytelling, parallax y View Transitions intactos.
+
+### Puntuación MVP (sobre 100) — tras Tier A+B+C
+| Categoría | Puntos | Nota |
+|-----------|-------:|------|
+| Jerarquía visual y coherencia | 19/20 | Orden de encabezados corregido; sistema de color más disciplinado |
+| Confianza y percepción B2B | 19/20 | Sin etiqueta de «prototipo»; datos honestos; nota de privacidad |
+| Conversión y claridad de CTAs | 19/20 | CTA de producto con texto; prerelleno más completo |
+| Responsive y accesibilidad | 19/20 | Contraste AA + trampa de foco + `aria-pressed` + jerarquía de headings |
+| Calidad técnica y mantenibilidad | 19/20 | Cambios pequeños, tokenizados y sin dependencias |
+| **Total** | **95/100** |
 
 **MVP SUPERADO**: ≥80/100, ninguna categoría <15, 0 errores de consola, 0 flujos rotos, validado en móvil/tablet/escritorio,
-sin regresiones y dirección de diseño coherente.
+sin regresiones, contraste AA verificado y dirección de diseño coherente.
+
+> Nota histórica: la primera ronda (4 arreglos base) puntuó **90/100**. La segunda ronda (Tier A+B+C) la eleva a **95/100**.
 
 ## Mejoras futuras (Fase 2)
 1. Revisión editorial del bloque *intro* de la portada. 2. Uso más disciplinado del degradado verde en el sistema de color.

@@ -27,6 +27,10 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     }
   } else if (qs.get('tipo') === 'datos') {
     tipo.value = 'Destrucción de datos';
+  } else if (qs.get('tipo') === 'compra') {
+    tipo.value = 'Compra de hardware';
+  } else if (qs.get('tipo') === 'renting') {
+    tipo.value = 'Renting de equipos';
   }
   if ([...qs.keys()].length) {
     document.getElementById('contact-form')?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });

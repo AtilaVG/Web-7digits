@@ -19,3 +19,13 @@ obtener evidencia determinista.
 4. **Flujo de conversión**: los anclajes (prerelleno catálogo/simulador → formulario, skip link) ya no quedan bajo la cabecera fija.
 
 Nota: la topbar móvil y el botón de cierre del menú **ya estaban corregidos** en la versión base; no forman parte de este MVP.
+
+## Segunda ronda (Tier A+B+C) — visible en el set `final/` regenerado
+5. **CTA de producto con texto**: cada tarjeta del catálogo pasa de un icono 44×44 a un botón «Pedir presupuesto»
+   con texto e icono (`final/productos-desktop`, `final/productos-mobile`).
+6. **Contraste WCAG AA**: texto de botón primario en `navy-2`, verde de marca a `--green-text` sobre blanco y banda
+   `.cta` con overlay navy al 34% (todos los pares ≥4.5 por cálculo de ratio).
+7. **Confianza/honestidad**: footer sin la etiqueta «Prototipo», contadores con la cifra real como *fallback*, nota de
+   privacidad junto al envío y asterisco del CO₂ aclarado como estimación (`final/contacto-mobile`, `final/medioambiente-mobile`).
+8. **Accesibilidad técnica** (no siempre visible en captura): menú `role="dialog"` con trampa de foco, `aria-pressed` en
+   toggles y orden de encabezados corregido.

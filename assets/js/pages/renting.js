@@ -30,10 +30,12 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
   }
   amount.addEventListener('input', calc);
   term.addEventListener('input', calc);
+  $$('#freq button').forEach(b => b.setAttribute('aria-pressed', b.classList.contains('active') ? 'true' : 'false'));
   $('#freq').addEventListener('click', e => {
     if (e.target.tagName !== 'BUTTON') return;
-    $$('#freq button').forEach(b => b.classList.remove('active'));
+    $$('#freq button').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
     e.target.classList.add('active');
+    e.target.setAttribute('aria-pressed', 'true');
     freq = +e.target.dataset.q;
     calc();
   });
