@@ -28,14 +28,15 @@ if (!WC_URL || !WC_KEY || !WC_SECRET) {
    se consulta vía búsqueda/presupuesto. Ajustable con MAX_PRODUCTS. */
 const MAX_PRODUCTS = parseInt(process.env.MAX_PRODUCTS || '120', 10);
 
-/* slug de categoría WooCommerce → filtro del front */
+/* Categorías reales de la tienda → filtro del front.
+   (Almacenamiento 7212 · Componentes 6473 · Redes 3728 · Otros 3526 ·
+    Servidores 2065 · Accesorios 593 · Software 259 · Consumibles 243 · Ordenadores 72) */
 const CAT_MAP = [
-  [/servidor/i, 'server'],
+  [/servidor|ordenador/i, 'server'],
   [/red|switch|router|comunicacion/i, 'network'],
   [/almacenamiento|cabina|disco|nas|san|storage/i, 'storage'],
   [/.*/, 'components'],
 ];
-const GRADE_LETTER = { A: 5, B: 4, C: 3, D: 2, E: 1 };
 
 async function fetchAll() {
   const out = [];
@@ -52,10 +53,11 @@ async function fetchAll() {
   return out.slice(0, MAX_PRODUCTS);
 }
 
-function attr(p, ...names) {
-  for (const name of names) {
-    const a = (p.attributes || []).find(x => x.name && x.name.toLowerCase() === name);
-    if (a && a.options && a.options.length) return a.options[0];
+/* Los datos clave viven en meta_data, no en atributos WooCommerce ni ACF. */
+function meta(p, ...keys) {
+  for (const key of keys) {
+    const m = (p.meta_data || []).find(x => x.key && x.key.toLowerCase() === key.toLowerCase());
+    if (m && m.value && typeof m.value === 'string' && m.value.trim()) return m.value.trim();
   }
   return null;
 }
@@ -63,18 +65,21 @@ function attr(p, ...names) {
 function map(p) {
   const catSlugs = (p.categories || []).map(c => c.slug + ' ' + c.name).join(' ');
   const cat = CAT_MAP.find(([re]) => re.test(catSlugs))[1];
-  const gradeRaw = (attr(p, 'grado', 'grade') || 'B').trim().toUpperCase()[0];
-  const specs = (p.attributes || [])
-    .filter(a => !/grado|grade|marca|brand/i.test(a.name) && a.options && a.options.length)
-    .slice(0, 3)
-    .map(a => [a.name, String(a.options[0]).slice(0, 40)]);
+  const brand = meta(p, 'brand', 'marca') || p.name.split(' ')[0];
+  const mpn = meta(p, 'MPN', 'mpn', '_mpn');
+  /* La tienda no guarda grado (A–E); todo el catálogo es refurbished (sufijo .REF en SKU).
+     No se inventa grado: grade queda a null y la tarjeta oculta la barra. */
+  const isRef = /\.REF/i.test(p.sku || '');
+  const specs = [];
+  if (mpn) specs.push(['Part number', mpn.slice(0, 40)]);
+  if (p.sku) specs.push(['Referencia', p.sku.slice(0, 40)]);
   return {
     t: p.name,
-    b: attr(p, 'marca', 'brand') || p.name.split(' ')[0],
+    b: brand,
     cat,
     type: (p.categories && p.categories[0] && p.categories[0].name) || 'Hardware',
-    badge: p.stock_status === 'instock' ? 'En stock' : 'Bajo pedido',
-    grade: GRADE_LETTER[gradeRaw] ?? 4,
+    badge: isRef ? 'Refurbished' : (p.stock_status === 'instock' ? 'En stock' : 'Bajo pedido'),
+    grade: null,
     specs,
     img: (p.images && p.images[0] && p.images[0].src) || null,
     url: p.permalink || null,

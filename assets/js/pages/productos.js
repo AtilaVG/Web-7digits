@@ -40,6 +40,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
   const gradeName = ['', 'E', 'D', 'C', 'B', 'A'];
   let activeFilter = 'all', searchTerm = '', sortMode = 'rel';
   const gradeBar = g => {
+    if (!g) return '';   /* productos reales sin grado: no se muestra barra inventada */
     let h = '';
     for (let i = 1; i <= 5; i++) h += `<i class="${i <= g ? 'fill' : ''}"></i>`;
     return `<div class="grade">${h}<em>Grado ${gradeName[g]}</em></div>`;
@@ -48,7 +49,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     let f = PRODUCTS.filter(p =>
       (activeFilter === 'all' || p.cat === activeFilter) &&
       (p.t + ' ' + p.b).toLowerCase().includes(searchTerm.toLowerCase()));
-    if (sortMode === 'grade') f = [...f].sort((a, b) => b.grade - a.grade);
+    if (sortMode === 'grade') f = [...f].sort((a, b) => (b.grade || 0) - (a.grade || 0));
     if (!f.length) {
       grid.innerHTML = `<div class="empty">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M8 11h6"/></svg>
