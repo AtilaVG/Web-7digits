@@ -23,6 +23,11 @@ if (!WC_URL || !WC_KEY || !WC_SECRET) {
   process.exit(1);
 }
 
+/* La tienda real tiene ~24.000 productos: el front es un escaparate, no el
+   catálogo completo. Se sincronizan los N más recientes en stock; el resto
+   se consulta vía búsqueda/presupuesto. Ajustable con MAX_PRODUCTS. */
+const MAX_PRODUCTS = parseInt(process.env.MAX_PRODUCTS || '120', 10);
+
 /* slug de categoría WooCommerce → filtro del front */
 const CAT_MAP = [
   [/servidor/i, 'server'],
@@ -34,9 +39,9 @@ const GRADE_LETTER = { A: 5, B: 4, C: 3, D: 2, E: 1 };
 
 async function fetchAll() {
   const out = [];
-  for (let page = 1; ; page++) {
+  for (let page = 1; out.length < MAX_PRODUCTS; page++) {
     const url = `${WC_URL.replace(/\/$/, '')}/wp-json/wc/v3/products` +
-      `?status=publish&per_page=100&page=${page}` +
+      `?status=publish&stock_status=instock&orderby=date&order=desc&per_page=100&page=${page}` +
       `&consumer_key=${WC_KEY}&consumer_secret=${WC_SECRET}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error(`WooCommerce respondió ${res.status} en la página ${page}`);
@@ -44,7 +49,7 @@ async function fetchAll() {
     out.push(...batch);
     if (batch.length < 100) break;
   }
-  return out;
+  return out.slice(0, MAX_PRODUCTS);
 }
 
 function attr(p, ...names) {

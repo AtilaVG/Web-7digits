@@ -81,6 +81,10 @@ tienda real:
 3. Listo: `.github/workflows/sync-catalog.yml` sincroniza cada noche (o al instante desde
    la pestaña Actions). El script es `tools/sync-woocommerce.mjs`.
 
+La tienda real tiene ~24.000 productos: el script sincroniza los **120 más recientes en
+stock** (variable `MAX_PRODUCTS`) — el front es escaparate, el catálogo completo se
+consulta por búsqueda/presupuesto. Plan de migración de URLs en `docs/migracion-seo.md`.
+
 Cada producto enlaza a su ficha real de la tienda (`permalink`), por lo que la compra
 se completa en su WooCommerce actual: arquitectura híbrida sin migrar el checkout.
 
