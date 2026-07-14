@@ -48,8 +48,6 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     let f = PRODUCTS.filter(p =>
       (activeFilter === 'all' || p.cat === activeFilter) &&
       (p.t + ' ' + p.b).toLowerCase().includes(searchTerm.toLowerCase()));
-    if (sortMode === 'asc')   f = [...f].sort((a, b) => a.price - b.price);
-    if (sortMode === 'desc')  f = [...f].sort((a, b) => b.price - a.price);
     if (sortMode === 'grade') f = [...f].sort((a, b) => b.grade - a.grade);
     if (!f.length) {
       grid.innerHTML = `<div class="empty">
@@ -63,7 +61,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
       <h4>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)}</a>` : esc(p.t)}</h4><div class="brand">${esc(p.b)}</div>
       ${gradeBar(p.grade)}
       <div class="specs">${(p.specs || []).map(s => `<div><span>${esc(s[0])}</span><b>${esc(s[1])}</b></div>`).join('')}</div>
-      <div class="pfoot"><div class="price"><b>${eur(p.price)}</b><span>+ IVA · refurbished</span></div>
+      <div class="pfoot"><div class="price"><b class="ask">Precio bajo consulta</b><span>presupuesto en &lt; 24 h</span></div>
         <a class="add" href="contacto.html?tipo=compra&producto=${encodeURIComponent(p.t + ' (' + p.b + ')')}"
            aria-label="Pedir presupuesto de ${esc(p.t)}" title="Pedir presupuesto">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></a></div>

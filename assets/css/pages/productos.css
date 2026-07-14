@@ -38,6 +38,7 @@
 .prod .grade em{font-family:'Barlow Semi Condensed';font-style:normal;font-size:.74rem;color:var(--muted);margin-left:6px;font-weight:600}
 .prod .pfoot{display:flex;align-items:flex-end;justify-content:space-between}
 .prod .price b{font-family:'Barlow';font-size:1.5rem;font-weight:800;color:var(--navy-2)}
+.prod .price b.ask{font-size:1.02rem;color:var(--blue-deep)}
 .prod .price span{font-size:.72rem;color:var(--muted);display:block}
 .prod .add{width:44px;height:44px;border-radius:11px;border:1.5px solid var(--line);background:#fff;color:var(--blue);
   cursor:pointer;display:grid;place-items:center;transition:.3s var(--ease)}

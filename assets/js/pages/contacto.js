@@ -17,9 +17,6 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
   if (qs.get('producto')) {
     tipo.value = 'Compra de hardware';
     msg.value = `Solicito presupuesto del siguiente artículo:\n· ${qs.get('producto')}\n\nUnidades: `;
-  } else if (qs.get('tipo') === 'renting' && qs.get('importe')) {
-    tipo.value = 'Renting de equipos';
-    msg.value = `Solicito estudio de renting:\n· Importe: ${fmt(+qs.get('importe'))} €\n· Plazo: ${qs.get('plazo')} meses\n· Cuota estimada: ${fmt(+qs.get('cuota'))} €${qs.get('periodicidad') === 'trimestral' ? '/trimestre' : '/mes'}`;
   } else if (qs.get('tipo') === 'retirada') {
     tipo.value = 'Venta / retirada de hardware';
     if (qs.get('material')) {

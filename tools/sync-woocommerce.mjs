@@ -70,7 +70,6 @@ function map(p) {
     type: (p.categories && p.categories[0] && p.categories[0].name) || 'Hardware',
     badge: p.stock_status === 'instock' ? 'En stock' : 'Bajo pedido',
     grade: GRADE_LETTER[gradeRaw] ?? 4,
-    price: Math.round(parseFloat(p.price || '0')) || 0,
     specs,
     img: (p.images && p.images[0] && p.images[0].src) || null,
     url: p.permalink || null,
@@ -78,7 +77,6 @@ function map(p) {
 }
 
 const raw = await fetchAll();
-const products = raw.filter(p => p.catalog_visibility !== 'hidden').map(map)
-  .filter(p => p.price > 0);
+const products = raw.filter(p => p.catalog_visibility !== 'hidden').map(map);
 writeFileSync('assets/data/products.json', JSON.stringify(products, null, 1));
 console.log(`Sincronizados ${products.length} productos desde ${WC_URL}`);
