@@ -1,0 +1,50 @@
+/* ═══ 7DIGITS · Secciones, FAQ, CTA y animaciones de aparición — componentes comunes ═══ */
+
+/* ════════ SECTIONS ════════ */
+.sec{padding:100px 0}
+.shead{max-width:680px;margin-bottom:56px}
+.shead.center{margin:0 auto 56px;text-align:center}
+.shead.center .tag{justify-content:center}
+.shead h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:800;margin:16px 0 14px}
+.shead p{color:var(--muted);font-size:1.08rem}
+.soft-bg{background:var(--soft)}
+/* ════════ FAQ ════════ */
+.faq-grid{max-width:840px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.faq{background:#fff;border:1.5px solid var(--line);border-radius:14px;overflow:hidden;transition:.35s var(--ease)}
+.faq.open{border-color:var(--green);box-shadow:var(--shadow)}
+.faq button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:0;cursor:pointer;
+  padding:22px 26px;font-family:'Barlow';font-weight:700;font-size:1.12rem;color:var(--navy-2);transition:.25s}
+.faq button:hover{color:var(--blue)}
+.faq .chev{width:34px;height:34px;flex-shrink:0;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;transition:.4s var(--ease);color:var(--blue)}
+.faq.open .chev{background:var(--grad-green);border-color:transparent;color:#fff;transform:rotate(180deg)}
+.faq .chev svg{width:15px;height:15px}
+.faq .body{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
+.faq .body p{padding:0 26px 24px;color:var(--muted);font-size:.97rem;max-width:720px}
+.faq .body b{color:var(--navy-2)}
+/* ════════ CTA ════════ */
+.cta{background:linear-gradient(115deg,var(--green) 0%,#4a9e3e 35%,var(--blue) 100%);color:#fff;text-align:center;overflow:hidden;position:relative}
+.cta::before{content:'';position:absolute;inset:0;opacity:.1;
+  background-image:radial-gradient(circle,#fff 1px,transparent 1.6px);background-size:28px 28px}
+.cta .wrap{position:relative}
+.cta h2{color:#fff;font-size:clamp(1.9rem,4vw,2.9rem);font-weight:800;margin-bottom:14px}
+.cta p{color:rgba(255,255,255,.92);font-size:1.12rem;margin-bottom:30px;max-width:640px;margin-inline:auto}
+.cta .acts{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* ════════ REVEALS ════════ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.rv-l{transform:translateX(-36px)}
+.reveal.rv-r{transform:translateX(36px)}
+.reveal.rv-s{transform:scale(.92)}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:760px){
+  .sec{padding:68px 0}
+}
+
+/* ════════ PÁGINAS LEGALES ════════ */
+.legal{max-width:840px}
+.legal h2{font-size:1.6rem;margin:42px 0 14px}
+.legal h2:first-child{margin-top:0}
+.legal p,.legal li{color:var(--muted);font-size:.98rem;margin-bottom:12px}
+.legal b{color:var(--navy-2)}
+.legal ul{padding-left:22px;margin-bottom:14px}
+.legal .box{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:18px 0}
+.legal .box p{margin-bottom:4px}

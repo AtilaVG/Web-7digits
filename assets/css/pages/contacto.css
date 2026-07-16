@@ -22,6 +22,9 @@ form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:40p
 .fg .msg{font-family:'Barlow Semi Condensed';font-weight:600;font-size:.74rem;color:#e25555;margin-top:5px;display:none}
 .fg.err .msg{display:block}
 form button[type=submit]{width:100%;justify-content:center}
+.form-note{margin-top:14px;text-align:center;font-size:.82rem;color:var(--muted);line-height:1.55}
+.form-note a{color:var(--blue-text);font-weight:700;border-bottom:1.5px solid var(--sky)}
+.form-note a:hover{color:var(--green-text);border-color:var(--green)}
 .form-ok{display:none;text-align:center;padding:36px 0}
 .form-ok.show{display:block;animation:pop .55s var(--ease-b)}
 .form-ok .ring{width:72px;height:72px;border-radius:50%;background:var(--grad-green);display:grid;place-items:center;margin:0 auto 18px;color:#fff;box-shadow:0 16px 34px -12px rgba(95,174,39,.7)}
@@ -37,5 +40,12 @@ form button[type=submit]{width:100%;justify-content:center}
 }
 
 /* mapa de situación */
-.map{margin-top:60px;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);line-height:0}
-.map iframe{width:100%;height:380px;border:0;filter:saturate(.85)}
+.map{position:relative;margin-top:60px;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);line-height:0;
+  background:linear-gradient(160deg,var(--navy-2),var(--navy))}
+.map::before{content:'Mapa de situación';position:absolute;inset:0;z-index:0;display:grid;place-items:center;
+  font-family:'Barlow Semi Condensed';font-weight:600;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;color:#7e90ad}
+.map iframe{position:relative;z-index:1;width:100%;height:380px;border:0;filter:saturate(.85)}
+.map-note{margin-top:14px;line-height:1.6;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.92rem;color:var(--muted)}
+.map-note svg{width:16px;height:16px;color:var(--green);flex-shrink:0}
+.map-note a{color:var(--blue);font-weight:700;border-bottom:1.5px solid var(--sky);transition:.25s}
+.map-note a:hover{color:var(--green);border-color:var(--green)}

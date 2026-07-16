@@ -1,0 +1,85 @@
+/* ═══ 7DIGITS · Tokens de diseño, reset, tipografía, botones y utilidades — se carga en todas las páginas ═══ */
+
+/* ═══════════════════════════════════════════════════════
+   7DIGITS · ICT REMARKETING — Hoja de estilos global
+   ═══════════════════════════════════════════════════════ */
+:root{
+  --navy:#16233f;
+  --navy-2:#1c2c4c;
+  --navy-3:#26395f;
+  --blue:#2b7fc4;
+  --blue-deep:#1f5fa0;
+  --blue-text:#34689f;
+  --sky:#3aa0db;
+  --green:#5fae27;
+  --lime:#8cc63f;
+  --footer:#bdcfe3;
+  --bg:#ffffff;
+  --soft:#f2f6fb;
+  --soft-2:#e9f0f8;
+  --ink:#1c2c4c;
+  --muted:#5d6f88;
+  --line:#dde6f1;
+  --line-soft:#eaf0f7;
+  --r:14px;
+  --maxw:1240px;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --ease-b:cubic-bezier(.34,1.56,.64,1);
+  --shadow:0 22px 50px -26px rgba(22,35,63,.42);
+  --shadow-lg:0 36px 80px -34px rgba(22,35,63,.5);
+  --grad-green:linear-gradient(135deg,var(--green),var(--lime));
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Mulish',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--lime);color:#fff}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:4px}
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:var(--soft)}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--blue),var(--green));border-radius:8px;border:2px solid var(--soft)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+h1,h2,h3,h4,h5{font-family:'Barlow',sans-serif;color:var(--navy-2);line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+section{position:relative}
+.skip{position:absolute;left:-9999px;top:0;background:var(--navy);color:#fff;padding:12px 22px;z-index:999;border-radius:0 0 10px 0;font-weight:700}
+.skip:focus{left:0}
+/* tag / kicker */
+.tag{font-family:'Barlow Semi Condensed';font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:700;display:inline-flex;align-items:center;gap:10px}
+.tag::before{content:'';width:26px;height:3px;background:var(--grad-green);border-radius:2px}
+.tag .num{font-weight:800;color:var(--sky);letter-spacing:.05em}
+.green{color:var(--green)}
+/* progress bar */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--blue),var(--green),var(--lime));z-index:300;transition:width .1s linear;border-radius:0 3px 3px 0}
+/* ════════ BUTTONS ════════ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Barlow';font-weight:700;font-size:.96rem;
+  letter-spacing:.01em;padding:14px 28px;border-radius:10px;cursor:pointer;border:2px solid transparent;transition:.35s var(--ease);white-space:nowrap;position:relative;overflow:hidden}
+.btn svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.btn::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);transform:translateX(-110%);transition:transform .7s var(--ease)}
+.btn:hover::after{transform:translateX(110%)}
+.btn-primary{background:var(--grad-green);color:#fff;box-shadow:0 12px 26px -10px rgba(95,174,39,.7)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 38px -12px rgba(95,174,39,.85)}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 12px 26px -12px rgba(43,127,196,.7)}
+.btn-blue:hover{background:var(--blue-deep);transform:translateY(-3px)}
+.btn-out{border-color:rgba(255,255,255,.8);color:#fff}
+.btn-out:hover{background:#fff;color:var(--navy);transform:translateY(-3px)}
+.btn-ghost{border-color:var(--line);color:var(--navy);background:#fff}
+.btn-ghost:hover{border-color:var(--green);color:var(--green);transform:translateY(-3px)}
+.btn-white{background:#fff;color:var(--navy-2)}
+.btn-white:hover{transform:translateY(-3px);box-shadow:0 18px 38px -12px rgba(0,0,0,.4)}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal,.reveal.rv-l,.reveal.rv-r,.reveal.rv-s{opacity:1!important;transform:none!important}
+  .hero #net{display:none}
+}
+
+/* ════════ TRANSICIONES ENTRE PÁGINAS (View Transitions, mejora progresiva) ════════ */
+@media (prefers-reduced-motion: no-preference){
+  @view-transition{navigation:auto}
+  ::view-transition-old(root){animation:vt-out .22s ease both}
+  ::view-transition-new(root){animation:vt-in .32s ease both}
+  @keyframes vt-out{to{opacity:0;transform:translateY(-10px)}}
+  @keyframes vt-in{from{opacity:0;transform:translateY(12px)}}
+}

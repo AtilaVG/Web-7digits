@@ -1,0 +1,89 @@
+/* ═══ 7DIGITS · Actividad: tarjetas de servicio y economía circular ═══ */
+
+/* ════════ SERVICES ════════ */
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:36px;display:flex;gap:24px;
+  transition:.4s var(--ease);position:relative;overflow:hidden}
+.svc::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(var(--green),var(--lime));transform:scaleY(0);transform-origin:top;transition:.45s var(--ease)}
+.svc::after{content:'';position:absolute;right:-50px;bottom:-50px;width:170px;height:170px;border-radius:50%;
+  background:radial-gradient(circle,rgba(140,198,63,.1),transparent 70%);opacity:0;transition:.45s}
+.svc:hover{box-shadow:var(--shadow-lg);transform:translateY(-5px);border-color:transparent}
+.svc:hover::before{transform:scaleY(1)}
+.svc:hover::after{opacity:1}
+.svc .ic{width:62px;height:62px;flex-shrink:0;border-radius:15px;background:var(--soft);color:var(--blue);display:grid;place-items:center;transition:.4s var(--ease-b)}
+.svc:hover .ic{background:var(--grad-green);color:#fff;transform:rotate(-6deg) scale(1.07);box-shadow:0 14px 26px -10px rgba(95,174,39,.6)}
+.svc .ic svg{width:28px;height:28px}
+.svc h3{font-size:1.42rem;font-weight:700;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:.97rem;margin-bottom:15px}
+.svc ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.svc li{font-size:.89rem;color:var(--navy-3);display:flex;gap:9px;align-items:center;font-weight:600}
+.svc li svg{width:15px;height:15px;color:var(--green);flex-shrink:0}
+.svc .more{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-family:'Barlow';font-weight:700;font-size:.9rem;color:var(--blue);transition:.3s}
+.svc .more svg{width:15px;height:15px;transition:transform .3s var(--ease)}
+.svc .more:hover{color:var(--green)}
+.svc .more:hover svg{transform:translateX(4px)}
+/* ════════ CIRCULAR ════════ */
+.circle-wrap{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.orbit{position:relative;width:min(440px,100%);aspect-ratio:1;margin:0 auto}
+.orbit .ring{position:absolute;inset:0;border-radius:50%;border:2px dashed var(--line);animation:spin 50s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.orbit .core{position:absolute;inset:31%;border-radius:50%;background:var(--grad-green);color:#fff;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;box-shadow:0 22px 48px -16px rgba(95,174,39,.65);padding:18px}
+.orbit .core svg{width:34px;height:34px;margin-bottom:8px}
+.orbit .core b{font-family:'Barlow';font-weight:800;font-size:1.02rem;line-height:1.2;text-transform:uppercase;letter-spacing:.04em}
+.onode{position:absolute;width:88px;height:88px;margin:-44px;border-radius:50%;background:#fff;border:1.5px solid var(--line);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center;cursor:default;
+  transition:.35s var(--ease);box-shadow:0 12px 26px -14px rgba(22,35,63,.35);z-index:2}
+.onode:hover{border-color:var(--green);transform:scale(1.12);box-shadow:0 18px 36px -14px rgba(95,174,39,.5);z-index:3}
+.onode svg{width:24px;height:24px;color:var(--blue);transition:.3s}
+.onode:hover svg{color:var(--green)}
+.onode span{font-family:'Barlow Semi Condensed';font-weight:700;font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;color:var(--navy-3);line-height:1.1;padding:0 6px}
+.onode em{position:absolute;top:-7px;right:-2px;font-style:normal;font-family:'Barlow';font-weight:800;font-size:.66rem;width:22px;height:22px;
+  border-radius:50%;background:var(--navy-2);color:#fff;display:grid;place-items:center}
+.impact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.imp{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;transition:.35s var(--ease);position:relative;overflow:hidden}
+.imp::after{content:'';position:absolute;left:0;bottom:0;right:0;height:3px;background:var(--grad-green);transform:scaleX(0);transform-origin:left;transition:.4s var(--ease)}
+.imp:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.imp:hover::after{transform:scaleX(1)}
+.imp b{font-family:'Barlow';font-size:2.5rem;font-weight:800;color:var(--green);display:block;line-height:1;font-variant-numeric:tabular-nums}
+.imp .u{font-family:'Barlow Semi Condensed';font-weight:700;font-size:.84rem;letter-spacing:.04em;text-transform:uppercase;color:var(--navy-2);margin-top:8px;display:block}
+.imp .d{font-size:.85rem;color:var(--muted);margin-top:6px;display:block}
+.weee{margin-top:26px;display:flex;gap:13px;align-items:flex-start;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.weee svg{width:26px;height:26px;color:var(--green);flex-shrink:0;margin-top:2px}
+.weee p{font-size:.88rem;color:var(--navy-3)}
+.weee b{color:var(--navy-2)}
+@media(max-width:980px){
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .circle-wrap{grid-template-columns:1fr;gap:40px}
+}
+@media(max-width:760px){
+  .svc-grid,.impact{grid-template-columns:1fr}
+  .svc{flex-direction:column;gap:16px}
+  .orbit{width:min(340px,100%)}
+  .onode{width:74px;height:74px;margin:-37px}
+  .onode span{font-size:.55rem}
+}
+
+/* ════════ VALORADOR DE RETIRADA ════════ */
+.sell-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:stretch}
+.sell{background:#fff;border:1px solid var(--line);border-radius:18px;padding:42px;box-shadow:var(--shadow)}
+.sell .fg{margin-bottom:24px}
+.sell label{display:block;font-family:'Barlow Semi Condensed';font-weight:700;font-size:.84rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+.sell select{width:100%;background:var(--soft);border:1.5px solid var(--line);border-radius:10px;padding:13px 15px;font-family:'Mulish';font-size:.95rem;color:var(--ink);outline:none;transition:.3s;cursor:pointer}
+.sell select:focus{border-color:var(--green);background:#fff;box-shadow:0 0 0 3px rgba(140,198,63,.15)}
+.sell .opts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sell .opts button{font-family:'Barlow Semi Condensed';font-weight:600;font-size:.9rem;padding:12px 8px;border-radius:10px;border:1.5px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:.3s var(--ease)}
+.sell .opts button:hover{border-color:var(--sky)}
+.sell .opts button.active{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 8px 18px -8px rgba(43,127,196,.6)}
+.sell-out{background:linear-gradient(160deg,var(--navy-2),var(--navy));border-radius:18px;padding:42px;color:#fff;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.sell-out::after{content:'';position:absolute;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(140,198,63,.2),transparent 70%)}
+.sell-out>*{position:relative;z-index:1}
+.sell-out .tag{color:var(--lime)}.sell-out .tag::before{background:var(--lime)}
+.sell-out h3{color:#fff;font-size:1.7rem;margin:14px 0 10px}
+.sell-out p.msg{color:#b9c6db;font-size:1rem;margin-bottom:22px}
+.sell-out ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:28px}
+.sell-out li{display:flex;gap:10px;align-items:center;font-size:.94rem;color:#dce6f4;font-weight:600}
+.sell-out li svg{width:16px;height:16px;color:var(--lime);flex-shrink:0}
+.sell-out .btn{margin-top:auto}
+@media(max-width:980px){.sell-wrap{grid-template-columns:1fr;gap:40px}}
+@media(max-width:760px){.sell,.sell-out{padding:28px}.sell .opts{grid-template-columns:1fr 1fr}}

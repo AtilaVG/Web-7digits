@@ -29,14 +29,26 @@ addEventListener('scroll', () => {
 }, { passive: true });
 if (totop) totop.addEventListener('click', () => scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' }));
 
-/* ══════ Menú móvil ══════ */
+/* ══════ Menú móvil (con trampa de foco accesible) ══════ */
 const mm = $('#mmenu'), ov = $('#overlay'), burger = $('#burger');
+if (mm) { mm.setAttribute('role', 'dialog'); mm.setAttribute('aria-modal', 'true'); }
+const mmFocusables = () => mm ? [...mm.querySelectorAll('a[href],button:not([disabled])')].filter(el => el.offsetParent !== null) : [];
 function setMenu(open) {
   if (!mm) return;
   mm.classList.toggle('open', open);
   burger.classList.toggle('open', open);
   burger.setAttribute('aria-expanded', open);
   ov.classList.toggle('open', open);
+  if (open) {
+    /* El panel entra deslizándose (translateX); hasta que no termina la
+       transición no es enfocable de forma fiable. Enfocamos al cerrar la
+       animación (instantáneo si el usuario pide movimiento reducido). */
+    const focusFirst = () => { const f = mmFocusables(); if (f.length) f[0].focus(); };
+    if (reduceMotion) requestAnimationFrame(focusFirst);
+    else setTimeout(focusFirst, 400);
+  } else if (document.activeElement && mm.contains(document.activeElement)) {
+    burger.focus();      /* devuelve el foco al botón al cerrar desde dentro */
+  }
 }
 if (burger) {
   burger.addEventListener('click', () => setMenu(!mm.classList.contains('open')));
@@ -44,7 +56,15 @@ if (burger) {
   ov.addEventListener('click', () => setMenu(false));
   const mmClose = $('#mmClose');
   if (mmClose) mmClose.addEventListener('click', () => setMenu(false));
-  addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+  addEventListener('keydown', e => {
+    if (e.key === 'Escape') { setMenu(false); return; }
+    if (e.key !== 'Tab' || !mm.classList.contains('open')) return;
+    const f = mmFocusables();
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
 }
 
 /* ══════ Marquee de marcas (duplicado para bucle continuo) ══════ */
@@ -84,6 +104,7 @@ const cio = new IntersectionObserver(es => es.forEach(en => {
   cio.unobserve(en.target);
   const el = en.target, target = +el.dataset.count;
   if (reduceMotion) { el.textContent = fmt(target); return; }
+  el.textContent = '0';               /* parte de 0 al animar; el HTML ya trae el valor real como fallback si falla JS */
   const dur = 1400, t0 = performance.now();
   (function tick(now) {
     const p = Math.min(((now || performance.now()) - t0) / dur, 1);

@@ -27,10 +27,12 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
       + '&unidades=' + encodeURIComponent(uds.value)
       + '&antiguedad=' + encodeURIComponent(edad);
   }
+  $$('#s-edad button').forEach(b => b.setAttribute('aria-pressed', b.classList.contains('active') ? 'true' : 'false'));
   $('#s-edad').addEventListener('click', e => {
     if (e.target.tagName !== 'BUTTON') return;
-    $$('#s-edad button').forEach(b => b.classList.remove('active'));
+    $$('#s-edad button').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
     e.target.classList.add('active');
+    e.target.setAttribute('aria-pressed', 'true');
     edad = e.target.dataset.v;
     update();
   });
