@@ -14,7 +14,33 @@
 El Nivel 2 **no sustituye** al Nivel 1: no incluye páginas, media, configuración ni usuarios.
 Es una red de seguridad extra del activo más valioso e irreemplazable (los 24k productos).
 
-## Escenario real: la base de datos la gestiona el cliente
+## Arquitectura real confirmada: el catálogo entra por feed XML
+
+El cliente mantiene su stock en una **BD interna propia** (la que gestionan con MySQL Workbench).
+De ahí se genera un **feed XML** que **WP All Import Pro** importa a WooCommerce. Es decir:
+
+```
+BD interna (máster, del cliente) → feed XML → WP All Import → productos en WordPress
+```
+
+WordPress conserva igualmente **su propia BD MySQL** en el hosting (páginas, usuarios,
+ajustes, SEO y los productos ya importados) — el XML la alimenta, no la sustituye.
+
+**Consecuencias para el backup:**
+
+- **Los ~24.000 productos son regenerables** reimportando el feed → baja la criticidad de la
+  BD de WordPress, PERO solo si sobreviven (a) el feed/BD interna y (b) la configuración de
+  WP All Import.
+- **Exportar las plantillas de WP All Import** (wp-admin → All Import → Manage Imports →
+  export) es la copia más rentable del proyecto: un archivo pequeño que evita rehacer todo
+  el mapeo XML→producto. Hacerla YA.
+- **Preguntar al cliente**: ¿las imágenes de producto vienen en el feed (regenerables) o se
+  subieron a mano (respaldar `/uploads/`)? ¿Su BD interna y el feed tienen copia propia?
+- El **punto único de fallo real es su sistema interno**, no WordPress. La BD de WordPress
+  sigue mereciendo copia por páginas/usuarios/ajustes/SEO, pero el drama de los 24k
+  productos queda mitigado.
+
+## Escenario previo (superado): reparto BD/archivos
 
 El cliente administra la base de datos por su cuenta (acceso directo vía MySQL Workbench).
 En ese caso el reparto de responsabilidades es:
