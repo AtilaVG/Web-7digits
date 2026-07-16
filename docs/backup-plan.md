@@ -14,7 +14,29 @@
 El Nivel 2 **no sustituye** al Nivel 1: no incluye páginas, media, configuración ni usuarios.
 Es una red de seguridad extra del activo más valioso e irreemplazable (los 24k productos).
 
-## Nivel 1 — Backup completo (recomendado: UpdraftPlus a Google Drive)
+## Escenario real: la base de datos la gestiona el cliente
+
+El cliente administra la base de datos por su cuenta (acceso directo vía MySQL Workbench).
+En ese caso el reparto de responsabilidades es:
+
+| Mitad del sitio | Responsable | Método |
+|---|---|---|
+| **Base de datos** (productos, páginas, usuarios, ajustes) | **Cliente** | MySQL Workbench → *Data Export* → `.sql`, guardado fuera del servidor |
+| **Archivos** (media, tema, plugins) | **Nosotros** | Descarga de `/wp-content/` (prioridad: `/uploads/`) |
+
+**Puntos críticos de este reparto:**
+
+- Copiar solo los archivos **no tiene ningún riesgo** (es lectura), pero **por sí solo no
+  restaura el sitio**: sin la BD no hay productos ni páginas. Las dos mitades son necesarias.
+- **Confirmar que el cliente EXPORTA la BD de verdad**, no solo que "la tiene en Workbench":
+  tener acceso ≠ tener copias. Pedir que hagan `Data Export` periódico y lo guarden aparte.
+- De los archivos, lo verdaderamente irreemplazable es **`/wp-content/uploads/`** (las imágenes
+  de los 24.000 productos). Tema y plugins se reinstalan; las imágenes subidas, no.
+- **Coordinar fechas**: BD y archivos idealmente del mismo día para que al restaurar encajen.
+- El export de catálogo (Nivel 2) es un respaldo independiente que no depende de ninguna de
+  las dos mitades — buena tercera capa.
+
+## Nivel 1 — Backup completo (si tenemos que cubrir todo) (recomendado: UpdraftPlus a Google Drive)
 
 UpdraftPlus es gratuito, estándar y guarda la copia **fuera del servidor** (si el hosting cae,
 la copia sobrevive). Pasos:
