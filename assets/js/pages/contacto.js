@@ -11,7 +11,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
 
   /* Pre-relleno vía parámetros de URL (sin almacenamiento en el navegador):
      contacto.html?tipo=compra&producto=...        → desde el catálogo
-     contacto.html?tipo=renting&importe=&plazo=&cuota= → desde la calculadora */
+     contacto.html?tipo=retirada&material=... → desde el valorador de compras */
   const qs = new URLSearchParams(location.search);
   const msg = form.querySelector('[name="msg"]'), tipo = form.querySelector('[name="tipo"]');
   if (qs.get('producto')) {
