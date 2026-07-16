@@ -22,7 +22,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     const [t, m] = MSG[edad];
     $('#s-title').textContent = t;
     $('#s-msg').textContent = m;
-    cta.href = 'contacto.html?tipo=retirada'
+    cta.href = (document.body.dataset.contact || 'contacto.html') + '?tipo=retirada'
       + '&material=' + encodeURIComponent(tipo.value)
       + '&unidades=' + encodeURIComponent(uds.value)
       + '&antiguedad=' + encodeURIComponent(edad);

@@ -42,6 +42,7 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     check('email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('email')));
     check('tipo', v('tipo') !== '');
     if (!ok) { form.querySelector('.fg.err input,.fg.err select')?.focus(); return; }
+    if (form.dataset.native) { form.submit(); return; }
 
     /* Endpoint configurable: poner la URL del backend / servicio de formularios
        en el atributo data-endpoint del <form>. Sin endpoint → modo demo. */
