@@ -37,6 +37,9 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     } catch (e) { /* sin red o file://: catálogo de demostración */ }
   }
   const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const PAGE_SIZE = 12;
+  let visible = PAGE_SIZE;
+  const moreBtn = document.getElementById('loadMore');
   const gradeName = ['', 'E', 'D', 'C', 'B', 'A'];
   let activeFilter = 'all', searchTerm = '', sortMode = 'rel';
   const gradeBar = g => {
@@ -50,6 +53,12 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
       (activeFilter === 'all' || p.cat === activeFilter) &&
       (p.t + ' ' + p.b).toLowerCase().includes(searchTerm.toLowerCase()));
     if (sortMode === 'grade') f = [...f].sort((a, b) => (b.grade || 0) - (a.grade || 0));
+    const total = f.length;
+    f = f.slice(0, visible);
+    if (moreBtn) {
+      moreBtn.style.display = total > visible ? '' : 'none';
+      moreBtn.querySelector('span').textContent = `Cargar más (${total - f.length} restantes)`;
+    }
     if (!f.length) {
       grid.innerHTML = `<div class="empty">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M8 11h6"/></svg>
@@ -76,10 +85,12 @@ const { $, $$, reduceMotion, fmt, eur } = window.SD;
     e.target.classList.add('active');
     e.target.setAttribute('aria-pressed', 'true');
     activeFilter = e.target.dataset.f;
+    visible = PAGE_SIZE;
     render();
   });
-  $('#search').addEventListener('input', e => { searchTerm = e.target.value; render(); });
-  $('#sortSel').addEventListener('change', e => { sortMode = e.target.value; render(); });
+  $('#search').addEventListener('input', e => { searchTerm = e.target.value; visible = PAGE_SIZE; render(); });
+  $('#sortSel').addEventListener('change', e => { sortMode = e.target.value; visible = PAGE_SIZE; render(); });
+  if (moreBtn) moreBtn.addEventListener('click', () => { visible += PAGE_SIZE; render(); });
 })();
 
 })();
