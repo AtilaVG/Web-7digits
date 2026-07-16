@@ -95,6 +95,16 @@ se completa en su WooCommerce actual: arquitectura híbrida sin migrar el checko
 - **CDN estático** (Cloudflare Pages / Netlify / GitHub Pages) apuntando el dominio
   `www.7digits.es` al front y dejando WordPress donde está, accesible para el equipo.
 
+## Copia de seguridad del WordPress del cliente
+
+El sitio del cliente no tiene ninguna copia de seguridad. Plan en dos niveles en
+`docs/backup-plan.md`:
+
+- **Sitio completo** (BD + archivos): plugin UpdraftPlus a Google Drive del cliente (incluye
+  prompt listo para el navegador).
+- **Catálogo** (~24.000 productos a CSV): `tools/backup-catalog.mjs` con la clave de lectura;
+  las copias van a `backups/` (ignorada por git — datos personales fuera del repo, RGPD).
+
 ## Pendiente antes de publicar
 
 - **Textos legales**: `aviso-legal.html` y `privacidad.html` son plantillas redactadas con los
