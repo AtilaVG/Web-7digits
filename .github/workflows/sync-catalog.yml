@@ -36,12 +36,33 @@ jobs:
             echo "configured=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # El servidor del cliente sirve una cadena SSL incompleta (falta el certificado
+      # intermedio). Los navegadores lo toleran; Node no. Se descarga el intermedio
+      # oficial desde la URL "CA Issuers" del propio certificado y se verifica la
+      # cadena completa — NUNCA se desactiva la verificación TLS.
+      - name: Completar cadena de certificados del servidor
+        if: steps.cfg.outputs.configured == 'true'
+        env:
+          WC_URL: ${{ secrets.WC_URL }}
+        run: |
+          HOST=$(echo "$WC_URL" | sed -E 's#https?://##; s#/.*##')
+          openssl s_client -connect "$HOST:443" -servername "$HOST" </dev/null 2>/dev/null \
+            | openssl x509 -outform PEM > /tmp/leaf.pem
+          AIA=$(openssl x509 -in /tmp/leaf.pem -noout -text \
+            | grep -A2 'Authority Information Access' | grep 'CA Issuers' | sed 's/.*URI://' | tr -d ' ')
+          echo "Certificado intermedio: $AIA"
+          curl -fsSL "$AIA" -o /tmp/inter.crt
+          openssl x509 -inform DER -in /tmp/inter.crt -out /tmp/chain.pem 2>/dev/null \
+            || openssl x509 -inform PEM -in /tmp/inter.crt -out /tmp/chain.pem
+          openssl verify -untrusted /tmp/chain.pem /tmp/leaf.pem
+
       - name: Sincronizar productos
         if: steps.cfg.outputs.configured == 'true'
         env:
           WC_URL: ${{ secrets.WC_URL }}
           WC_KEY: ${{ secrets.WC_KEY }}
           WC_SECRET: ${{ secrets.WC_SECRET }}
+          NODE_EXTRA_CA_CERTS: /tmp/chain.pem
         run: node tools/sync-woocommerce.mjs
 
       - name: Publicar cambios
