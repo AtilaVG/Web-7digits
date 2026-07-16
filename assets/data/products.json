@@ -1,302 +1,2402 @@
 [
  {
-  "t": "PowerEdge R740",
-  "b": "Dell",
-  "cat": "server",
-  "type": "Servidor 2U",
+  "t": "16GB (1x16GB) Dual Rank x4 DDR4-2133 CAS-15-15-15 Registered Memory Kit",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
   "badge": "Refurbished",
-  "grade": 4,
-  "price": 1890,
+  "grade": null,
   "specs": [
    [
-    "CPU",
-    "2× Xeon Gold 6130"
+    "Part number",
+    "726719-B21"
    ],
    [
-    "RAM",
-    "128 GB DDR4"
-   ],
-   [
-    "Discos",
-    "8× 1.2TB SAS"
+    "Referencia",
+    "HLPD4.100001.REF"
    ]
   ],
-  "img": null,
-  "url": null
+  "img": "https://www.7digits.es/wp-content/uploads/119084_1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/16gb-1x16gb-dual-rank-x4-ddr4-2133-cas-15-15-15-registered-memory-kit/"
  },
  {
-  "t": "ProLiant DL380 Gen10",
-  "b": "HPE",
-  "cat": "server",
-  "type": "Servidor 2U",
-  "badge": "Refurbished",
-  "grade": 5,
-  "price": 2350,
-  "specs": [
-   [
-    "CPU",
-    "2× Xeon Silver 4210"
-   ],
-   [
-    "RAM",
-    "192 GB DDR4"
-   ],
-   [
-    "Discos",
-    "Sin discos"
-   ]
-  ],
-  "img": null,
-  "url": null
- },
- {
-  "t": "Catalyst 9300 48P",
-  "b": "Cisco",
-  "cat": "network",
-  "type": "Switch L3",
-  "badge": "Refurbished",
-  "grade": 5,
-  "price": 1450,
-  "specs": [
-   [
-    "Puertos",
-    "48× 1G PoE+"
-   ],
-   [
-    "Uplink",
-    "4× 10G SFP+"
-   ],
-   [
-    "Stack",
-    "480 Gbps"
-   ]
-  ],
-  "img": null,
-  "url": null
- },
- {
-  "t": "Nexus 9336C-FX2",
-  "b": "Cisco",
-  "cat": "network",
-  "type": "Switch Spine",
-  "badge": "Refurbished",
-  "grade": 4,
-  "price": 3200,
-  "specs": [
-   [
-    "Puertos",
-    "36× 100G"
-   ],
-   [
-    "Latencia",
-    "< 1 µs"
-   ],
-   [
-    "Throughput",
-    "7.2 Tbps"
-   ]
-  ],
-  "img": null,
-  "url": null
- },
- {
-  "t": "PowerVault ME4024",
-  "b": "Dell",
+  "t": "2.5inch SFF SC (Smart Carrier) HDD caddy for G8/G9/G10",
+  "b": "HP",
   "cat": "storage",
-  "type": "Cabina SAN",
-  "badge": "Refurbished",
-  "grade": 4,
-  "price": 2780,
-  "specs": [
-   [
-    "Bahías",
-    "24× 2.5\""
-   ],
-   [
-    "Conexión",
-    "16G FC"
-   ],
-   [
-    "Controladoras",
-    "Dual"
-   ]
-  ],
-  "img": null,
-  "url": null
- },
- {
-  "t": "G620 SAN Switch",
-  "b": "Brocade",
-  "cat": "network",
-  "type": "Switch FC",
-  "badge": "Refurbished",
-  "grade": 5,
-  "price": 1120,
-  "specs": [
-   [
-    "Puertos",
-    "64× 32G FC"
-   ],
-   [
-    "Latencia",
-    "700 ns"
-   ],
-   [
-    "Agregado",
-    "2 Tbps"
-   ]
-  ],
-  "img": null,
-  "url": null
- },
- {
-  "t": "DGS-3630-28PC",
-  "b": "D-Link",
-  "cat": "network",
-  "type": "Switch L3",
-  "badge": "Refurbished",
-  "grade": 4,
-  "price": 690,
-  "specs": [
-   [
-    "Puertos",
-    "24× 1G PoE"
-   ],
-   [
-    "Uplink",
-    "4× 10G"
-   ],
-   [
-    "PoE",
-    "370 W"
-   ]
-  ],
-  "img": null,
-  "url": null
- },
- {
-  "t": "32GB RDIMM DDR4",
-  "b": "Samsung",
-  "cat": "components",
-  "type": "Memoria",
-  "badge": "Testado",
-  "grade": 5,
-  "price": 78,
-  "specs": [
-   [
-    "Capacidad",
-    "32 GB"
-   ],
-   [
-    "Velocidad",
-    "2933 MHz"
-   ],
-   [
-    "ECC",
-    "Registered"
-   ]
-  ],
-  "img": null,
-  "url": null
- },
- {
-  "t": "1.92TB SSD SAS",
-  "b": "Intel",
-  "cat": "components",
   "type": "Almacenamiento",
   "badge": "Refurbished",
-  "grade": 4,
-  "price": 215,
+  "grade": null,
   "specs": [
    [
-    "Capacidad",
-    "1.92 TB"
+    "Part number",
+    "651687-001"
    ],
    [
-    "Interfaz",
-    "12G SAS"
-   ],
-   [
-    "Formato",
-    "2.5\""
+    "Referencia",
+    "HLPB2.100011.REF"
    ]
   ],
-  "img": null,
-  "url": null
+  "img": "https://www.7digits.es/wp-content/uploads/108797_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/2-5inch-sff-sc-smart-carrier-hdd-caddy-for-g8-g9-g10/"
  },
  {
-  "t": "Xeon Gold 6248R",
-  "b": "Intel",
+  "t": "750W PSU for T320, T420, T620, R520, R620, R720, R820",
+  "b": "DELL",
   "cat": "components",
-  "type": "Procesador",
+  "type": "Componentes",
   "badge": "Refurbished",
-  "grade": 5,
-  "price": 460,
+  "grade": null,
   "specs": [
    [
-    "Núcleos",
-    "24c / 48t"
+    "Part number",
+    "6W2PW"
    ],
    [
-    "Frecuencia",
-    "3.0 GHz"
-   ],
-   [
-    "TDP",
-    "205 W"
+    "Referencia",
+    "DELPS.100202.REF"
    ]
   ],
-  "img": null,
-  "url": null
+  "img": "https://www.7digits.es/wp-content/uploads/120461_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/750w-psu-for-t320-t420-t620-r520-r620-r720-r820-4/"
  },
  {
-  "t": "StoreEver MSL2024",
+  "t": "HDD Drive Cage with backplane for DL380 G9, ML350 G9",
+  "b": "HP",
+  "cat": "components",
+  "type": "Backplane",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "747592-001"
+   ],
+   [
+    "Referencia",
+    "HLPBP.100104.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/121023_1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/backplane/hdd-drive-cage-with-backplane-for-dl380-g9-ml350-g9/"
+ },
+ {
+  "t": "G8 G9 3.5 SAS/SATA SC Tray",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "651314-001"
+   ],
+   [
+    "Referencia",
+    "HLPB0.100005.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/111834_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/g8-g9-3-5-sas-sata-sc-tray/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "507616-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100457.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120583_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-hdd-9/"
+ },
+ {
+  "t": "Slimline hard drive carrier/tray with screws for 3.5-inch  hot-plug hard drives, G5/6/7",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "373211-001"
+   ],
+   [
+    "Referencia",
+    "HLPB0.100001.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/104850_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/slimline-hard-drive-carrier-tray-with-screws-for-3-5-inch-hot-plug-hard-drives-g5-6-7/"
+ },
+ {
+  "t": "2U Static Rail Kit for PowerVault MD12xx MD32xx MD14xx",
+  "b": "DELL",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "7WJ8N"
+   ],
+   [
+    "Referencia",
+    "DELRK.100104.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/118299_1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/2u-static-rail-kit-for-powervault-md12xx-md32xx-md14xx/"
+ },
+ {
+  "t": "Broadcom 5720 1G Ethernet 4-Port Network Daughter Card",
+  "b": "DELL",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "FM487"
+   ],
+   [
+    "Referencia",
+    "DELNE.100141.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/113480_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/broadcom-5720-1g-ethernet-4-port-network-daughter-card/"
+ },
+ {
+  "t": "Broadcom 57810-K 2 x 10GB Network Daughter Card for blade",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "JVFVR"
+   ],
+   [
+    "Referencia",
+    "DELMZ.100219.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/115302_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/tarjetas-mezzanine/broadcom-57810-k-2-x-10gb-network-daughter-card-for-blade/"
+ },
+ {
+  "t": "2.5inch SFF SAS / SATA Caddy for PowerEdge Gen 11-13 and PowerVault,  (Plastic), with screws",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "8FKXC"
+   ],
+   [
+    "Referencia",
+    "DELB2.100223.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/118807_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/2-5inch-sff-sas-sata-caddy-for-poweredge-gen-11-13-and-powervault-plastic-with-screws/"
+ },
+ {
+  "t": "2.5inch Caddy for PowerEdge Blade, VRTX, Gen 12, 13, 14",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "NRX7Y"
+   ],
+   [
+    "Referencia",
+    "DELB2.100225.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/116073_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/2-5inch-caddy-for-poweredge-blade-vrtx-gen-12-13-14/"
+ },
+ {
+  "t": "Xeon Gold 5120 CPU (14 x 2.2GHz + HT, 3.2GHz Turbo, 19.25M Cache)",
+  "b": "INTEL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "SR3GD"
+   ],
+   [
+    "Referencia",
+    "ITLCP.100530.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-5120-cpu-14-x-2-2ghz-ht-3-2ghz-turbo-19-25m-cache/"
+ },
+ {
+  "t": "4GB (1x 4 GB, 2Rx8, 1.5 V) PC3-10600 CL9 ECC DDR3 1333 MHz",
+  "b": "IBM",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "43X5314"
+   ],
+   [
+    "Referencia",
+    "IBMD3.100016.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/4gb-1x-4-gb-2rx8-1-5-v-pc3-10600-cl9-ecc-ddr3-1333-mhz/"
+ },
+ {
+  "t": "Integrity 300GB SAS 12Gb Enterprise 15k SFF (2.5inch) Digitally Signed Firmware HDD",
   "b": "HPE",
   "cat": "storage",
-  "type": "Librería LTO",
+  "type": "Almacenamiento",
   "badge": "Refurbished",
-  "grade": 3,
-  "price": 1340,
+  "grade": null,
   "specs": [
    [
-    "Tipo",
-    "LTO-8"
+    "Part number",
+    "B9F30B"
    ],
    [
-    "Slots",
-    "24"
-   ],
-   [
-    "Capacidad",
-    "720 TB"
+    "Referencia",
+    "HPES2.100853.REF"
    ]
   ],
-  "img": null,
-  "url": null
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/integrity-300gb-sas-12gb-enterprise-15k-sff-2-5inch-digitally-signed-firmware-hdd/"
  },
  {
-  "t": "UCS C220 M5",
-  "b": "Cisco",
+  "t": "2U Small Form Factor Easy Install Rail Kit",
+  "b": "HP",
   "cat": "server",
-  "type": "Servidor 1U",
+  "type": "Accesorios",
   "badge": "Refurbished",
-  "grade": 4,
-  "price": 1680,
+  "grade": null,
   "specs": [
    [
-    "CPU",
-    "2× Xeon Gold 5118"
+    "Part number",
+    "733660-B21"
    ],
    [
-    "RAM",
-    "96 GB DDR4"
-   ],
-   [
-    "Discos",
-    "4× 960GB SSD"
+    "Referencia",
+    "HLPRK.100093.REF"
    ]
   ],
-  "img": null,
-  "url": null
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/2u-small-form-factor-easy-install-rail-kit/"
+ },
+ {
+  "t": "1200W Common Slot Platinum Plus Hot Plug Power Supply Kit",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "656364-B21"
+   ],
+   [
+    "Referencia",
+    "HLPPS.100044.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/1200w-common-slot-platinum-plus-hot-plug-power-supply-kit/"
+ },
+ {
+  "t": "8xSFF Backplane for DL380 Gen10, including cage",
+  "b": "HP",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "832305-002"
+   ],
+   [
+    "Referencia",
+    "HLPST.100293.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/8xsff-backplane-for-dl380-gen10-including-cage/"
+ },
+ {
+  "t": "MSA 2040 8Gb Short Wave Fibre Channel SFP+ 4-pack Transceiver",
+  "b": "HP",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "C8R23A"
+   ],
+   [
+    "Referencia",
+    "HLPSF.100005.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/transceiver/msa-2040-8gb-short-wave-fibre-channel-sfp-4-pack-transceiver/"
+ },
+ {
+  "t": "146GB 6G 15K RPM, 2.5 inch SFF Dual-Port SAS hard drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "512547-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100040.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/146gb-6g-15k-rpm-2-5-inch-sff-dual-port-sas-hard-drive-6/"
+ },
+ {
+  "t": "Proliant DL360 G5 700W Power Supply",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "412211-001"
+   ],
+   [
+    "Referencia",
+    "HLPPS.100027.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/proliant-dl360-g5-700w-power-supply/"
+ },
+ {
+  "t": "BladeSystem c-Class 10Gb SFP+ SR Transceiver",
+  "b": "HP",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "455883-B21"
+   ],
+   [
+    "Referencia",
+    "HLPSF.100004.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/transceiver/bladesystem-c-class-10gb-sfp-sr-transceiver/"
+ },
+ {
+  "t": "1.8TB SAS 12G 10K SFF SC 512e DS HDD ",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "872481-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101667.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/1-8tb-sas-12g-10k-sff-sc-512e-ds-hdd-3/"
+ },
+ {
+  "t": "1.8TB SAS 12G 10K SFF SC 512e DS HDD ",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "872481-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101651.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/1-8tb-sas-12g-10k-sff-sc-512e-ds-hdd-2/"
+ },
+ {
+  "t": "Railkit for 3PAR 2U Enclosure 7200 / 7400 / M6710 / M6720",
+  "b": "HP",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "692981-001"
+   ],
+   [
+    "Referencia",
+    "HLPRK.100104.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/railkit-for-3par-2u-enclosure-7200-7400-m6710-m6720/"
+ },
+ {
+  "t": "16GB (1x16GB) Single Rank x4 DDR4-2933 CAS-21-21-21 Registered Smart Memory Kit",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "P00920-B21"
+   ],
+   [
+    "Referencia",
+    "HLPD4.100047.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/16gb-1x16gb-single-rank-x4-ddr4-2933-cas-21-21-21-registered-smart-memory-kit/"
+ },
+ {
+  "t": "16GB (1x16GB) Single Rank x4 DDR4-2400 CAS-17-17-17 Registered Memory Kit",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "805349-B21"
+   ],
+   [
+    "Referencia",
+    "HLPD4.100014.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/16gb-1x16gb-single-rank-x4-ddr4-2400-cas-17-17-17-registered-memory-kit/"
+ },
+ {
+  "t": "Ethernet 10Gb 2-port 530SFP Adapter, Low Profile",
+  "b": "HP",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652503-B21-LP"
+   ],
+   [
+    "Referencia",
+    "HLPNE.100236.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/ethernet-10gb-2-port-530sfp-adapter-low-profile/"
+ },
+ {
+  "t": "8GB (1x8GB) Single Rank x8 DDR4-2400 CAS-17-17-17 Registered Memory Kit",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "805347-B21"
+   ],
+   [
+    "Referencia",
+    "HLPD4.100012.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/8gb-1x8gb-single-rank-x8-ddr4-2400-cas-17-17-17-registered-memory-kit/"
+ },
+ {
+  "t": "32GB (1 x 32GB) Dual Rank x4 DDR4-2133 CAS-15-15-15 Registered Memory Kit",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "728629-B21"
+   ],
+   [
+    "Referencia",
+    "HLPD4.100005.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/32gb-1-x-32gb-dual-rank-x4-ddr4-2133-cas-15-15-15-registered-memory-kit/"
+ },
+ {
+  "t": "Standard (105W) Heatsink for DL380 Gen9",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "777290-001"
+   ],
+   [
+    "Referencia",
+    "HLPHK.100056.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/standard-105w-heatsink-for-dl380-gen9/"
+ },
+ {
+  "t": "Heatsink for ProLiant BL460 Gen 9 / BL660c Gen 9, CPU 1",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "740345-001"
+   ],
+   [
+    "Referencia",
+    "HLPHK.100130.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/heatsink-for-proliant-bl460-gen-9-bl660c-gen-9-cpu-1/"
+ },
+ {
+  "t": "Ethernet 10Gb 2-port 560FLB Adapter",
+  "b": "HP",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "684214-B21"
+   ],
+   [
+    "Referencia",
+    "HLPNE.100216.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/ethernet-10gb-2-port-560flb-adapter/"
+ },
+ {
+  "t": "Hotplug fan for DL380 Gen9, DL560 Gen9",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "777285-001"
+   ],
+   [
+    "Referencia",
+    "HLPFN.100094.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/hotplug-fan-for-dl380-gen9-dl560-gen9/"
+ },
+ {
+  "t": "16GB (1x16GB) Dual Rank x4 PC3L-10600R (DDR3-1333) Registered CAS-9 Low Voltage Memory Kit",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "647883-B21"
+   ],
+   [
+    "Referencia",
+    "HLPD3.100098.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/16gb-1x16gb-dual-rank-x4-pc3l-10600r-ddr3-1333-registered-cas-9-low-voltage-memory-kit-2/"
+ },
+ {
+  "t": "NC375T PCI Express Quad Port Gigabit Server Adapter, High Profile",
+  "b": "HP",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "538696-B21-HP"
+   ],
+   [
+    "Referencia",
+    "HLPNE.100016.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/nc375t-pci-express-quad-port-gigabit-server-adapter-high-profile/"
+ },
+ {
+  "t": "Battery, 96 W Megacell, 260 mm-b",
+  "b": "HP",
+  "cat": "components",
+  "type": "Baterías",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "878644-001"
+   ],
+   [
+    "Referencia",
+    "HLPBT.100073.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/consumibles/baterias/battery-96-w-megacell-260-mm-b/"
+ },
+ {
+  "t": "16GB (1x16GB) Dual Rank x4 PC3L-10600R (DDR3-1333) Registered CAS-9 Low Voltage Memory Kit",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "647901-B21"
+   ],
+   [
+    "Referencia",
+    "HLPD3.100002.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/16gb-1x16gb-dual-rank-x4-pc3l-10600r-ddr3-1333-registered-cas-9-low-voltage-memory-kit/"
+ },
+ {
+  "t": "2TB SATA 6G Midline 7.2K SFF (2.5in) SC 512e Digitally Signed Firmware HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "765455-B21"
+   ],
+   [
+    "Referencia",
+    "HLPA2.100007.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-25/2tb-sata-6g-midline-7-2k-sff-2-5in-sc-512e-digitally-signed-firmware-hdd/"
+ },
+ {
+  "t": "2.5inch Proliant Hot-Swap bracket with screws",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "500223-001"
+   ],
+   [
+    "Referencia",
+    "HLPB2.100008.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/2-5inch-proliant-hot-swap-bracket-with-screws/"
+ },
+ {
+  "t": "MSA 2040 SAS Controller",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "C8S53A"
+   ],
+   [
+    "Referencia",
+    "HLPAC.100009.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/controladoras/msa-2040-sas-controller/"
+ },
+ {
+  "t": "MX9116N Fabric Switching Engine for MX7000",
+  "b": "DELL",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "MX9116N"
+   ],
+   [
+    "Referencia",
+    "DELSW.100333.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/switches/mx9116n-fabric-switching-engine-for-mx7000/"
+ },
+ {
+  "t": "BOSS Controller Card for MX Blade, R450, R650XS, MX750C with 2 NVMe slots",
+  "b": "DELL",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "WX5KW"
+   ],
+   [
+    "Referencia",
+    "DELSM.100296.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/boss-controller-card-for-mx-blade-r450-r650xs-mx750c-with-2-nvme-slots/"
+ },
+ {
+  "t": "1.92TB 6Gb RI Read Intensive 2.5inch SATA SSD",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "VJ36D"
+   ],
+   [
+    "Referencia",
+    "DELSS.100682.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/1-92tb-6gb-ri-read-intensive-2-5inch-sata-ssd/"
+ },
+ {
+  "t": "QuickSync (LCD) front bezel for 2U Gen 14, 15, 16 PowerEdge servers",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "M39NW"
+   ],
+   [
+    "Referencia",
+    "DELSR.100011.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/frontales-embellecedores/quicksync-lcd-front-bezel-for-2u-gen-14-15-16-poweredge-servers/"
+ },
+ {
+  "t": "H730 12Gb Mini Mono RAID Controller for Blade, 2GB NV Cache",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "YRPP6"
+   ],
+   [
+    "Referencia",
+    "DELSD.100052.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/controladoras-disco-duro/h730-12gb-mini-mono-raid-controller-for-blade-2gb-nv-cache/"
+ },
+ {
+  "t": "480GB 6Gb SATA SSD, RI, No caddy",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "3397M"
+   ],
+   [
+    "Referencia",
+    "DELSS.100344.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/480gb-6gb-sata-ssd-ri-no-caddy/"
+ },
+ {
+  "t": "Heatsink for PowerEdge MX740c, MX840c",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "GHVM2"
+   ],
+   [
+    "Referencia",
+    "DELHK.100124.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/heatsink-for-poweredge-mx740c-mx840c/"
+ },
+ {
+  "t": "High Performance Low Profile 125W+ Heatsink for R640, R740, R740xd",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "C6R9H"
+   ],
+   [
+    "Referencia",
+    "DELHK.100117.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/high-performance-low-profile-125w-heatsink-for-r640-r740-r740xd/"
+ },
+ {
+  "t": "Broadcom 57416 Quad Port (2 x 10Gb RJ45 + 2 x 1Gb RJ45) network daughtercard",
+  "b": "DELL",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "1224N"
+   ],
+   [
+    "Referencia",
+    "DELNE.100223.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/broadcom-57416-quad-port-2-x-10gb-rj45-2-x-1gb-rj45-network-daughtercard/"
+ },
+ {
+  "t": "12Gb Dual Port SAS HBA PCIe 3.0, LSI 9300-8E, High Profile",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "2PHG9-HP"
+   ],
+   [
+    "Referencia",
+    "DELHS.100034.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/hba-sas/12gb-dual-port-sas-hba-pcie-3-0-lsi-9300-8e-high-profile-2/"
+ },
+ {
+  "t": "Heatsink for PowerEdge R430",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "2FKY9"
+   ],
+   [
+    "Referencia",
+    "DELHK.100060.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/heatsink-for-poweredge-r430/"
+ },
+ {
+  "t": "900GB 10K 12Gb 2.5inch SAS drive",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "N9VVV"
+   ],
+   [
+    "Referencia",
+    "DELS2.100206.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/900gb-10k-12gb-2-5inch-sas-drive/"
+ },
+ {
+  "t": "PowerEdge G14/G15/G16 3.5inch HDD Tray",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "WH5D2"
+   ],
+   [
+    "Referencia",
+    "DELB3.100048.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/poweredge-g14-g15-g16-3-5inch-hdd-tray-3/"
+ },
+ {
+  "t": "4 x SFF 2.5inch rear drive cage with backplane for R740xd",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Backplane",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "HN1H8"
+   ],
+   [
+    "Referencia",
+    "DELBP.100093.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/backplane/4-x-sff-2-5inch-rear-drive-cage-with-backplane-for-r740xd/"
+ },
+ {
+  "t": "2.5inch SFF SATA Caddy forPowerEdge Gen 11-13,  (Plastic), with screws, NOT for PowerVault",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "NTPP3"
+   ],
+   [
+    "Referencia",
+    "DELB2.100227.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/2-5inch-sff-sata-caddy-forpoweredge-gen-11-13-plastic-with-screws-not-for-powervault/"
+ },
+ {
+  "t": "1TB 7.2K 6Gb 3.5inch SATA HDD",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "K4M5W"
+   ],
+   [
+    "Referencia",
+    "DELA3.100195.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-35/1tb-7-2k-6gb-3-5inch-sata-hdd-3/"
+ },
+ {
+  "t": "2.5inch caddy, Compellent",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "7D4F6"
+   ],
+   [
+    "Referencia",
+    "DELB2.100233.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/2-5inch-caddy-compellent-2/"
+ },
+ {
+  "t": "10GBase-LR SFP Module",
+  "b": "CISCO",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "SFP-10G-LR"
+   ],
+   [
+    "Referencia",
+    "CSCSF.100003.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/transceiver/10gbase-lr-sfp-module/"
+ },
+ {
+  "t": "600GB 6G SAS 15K 3.5in DP ENT HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "516828-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100346"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/112607_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/600gb-6g-sas-15k-3-5in-dp-ent-hdd-3/"
+ },
+ {
+  "t": "300GB 12G SAS 15K 2.5in SC ENT HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "759208-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101498"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120400_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/300gb-12g-sas-15k-2-5in-sc-ent-hdd-4/"
+ },
+ {
+  "t": "MSA2 300GB 3Gb 15K 3.5inch Dual Port SAS HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "AJ736A"
+   ],
+   [
+    "Referencia",
+    "HLPS3.101323"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120776_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/msa2-300gb-3gb-15k-3-5inch-dual-port-sas-hdd-5/"
+ },
+ {
+  "t": "MSA2 300GB 3Gb 15K 3.5inch Dual Port SAS HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "AJ736A"
+   ],
+   [
+    "Referencia",
+    "HLPS3.101324"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120776_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/msa2-300gb-3gb-15k-3-5inch-dual-port-sas-hdd-6/"
+ },
+ {
+  "t": "MSA2 300GB 3Gb 15K 3.5inch Dual Port SAS HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "AJ736A"
+   ],
+   [
+    "Referencia",
+    "HLPS3.101254"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120776_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/msa2-300gb-3gb-15k-3-5inch-dual-port-sas-hdd-3/"
+ },
+ {
+  "t": "MSA2 300GB 3Gb 15K 3.5inch Dual Port SAS HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "AJ736A"
+   ],
+   [
+    "Referencia",
+    "HLPS3.101328"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120776_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/msa2-300gb-3gb-15k-3-5inch-dual-port-sas-hdd-7/"
+ },
+ {
+  "t": "MSA2 300GB 3Gb 15K 3.5inch Dual Port SAS HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "AJ736A"
+   ],
+   [
+    "Referencia",
+    "HLPS3.101260"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120776_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/msa2-300gb-3gb-15k-3-5inch-dual-port-sas-hdd-4/"
+ },
+ {
+  "t": "MSA2 300GB 3Gb 15K 3.5inch Dual Port SAS HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "AJ736A"
+   ],
+   [
+    "Referencia",
+    "HLPS3.101252"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120776_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/msa2-300gb-3gb-15k-3-5inch-dual-port-sas-hdd-2/"
+ },
+ {
+  "t": "8GB 1Rx8 PC4-19200 2400MHz SO-DIMM, NON-ECC",
+  "b": "SAMSUNG",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "M471A1K43CB1-CRC"
+   ],
+   [
+    "Referencia",
+    "SSND4.100230"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122827_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/8gb-1rx8-pc4-19200-2400mhz-so-dimm-non-ecc/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "507616-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100310"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/113711_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-hdd-8/"
+ },
+ {
+  "t": "600GB 12G SAS 15K 2.5in SC ENT HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "759212-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101543"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/118972_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-12g-sas-15k-2-5in-sc-ent-hdd-3/"
+ },
+ {
+  "t": "600GB 6G SAS 10K 2.5in DP ENT SC HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101559"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-6/"
+ },
+ {
+  "t": "600GB 6G SAS 10K 2.5in DP ENT SC HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101221"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-5/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "507616-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100580"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120583_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-hdd-7/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "507616-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100411"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120583_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-hdd-6/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "507616-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100510"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120583_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-hdd-5/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL SC HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652757-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100628"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120587_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-sc-hdd-8/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL SC HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652757-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100313"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/113711_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-sc-hdd-9/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "507616-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100306"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120583_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-hdd-4/"
+ },
+ {
+  "t": "600GB 6G SAS 10K 2.5in DP ENT SC HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101590"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-2-5in-dp-ent-sc-hdd/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "507616-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100416"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120583_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-hdd-3/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL SC HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652757-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100584"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120584_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-sc-hdd-7/"
+ },
+ {
+  "t": "600GB 6G SAS 10K 2.5in DP ENT SC HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101143"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-4/"
+ },
+ {
+  "t": "600GB 6G SAS 10K 2.5in DP ENT SC HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101083"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-2/"
+ },
+ {
+  "t": "600GB 6G SAS 15K 3.5in DP ENT HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "516828-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100347"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/112607_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/600gb-6g-sas-15k-3-5in-dp-ent-hdd-2/"
+ },
+ {
+  "t": "600GB 12G SAS 15K 2.5in SC ENT HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "759212-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101505"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120778_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-12g-sas-15k-2-5in-sc-ent-hdd-2/"
+ },
+ {
+  "t": "600GB 6G SAS 15K 3.5in DP ENT HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "516828-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100374"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/112607_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/600gb-6g-sas-15k-3-5in-dp-ent-hdd/"
+ },
+ {
+  "t": "600GB 6G SAS 10K 2.5in DP ENT SC HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101189"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-3/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "507616-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100626"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120583_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-hdd/"
+ },
+ {
+  "t": "2TB 6G SAS 7.2K 3.5in DP MDL HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "507616-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS3.100463"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120583_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-hdd-2/"
+ },
+ {
+  "t": "16GB (1*16GB) 2RX8 PC4-17000P-T DDR4-2333MHZ ECC SODIMM",
+  "b": "SAMSUNG",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "M474A2K43BB1-CPBQ"
+   ],
+   [
+    "Referencia",
+    "997RM.40238"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120751_1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/16gb-116gb-2rx8-pc4-17000p-t-ddr4-2333mhz-ecc-sodimm/"
+ },
+ {
+  "t": "POWEREDGE VRTX 25*SFF HDD BACKPLANE",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "V38K3"
+   ],
+   [
+    "Referencia",
+    "997MB.21342"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/121114_1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/placas-base/poweredge-vrtx-25sff-hdd-backplane/"
+ },
+ {
+  "t": "8GB (1x8GB) Single Rank x4 PC4-2133P-R (DDR4-2133) Registered",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "726718-B21"
+   ],
+   [
+    "Referencia",
+    "HLPD4.100002"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/118634_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/8gb-1x8gb-single-rank-x4-pc4-2133p-r-ddr4-2133-registered/"
+ },
+ {
+  "t": "600GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100082"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-8/"
+ },
+ {
+  "t": "2TB 7.2K 12G SED 2.5INCH SAS HDD (ME4)",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "Y6W8N"
+   ],
+   [
+    "Referencia",
+    "997S2.46351"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/119157_1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/2tb-7-2k-12g-sed-2-5inch-sas-hdd-me4/"
+ },
+ {
+  "t": "INTEL X710-KR 10GB QUAD-PORT BNDC",
+  "b": "DELL",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "Y348Y"
+   ],
+   [
+    "Referencia",
+    "997SF.44824"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/121338_1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/transceiver/intel-x710-kr-10gb-quad-port-bndc/"
+ },
+ {
+  "t": "600GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100515"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-6/"
+ },
+ {
+  "t": "B6 Sliding ReadyRails II for R510, R515, R520, R530, R540, R540xd, R720, R720xd, R730, R730xd, R740, R740xd, R7415, R7425, R7515, R7525, R750, R820, R830, R7910, NX3200, SC8000",
+  "b": "DELL",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "61KCY"
+   ],
+   [
+    "Referencia",
+    "DELRK.100090"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/113841_1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/b6-sliding-readyrails-ii-for-r510-r515-r520-r530-r540-r540xd-r720-r720xd-r730-r730xd-r740-r740xd-r7415-r7425-r7515-r7525-r750-r820-r830-r7910-nx3200-sc8000-6/"
+ },
+ {
+  "t": "Fan Assembly for PowerEdge R730, R730XD",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "HK9PH"
+   ],
+   [
+    "Referencia",
+    "DELFN.100092"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120417_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/fan-assembly-for-poweredge-r730-r730xd-2/"
+ },
+ {
+  "t": "2U Ball Bearing rail kit for DL380 G8, G9, G10",
+  "b": "HP",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "679365-001"
+   ],
+   [
+    "Referencia",
+    "HLPRK.100149"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/109063_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/2u-ball-bearing-rail-kit-for-dl380-g8-g9-g10/"
+ },
+ {
+  "t": "2U Rail Kit for DL380, DL385, G8, G9 SFF, G10",
+  "b": "HP",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "662535-001"
+   ],
+   [
+    "Referencia",
+    "HLPRK.100047"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/114584_1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/2u-rail-kit-for-dl380-dl385-g8-g9-sff-g10/"
+ },
+ {
+  "t": "96W Smart Storage Battery With 145mm Cable",
+  "b": "HP",
+  "cat": "components",
+  "type": "Baterías",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "878643-001"
+   ],
+   [
+    "Referencia",
+    "HLPBT.100067"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/121038_1.jpg",
+  "url": "https://www.7digits.es/tienda/consumibles/baterias/96w-smart-storage-battery-with-145mm-cable-4/"
+ },
+ {
+  "t": "Quad Port 10Gb SFP+ Hot-Swappable Module for 8132, N4032, N4064",
+  "b": "DELL",
+  "cat": "network",
+  "type": "Otros",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "PHP6J"
+   ],
+   [
+    "Referencia",
+    "DELNM.100225"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122720_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/otros-redes/quad-port-10gb-sfp-hot-swappable-module-for-8132-n4032-n4064/"
+ },
+ {
+  "t": "600GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100518"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-7/"
+ },
+ {
+  "t": "450GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652572-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100429"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/119409_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/450gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-6/"
+ },
+ {
+  "t": "1TB 3.0Gb/s SATA 7.2k RPM, 3.5 inch, LFF Hot-Plug Drive, NCQ (Native Command Queing)",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "454146-B21"
+   ],
+   [
+    "Referencia",
+    "HLPA3.100050"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/108401_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-35/1tb-3-0gb-s-sata-7-2k-rpm-3-5-inch-lff-hot-plug-drive-ncq-native-command-queing-6/"
+ },
+ {
+  "t": "450GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652572-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100437"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/119408_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/450gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-5/"
+ },
+ {
+  "t": "1TB 3.0Gb/s SATA 7.2k RPM, 3.5 inch, LFF Hot-Plug Drive, NCQ (Native Command Queing)",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "454146-B21"
+   ],
+   [
+    "Referencia",
+    "HLPA3.100033"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/108401_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-35/1tb-3-0gb-s-sata-7-2k-rpm-3-5-inch-lff-hot-plug-drive-ncq-native-command-queing/"
+ },
+ {
+  "t": "1TB 3.0Gb/s SATA 7.2k RPM, 3.5 inch, LFF Hot-Plug Drive, NCQ (Native Command Queing)",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "454146-B21"
+   ],
+   [
+    "Referencia",
+    "HLPA3.100144"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/108401_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-35/1tb-3-0gb-s-sata-7-2k-rpm-3-5-inch-lff-hot-plug-drive-ncq-native-command-queing-4/"
+ },
+ {
+  "t": "1TB 3.0Gb/s SATA 7.2k RPM, 3.5 inch, LFF Hot-Plug Drive, NCQ (Native Command Queing)",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "454146-B21"
+   ],
+   [
+    "Referencia",
+    "HLPA3.100146"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/108401_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-35/1tb-3-0gb-s-sata-7-2k-rpm-3-5-inch-lff-hot-plug-drive-ncq-native-command-queing-2/"
+ },
+ {
+  "t": "16GB DDR3-1600MHz RDIMM/PC3-12800/2R/x4/dual voltage",
+  "b": "CISCO",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "UCS-MR-1X162RY-A"
+   ],
+   [
+    "Referencia",
+    "CSCD3.100011"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/108840_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/16gb-ddr3-1600mhz-rdimm-pc3-12800-2r-x4-dual-voltage/"
+ },
+ {
+  "t": "600GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100522"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-2/"
+ },
+ {
+  "t": "2TB 7.2K 6Gb 3.5inch SAS HDD",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "1P7DP"
+   ],
+   [
+    "Referencia",
+    "DELS3.100248"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/117184_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-7-2k-6gb-3-5inch-sas-hdd-2/"
+ },
+ {
+  "t": "1TB 3.0Gb/s SATA 7.2k RPM, 3.5 inch, LFF Hot-Plug Drive, NCQ (Native Command Queing)",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "454146-B21"
+   ],
+   [
+    "Referencia",
+    "HLPA3.100064"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/108401_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-35/1tb-3-0gb-s-sata-7-2k-rpm-3-5-inch-lff-hot-plug-drive-ncq-native-command-queing-5/"
+ },
+ {
+  "t": "600GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100531"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive/"
+ },
+ {
+  "t": "Railkit for PowerEdge R520 / R530/  R720 / R730 / R820",
+  "b": "DELL",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "J642R"
+   ],
+   [
+    "Referencia",
+    "DELRK.100074"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120519_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/railkit-for-poweredge-r520-r530-r720-r730-r820/"
+ },
+ {
+  "t": "1TB 3.0Gb/s SATA 7.2k RPM, 3.5 inch, LFF Hot-Plug Drive, NCQ (Native Command Queing)",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "454146-B21"
+   ],
+   [
+    "Referencia",
+    "HLPA3.100141"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/108401_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-35/1tb-3-0gb-s-sata-7-2k-rpm-3-5-inch-lff-hot-plug-drive-ncq-native-command-queing-7/"
+ },
+ {
+  "t": "600GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100535"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-4/"
+ },
+ {
+  "t": "600GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "652583-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100512"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-5/"
+ },
+ {
+  "t": "SPS-DRV HD 450GB 10K SFF 6G M6625 SAS",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "AW612A"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100291"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/119409_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/sps-drv-hd-450gb-10k-sff-6g-m6625-sas-3/"
+ },
+ {
+  "t": "H730 Mini Mono 12Gb SAS controller with 1GB NV Cache",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "KMCCD"
+   ],
+   [
+    "Referencia",
+    "DELSD.100008"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/120403_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/controladoras-disco-duro/h730-mini-mono-12gb-sas-controller-with-1gb-nv-cache/"
  }
 ]
