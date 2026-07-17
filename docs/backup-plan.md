@@ -126,6 +126,20 @@ FTP con credenciales guardadas apuntando a `ftp.quierounaconsola.com` (usuario `
 - Aviso menor anotado: `wp-config.php` tiene BOM al inicio (no bloquea; corregir en
   mantenimiento para evitar avisos de cabeceras).
 
+**Ampliación del hallazgo (inspección de UpdraftPlus):**
+
+- La programación **diaria seguía activa** (archivos+BD, retención 1) apuntando al FTP; se
+  cambió el destino antes de su disparo de las 08:06.
+- **16 copias existentes, todas de febrero de 2019** (última: 21-feb-2019), ocupando
+  **9,2 GB** en el servidor → el mantenimiento del sitio se abandonó en esa fecha.
+  Candidatas a limpieza previa autorización del cliente.
+- **Google Drive ya estuvo vinculado** con Client ID/Secret propios a la cuenta
+  **"7Digits Madrid"** (del cliente; token presumiblemente caducado desde 2019).
+- **Decisión operativa**: backup local + descarga de BD/plugins/temas al equipo para
+  desbloquear la instalación del tema; la autenticación de Drive se hará con el cliente
+  usando su cuenta "7Digits Madrid" (custodia RGPD correcta), reconfigurando la
+  programación a retención 7.
+
 ## ⚠️ Antes de asumir el backup como servicio
 
 - **Responsabilidad**: al hacernos cargo del backup, asumimos responsabilidad. Debe quedar
