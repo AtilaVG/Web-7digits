@@ -112,6 +112,20 @@ Exporta los ~24.000 productos a CSV (marca, MPN, SKU, categorías, precio, stock
 imagen). Los CSV se guardan en `backups/` (ignorada por git: contiene datos y no debe
 publicarse). Automatizable con un workflow semanal si se desea.
 
+## 🔴 Hallazgo de seguridad (instalación del backup)
+
+Al instalar UpdraftPlus se encontró **configuración persistida de un uso anterior**: destino
+FTP con credenciales guardadas apuntando a `ftp.quierounaconsola.com` (usuario `quier725`) —
+**un servidor de terceros ajeno al cliente**. Probablemente del desarrollador original (~2015).
+
+- **Decisión**: no enviar ninguna copia a ese destino; cambiar la selección a Google Drive
+  del cliente. Las credenciales FTP se conservan sin usar como evidencia (captura tomada).
+- **Preguntar al cliente**: ¿les suena ese dominio / quién les desarrolló la web? Si no lo
+  reconocen, valorar limpiar esas credenciales de la configuración y revisar qué más quedó
+  del proveedor anterior.
+- Aviso menor anotado: `wp-config.php` tiene BOM al inicio (no bloquea; corregir en
+  mantenimiento para evitar avisos de cabeceras).
+
 ## ⚠️ Antes de asumir el backup como servicio
 
 - **Responsabilidad**: al hacernos cargo del backup, asumimos responsabilidad. Debe quedar
