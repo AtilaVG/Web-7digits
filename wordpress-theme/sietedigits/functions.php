@@ -12,6 +12,32 @@ function sd_opt($key, $default = '') {
     return $v === '' ? $default : $v;
 }
 
+/* ── Redirecciones 301 de URLs antiguas (Jupiter/WPBakery) a las páginas nuevas ──
+   Doble función: implementa la migración SEO (docs/migracion-seo.md) Y evita que las
+   páginas viejas del constructor lleguen a renderizarse (causa de los fatales de Jupiter),
+   porque template_redirect actúa antes de cargar la plantilla y el contenido. */
+add_action('template_redirect', function () {
+    if (is_admin()) return;
+    $map = [
+        'presupuesto'              => '/contacto/',
+        'presupuesto-2'            => '/contacto/',
+        'contacto-7digits'         => '/contacto/',
+        'quote-request'            => '/contacto/',
+        'request-a-quote'          => '/contacto/',
+        'request-quote'            => '/contacto/',
+        'contact-list'             => '/contacto/',
+        'servidores-y-componentes' => '/productos/',
+        'stock-actualizado'        => '/productos/',
+        'ley-de-cookies'           => '/privacidad/',
+    ];
+    $path = trim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH), '/');
+    $first = strtolower(explode('/', $path)[0]);
+    if (isset($map[$first])) {
+        wp_redirect(home_url($map[$first]), 301);
+        exit;
+    }
+}, 1);
+
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');

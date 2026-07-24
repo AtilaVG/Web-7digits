@@ -14,13 +14,22 @@ En la prueba con Theme Switcha se confirmó:
   Jupiter Donut** (activos) dependen del tema Jupiter y llaman a funciones que desaparecen al
   cambiar de tema → fatal. Es un problema del ecosistema Jupiter, no del tema nuevo.
 
-**Por tanto: NO activar en producción.** Procedimiento correcto:
+**Mitigación aplicada en el tema (v1.1):** `functions.php` ahora redirige por `template_redirect`
+las URLs antiguas del constructor (`/presupuesto/`, `/servidores-y-componentes/`, variantes de
+contacto/presupuesto, `/ley-de-cookies/`…) a las páginas nuevas **antes de que rendericen** →
+el fatal conocido de `/presupuesto/` ya no puede ocurrir, y quedan implementadas las 301 del SEO.
+
+**Aun así: primera activación en STAGING**, para descubrir cualquier otro fatal:
 1. Clonar el sitio a **staging** (un clic en la mayoría de hostings).
-2. Activar el tema en staging con el log de errores a la vista.
-3. Resolver los fatales: desactivar Jupiter Core/Donut (innecesarios con el tema nuevo) y
-   montar los **301** de las páginas antiguas (`/presupuesto/`, `/servidores-y-componentes/`…)
-   que ya estaban previstas para redirigir en `docs/migracion-seo.md`.
-4. Con staging limpio y verificado, replicar en producción.
+2. En staging, activar `WP_DEBUG` y `WP_DEBUG_LOG` en `wp-config.php` (SOLO en staging).
+3. Activar el tema. Recorrer las páginas; si algo fatal, `wp-content/debug.log` da la
+   función/fichero exactos → me lo pasas y lo arreglo (probable: desactivar Jupiter Core/Donut,
+   que ya no hacen falta con el tema nuevo).
+4. Con staging limpio y verificado, replicar en producción (sin WP_DEBUG).
+
+Diagnóstico confirmado en producción (solo lectura): WP_DEBUG y WP_DEBUG_LOG **desactivados**
+(por eso el texto exacto del fatal no era accesible sin tocar wp-config); plugins Jupiter
+activos: **Jupiter Core 1.0.6, Jupiter Donut 1.6.5, Artbees Themes Captcha 1.0**.
 
 ## ⚠️ Antes de activar — imprescindible
 
