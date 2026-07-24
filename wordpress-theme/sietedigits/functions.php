@@ -33,8 +33,14 @@ add_action('template_redirect', function () {
     $path = trim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH), '/');
     $first = strtolower(explode('/', $path)[0]);
     if (isset($map[$first])) {
-        wp_redirect(home_url($map[$first]), 301);
-        exit;
+        $target_slug = trim($map[$first], '/');
+        // Guarda anti-bucle: solo redirige si el destino es una página distinta
+        // y ya existe publicada. Evita el loop cuando el destino aún no se ha
+        // creado (p. ej. en vista previa antes de activar el tema).
+        if ($first !== $target_slug && get_page_by_path($target_slug)) {
+            wp_redirect(home_url($map[$first]), 301);
+            exit;
+        }
     }
 }, 1);
 
