@@ -4,6 +4,24 @@
 > lee WooCommerce **en tiempo real** (sin sincronización), el formulario envía por el
 > WP Mail SMTP ya configurado, y los textos clave se editan desde **Apariencia → Personalizar**.
 
+## 🔴 Bloqueante conocido (detectado en preview) — activar SOLO en staging
+
+En la prueba con Theme Switcha se confirmó:
+- Portada, `/tienda/` y las fichas de producto renderizan **perfectas** con el tema nuevo.
+- `/productos/` y `/contacto/` dan 404 en preview: **esperado** (el tema crea esas páginas
+  al activarse; en preview no está activado). Tras activar existirían y funcionarían.
+- **`/presupuesto/` lanza error crítico de PHP.** Causa probable: los plugins **Jupiter Core /
+  Jupiter Donut** (activos) dependen del tema Jupiter y llaman a funciones que desaparecen al
+  cambiar de tema → fatal. Es un problema del ecosistema Jupiter, no del tema nuevo.
+
+**Por tanto: NO activar en producción.** Procedimiento correcto:
+1. Clonar el sitio a **staging** (un clic en la mayoría de hostings).
+2. Activar el tema en staging con el log de errores a la vista.
+3. Resolver los fatales: desactivar Jupiter Core/Donut (innecesarios con el tema nuevo) y
+   montar los **301** de las páginas antiguas (`/presupuesto/`, `/servidores-y-componentes/`…)
+   que ya estaban previstas para redirigir en `docs/migracion-seo.md`.
+4. Con staging limpio y verificado, replicar en producción.
+
 ## ⚠️ Antes de activar — imprescindible
 
 1. **Backup completo verificado** (ver `docs/backup-plan.md`). Activar un tema es reversible
