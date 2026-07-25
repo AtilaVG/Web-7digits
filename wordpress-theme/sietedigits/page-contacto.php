@@ -8,6 +8,7 @@
     <p class="lead">Compra, venta, retirada o destrucción de datos: cuéntanos qué necesitas y un técnico te responderá en menos de 24 horas laborables.</p>
   </div>
 </section>
+<?php sd_page_intro(); ?>
 
 <section class="sec" id="contact-form">
   <div class="wrap">

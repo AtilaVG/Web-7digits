@@ -8,6 +8,7 @@
     <p class="lead">Servidores, componentes, redes, almacenamiento y racks completos: si ya no lo necesitas, te hacemos la mejor oferta del mercado y nos encargamos de todo.</p>
   </div>
 </section>
+<?php sd_page_intro(); ?>
 
 <section class="sec">
   <div class="wrap">

@@ -8,6 +8,7 @@
     <p class="lead">Cada equipo que reutilizamos es un equipo que no hay que fabricar. Nuestra actividad sigue la escalera de Lansink: priorizar siempre el tratamiento de menor impacto ambiental.</p>
   </div>
 </section>
+<?php sd_page_intro(); ?>
 
 <section class="sec">
   <div class="wrap">

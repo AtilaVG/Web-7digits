@@ -8,6 +8,7 @@
     <p class="lead">Tres métodos para garantizar que tu información no vuelve: borrado por software, destrucción física y desmagnetización. Siempre con certificado nominal y trazabilidad completa.</p>
   </div>
 </section>
+<?php sd_page_intro(); ?>
 
 <section class="sec">
   <div class="wrap">

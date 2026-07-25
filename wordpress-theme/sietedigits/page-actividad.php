@@ -8,6 +8,7 @@
     <p class="lead">Especialistas en logística inversa de componentes informáticos: tratamos hardware de centros de datos y empresas — redes, servidores, almacenamiento, SAIs, racks completos y equipos.</p>
   </div>
 </section>
+<?php sd_page_intro(); ?>
 
 <section class="sec">
   <div class="wrap">

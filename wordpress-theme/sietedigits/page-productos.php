@@ -29,6 +29,7 @@ get_header(); ?>
     <p class="lead">Stock real, listo para enviar en menos de 24 horas. Filtra por categoría o busca por marca y modelo.</p>
   </div>
 </section>
+<?php sd_page_intro(); ?>
 
 <section class="sec soft-bg">
   <div class="wrap">
