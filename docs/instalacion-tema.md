@@ -78,3 +78,12 @@ activos: **Jupiter Core 1.0.6, Jupiter Donut 1.6.5, Artbees Themes Captcha 1.0**
 - El tema no toca plugins ni datos: **desactivarlo devuelve el sitio exactamente a Jupiter**.
 - Requisitos: WooCommerce activo (ya lo está) y PHP ≥ 7.4 (tienen 8.1). El aviso de
   "plantillas WooCommerce obsoletas" del tema Jupiter desaparece con este tema.
+
+## Mantenimiento: sincronizar assets del tema con la web estática
+
+El tema reutiliza el CSS/JS de la web estática (`assets/`). Son **copias**, así que si se
+edita el CSS del front hay que **resincronizarlo** en `wordpress-theme/sietedigits/assets/`
+(el bug del pin gigante del mapa vino de una copia de `contacto.css` desactualizada).
+Al copiar el CSS, re-añadir al final de `components.css` del tema el bloque `.sd-intro`
+(estilos propios del tema). Los JS del tema (`productos-wp.js`, y los parches de
+`compras.js`/`contacto.js`) son específicos del tema y NO se sobreescriben con los del front.
