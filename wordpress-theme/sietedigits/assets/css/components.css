@@ -59,3 +59,18 @@
 .sd-intro strong{color:var(--navy-2)}
 .sd-intro a{color:var(--blue);font-weight:700;border-bottom:1.5px solid var(--sky);transition:.25s}
 .sd-intro a:hover{color:var(--green);border-color:var(--green)}
+
+/* paginación numerada del catálogo (tema) */
+.cat-count{text-align:center;color:var(--muted);font-family:'Barlow Semi Condensed';font-weight:600;font-size:.92rem;margin:-8px 0 24px}
+.pager{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px;margin-top:40px}
+.pager .page-numbers{display:inline-grid;place-items:center;min-width:42px;height:42px;padding:0 12px;border-radius:10px;
+  border:1.5px solid var(--line);background:#fff;color:var(--navy-2);font-family:'Barlow';font-weight:700;font-size:.95rem;
+  text-decoration:none;transition:.25s var(--ease)}
+.pager a.page-numbers:hover{border-color:var(--sky);color:var(--blue);transform:translateY(-2px)}
+.pager .page-numbers.current{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 8px 18px -8px rgba(43,127,196,.6)}
+.pager .page-numbers.dots{border:0;background:none;min-width:24px}
+.pager .prev,.pager .next{font-family:'Barlow Semi Condensed';font-weight:700}
+@media(max-width:600px){.pager .page-numbers{min-width:38px;height:38px;font-size:.9rem}}
+
+/* filtros del catálogo como enlaces (paginación server-side): asegurar caja */
+a.filter{display:inline-block;text-decoration:none;line-height:1.2}

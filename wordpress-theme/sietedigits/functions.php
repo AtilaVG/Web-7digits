@@ -150,6 +150,25 @@ add_action('admin_init', function () {
     }
 });
 
+/* Resuelve los slugs de categorías reales de WooCommerce que caen en cada
+   macro-filtro del catálogo (Servidores / Redes / Almacenamiento / Componentes). */
+function sd_macro_cat_slugs($macro) {
+    $pat = [
+        'server'  => '/servidor|ordenador/i',
+        'network' => '/red|switch|router|comunicaci/i',
+        'storage' => '/almacenamiento|cabina|disco|nas|san|storage/i',
+    ];
+    $terms = get_terms(['taxonomy' => 'product_cat', 'hide_empty' => false]);
+    if (is_wp_error($terms)) return [];
+    $slugs = [];
+    foreach ($terms as $t) {
+        $other = preg_match($pat['server'], $t->name) || preg_match($pat['network'], $t->name) || preg_match($pat['storage'], $t->name);
+        if ($macro === 'components') { if (!$other) $slugs[] = $t->slug; }
+        elseif (isset($pat[$macro]) && preg_match($pat[$macro], $t->name)) { $slugs[] = $t->slug; }
+    }
+    return $slugs;
+}
+
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
@@ -172,7 +191,7 @@ add_action('wp_enqueue_scripts', function () {
     if (is_front_page()) {
         $css('scrolly', 'scrolly.css'); $css('home', 'pages/home.css'); $js('home', 'pages/home.js');
     } elseif (is_page('productos')) {
-        $css('productos', 'pages/productos.css'); $js('productos', 'productos-wp.js');
+        $css('productos', 'pages/productos.css');
     } elseif (is_page('compramos-servidores')) {
         $css('actividad', 'pages/actividad.css'); $js('compras', 'pages/compras.js');
     } elseif (is_page('actividad')) {
