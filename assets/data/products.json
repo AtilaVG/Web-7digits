@@ -1,5 +1,625 @@
 [
  {
+  "t": "1GB FBWC for P420/P421 (Cache only, no battery)",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "633542-001"
+   ],
+   [
+    "Referencia",
+    "HLPRM.100009.REF"
+   ]
+  ],
+  "img": null,
+  "url": "https://www.7digits.es/tienda/componentes/memorias/1gb-fbwc-for-p420-p421-cache-only-no-battery-2/"
+ },
+ {
+  "t": "Ethernet 1Gb 4-port 331FLR Adapter",
+  "b": "HP",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "629135-B21"
+   ],
+   [
+    "Referencia",
+    "HLPNE.100172.REF"
+   ]
+  ],
+  "img": null,
+  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/ethernet-1gb-4-port-331flr-adapter-5/"
+ },
+ {
+  "t": "PSU backplane for DL380p G8, DL560 G8",
+  "b": "HP",
+  "cat": "components",
+  "type": "Backplane",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "662528-001"
+   ],
+   [
+    "Referencia",
+    "HLPBP.100115.REF"
+   ]
+  ],
+  "img": null,
+  "url": "https://www.7digits.es/tienda/componentes/backplane/psu-backplane-for-dl380p-g8-dl560-g8-2/"
+ },
+ {
+  "t": "DL380p/385pGen8 3 Slot PCIe Riser whit cage",
+  "b": "HP",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "662524-001"
+   ],
+   [
+    "Referencia",
+    "HLPST.100274.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/112646_1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/dl380p-385pgen8-3-slot-pcie-riser-whit-cage/"
+ },
+ {
+  "t": "Hot-plug fan for DL380p/DL380e/DL385 G8",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "662520-001"
+   ],
+   [
+    "Referencia",
+    "HLPFN.100117.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/112657_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/hot-plug-fan-for-dl380p-dl380e-dl385-g8-2/"
+ },
+ {
+  "t": "Xeon E5-2695 v2 CPU (12 x 2.4Ghz with HT, 3.2GHz Turbo, 30M Cache)",
+  "b": "INTEL",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "SR1BA"
+   ],
+   [
+    "Referencia",
+    "ITLCP.100396.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-e5-2695-v2-cpu-12-x-2-4ghz-with-ht-3-2ghz-turbo-30m-cache-2/"
+ },
+ {
+  "t": "3.84TB SAS 12G Mixed Use SFF (2.5in) SC SSD",
+  "b": "HPE",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "P10460-B21"
+   ],
+   [
+    "Referencia",
+    "HPESS.101346.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/3-84tb-sas-12g-mixed-use-sff-2-5in-sc-ssd/"
+ },
+ {
+  "t": "25 drive SFF front cage for DL380p / DL385p G8 (Cage, backplane, ears, SAS and power cables)",
+  "b": "HPE",
+  "cat": "components",
+  "type": "Backplane",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "691265-001"
+   ],
+   [
+    "Referencia",
+    "HPEBP.100258.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/backplane/25-drive-sff-front-cage-for-dl380p-dl385p-g8-cage-backplane-ears-sas-and-power-cables/"
+ },
+ {
+  "t": "Ethernet 10Gb 2-port 561T Adapter, Low Profile",
+  "b": "HP",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "716591-B21-LP"
+   ],
+   [
+    "Referencia",
+    "HLPNE.100250.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/ethernet-10gb-2-port-561t-adapter-low-profile-2/"
+ },
+ {
+  "t": "550W 12V non-hot-plug power supply",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "748950-B21"
+   ],
+   [
+    "Referencia",
+    "HLPPS.100240.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/550w-12v-non-hot-plug-power-supply/"
+ },
+ {
+  "t": "Fan Cage assembly for DL380 G8",
+  "b": "HP",
+  "cat": "components",
+  "type": "Otros",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "654569-001"
+   ],
+   [
+    "Referencia",
+    "HLPOT.100127.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/otros/fan-cage-assembly-for-dl380-g8/"
+ },
+ {
+  "t": "DL380p Gen8 Intel® Xeon® E5-2695v2 (2.4GHz/12-core/30MB/115W) Processor Kit",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "715225-B21"
+   ],
+   [
+    "Referencia",
+    "HLPCK.100458.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/kits-procesador/dl380p-gen8-intel-xeon-e5-2695v2-2-4ghz-12-core-30mb-115w-processor-kit-2/"
+ },
+ {
+  "t": "1GB G8 P-series Smart Array Flash Backed Write Cache (With 36in/91cm cable on supercap)",
+  "b": "HP",
+  "cat": "components",
+  "type": "Accesorios",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "631679-B21"
+   ],
+   [
+    "Referencia",
+    "HLPCC.100218.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/accesorios-2/otros-accesorios-2/1gb-g8-p-series-smart-array-flash-backed-write-cache-with-36in-91cm-cable-on-supercap/"
+ },
+ {
+  "t": "Fan for BLc7000 / BLc3000",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "412140-B21"
+   ],
+   [
+    "Referencia",
+    "HLPFN.100001.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/fan-for-blc7000-blc3000/"
+ },
+ {
+  "t": "300GB 10K 2Gb FC drive",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "359438-010"
+   ],
+   [
+    "Referencia",
+    "HLPFD.100113.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-fibra/300gb-10k-2gb-fc-drive-2/"
+ },
+ {
+  "t": "Front bezel for 1U PowerEdge servers, with LCD, Gen14/15/16,  With Key, No Logo",
+  "b": "DELL",
+  "cat": "server",
+  "type": "Accesorios",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "RHDFM"
+   ],
+   [
+    "Referencia",
+    "DELST.100131.NOB"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/accesorios/front-bezel-for-1u-poweredge-servers-with-lcd-gen14-15-16-with-key-no-logo/"
+ },
+ {
+  "t": "1.92TB 6Gb RI Read Intensive 2.5inch SATA SSD",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "VJ36D"
+   ],
+   [
+    "Referencia",
+    "DELSS.100682.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/1-92tb-6gb-ri-read-intensive-2-5inch-sata-ssd/"
+ },
+ {
+  "t": "Front backplane to Flex Backplane SAS cable for PowerEdge R740xd, 12xLFF",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Accesorios",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "674FN"
+   ],
+   [
+    "Referencia",
+    "DELSB.100082"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/accesorios-2/cables-accesorios-2/front-backplane-to-flex-backplane-sas-cable-for-poweredge-r740xd-12xlff/"
+ },
+ {
+  "t": "PER660 2*6526Y H965I 8SFF 4*128GB 2*3.84TB NVME 2*480GB M.2",
+  "b": "DELL",
+  "cat": "components",
+  "type": "Otros",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "PER660-8XSFF-2X6526Y-H965I-512GB-2X3.84T"
+   ],
+   [
+    "Referencia",
+    "997OT.52692"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/otros/per660-26526y-h965i-8sff-4128gb-23-84tb-nvme-2480gb-m-2/"
+ },
+ {
+  "t": "HPE DL360 G10+ GOLD 5320 4*32GB 800GB SSD 3*2TB HDD 2*480GB M.2",
+  "b": "HP",
+  "cat": "components",
+  "type": "Otros",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "DL360G10PLUS-8SFF-5320-128GB-800GB-3X2TB"
+   ],
+   [
+    "Referencia",
+    "997OT.52691"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/otros/hpe-dl360-g10-gold-5320-432gb-800gb-ssd-32tb-hdd-2480gb-m-2/"
+ },
+ {
+  "t": "920W 1U platinum hot-swap PSU",
+  "b": "SUPERMICRO",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "PWS-920P-1R"
+   ],
+   [
+    "Referencia",
+    "SPMPS.100026"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/920w-1u-platinum-hot-swap-psu/"
+ },
+ {
+  "t": "2GB 1Rx8 PC3-12800U cl11 DIMM, 1.5v, Non-ECC, Unbuffered",
+  "b": "HYNIX",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "HMT325U6CFR8C-PB"
+   ],
+   [
+    "Referencia",
+    "HYND3.100141"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/2gb-1rx8-pc3-12800u-cl11-dimm-1-5v-non-ecc-unbuffered-2/"
+ },
+ {
+  "t": "550W Standard FIO Power Supply Kit",
+  "b": "HPE",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "730941-B21"
+   ],
+   [
+    "Referencia",
+    "HPEPS.100219"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/550w-standard-fio-power-supply-kit/"
+ },
+ {
+  "t": "Performance Heat Sink for ML350 G10",
+  "b": "HPE",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "879150-001"
+   ],
+   [
+    "Referencia",
+    "HPEHK.100281"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/performance-heat-sink-for-ml350-g10/"
+ },
+ {
+  "t": "32GB 2Rx8 DDR5-6400 CAS-52-52-52 EC8 6400MHz RDIMM",
+  "b": "HPE",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "P69727-B21"
+   ],
+   [
+    "Referencia",
+    "HPED5.100265"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/32gb-2rx8-ddr5-6400-cas-52-52-52-ec8-6400mhz-rdimm/"
+ },
+ {
+  "t": "Motherboard to 25SFF backplane cable for DL380e/p G8",
+  "b": "HP",
+  "cat": "components",
+  "type": "Accesorios",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "686614-001"
+   ],
+   [
+    "Referencia",
+    "HLPSB.100242"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/accesorios-2/cables-accesorios-2/motherboard-to-25sff-backplane-cable-for-dl380e-p-g8/"
+ },
+ {
+  "t": "1.8TB SAS 12G 10K SFF SC 512e DS HDD ",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "872481-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.101667"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/1-8tb-sas-12g-10k-sff-sc-512e-ds-hdd-2/"
+ },
+ {
+  "t": "Ethernet 10Gb 2-port 530T Adapter, Low Profile Bracket",
+  "b": "HP",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "656596-B21-LP"
+   ],
+   [
+    "Referencia",
+    "HLPNE.100055"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/ethernet-10gb-2-port-530t-adapter-low-profile-bracket-2/"
+ },
+ {
+  "t": "450W Power Supply for RX2520/RX2530 M2, RX2540 M4",
+  "b": "FUJITSU",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "S26113-F575-L13"
+   ],
+   [
+    "Referencia",
+    "FJSPS.100121"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/450w-power-supply-for-rx2520-rx2530-m2-rx2540-m4-2/"
+ },
+ {
+  "t": "240W AC to DC power supply",
+  "b": "CISCO",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "PWR-IE240W-PCAC-L"
+   ],
+   [
+    "Referencia",
+    "CSCPS.100347"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/240w-ac-to-dc-power-supply/"
+ },
+ {
+  "t": "Catalyst IE3300 with 8 GE Copper ports, Expansion Module",
+  "b": "CISCO",
+  "cat": "network",
+  "type": "Otros",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "IEM-3300-8T"
+   ],
+   [
+    "Referencia",
+    "CSCNM.100978"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/otros-redes/catalyst-ie3300-with-8-ge-copper-ports-expansion-module/"
+ },
+ {
   "t": "2.5inch SFF SC (Smart Carrier) HDD caddy for G8/G9/G10",
   "b": "HP",
   "cat": "storage",
@@ -398,26 +1018,6 @@
   ],
   "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
   "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/146gb-6g-15k-rpm-2-5-inch-sff-dual-port-sas-hard-drive-6/"
- },
- {
-  "t": "1.8TB SAS 12G 10K SFF SC 512e DS HDD ",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "Refurbished",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "872481-B21"
-   ],
-   [
-    "Referencia",
-    "HLPS2.101667.REF"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/1-8tb-sas-12g-10k-sff-sc-512e-ds-hdd-3/"
  },
  {
   "t": "Standard (105W) Heatsink for DL380 Gen9",
@@ -1798,605 +2398,5 @@
   ],
   "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
   "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-5/"
- },
- {
-  "t": "600GB 6G SAS 10K 2.5in DP ENT SC HDD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "652583-B21"
-   ],
-   [
-    "Referencia",
-    "HLPS2.101189"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-3/"
- },
- {
-  "t": "600GB 6G SAS 10K RPM SFF (2.5-inch) SmartDrive Carrier (SC) Enterprise Hard Drive",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "652583-B21"
-   ],
-   [
-    "Referencia",
-    "HLPS2.100527"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/122682_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/600gb-6g-sas-10k-rpm-sff-2-5-inch-smartdrive-carrier-sc-enterprise-hard-drive-3/"
- },
- {
-  "t": "960GB 12Gb 2.5inch SAS SSD for DS224C, A200, A220, and FAS",
-  "b": "NETAPP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "X371A"
-   ],
-   [
-    "Referencia",
-    "NTASS.100226"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/960gb-12gb-2-5inch-sas-ssd-for-ds224c-a200-a220-and-fas/"
- },
- {
-  "t": "16Gb MM FC Transceiver, 850nm, 100-125 meters",
-  "b": "QLOGIC",
-  "cat": "network",
-  "type": "Redes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SFP-16GFC-SW"
-   ],
-   [
-    "Referencia",
-    "QLGSF.100217"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/redes/transceiver/16gb-mm-fc-transceiver-850nm-100-125-meters/"
- },
- {
-  "t": "1.92TB SATA SSD, 6Gb, RI",
-  "b": "SAMSUNG",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "MZ7LH1T9HMLT-00005"
-   ],
-   [
-    "Referencia",
-    "SSNSS.100232"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/1-92tb-sata-ssd-6gb-ri/"
- },
- {
-  "t": "8TB 7.2K 6Gb 3.5inch SATA drive, IronWolf Pro",
-  "b": "SEAGATE",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "ST8000NE001"
-   ],
-   [
-    "Referencia",
-    "SGTA3.100194"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-35/8tb-7-2k-6gb-3-5inch-sata-drive-ironwolf-pro/"
- },
- {
-  "t": "4TB 7.2K 12Gb 128MB Cache 3.5inch Enterprise SAS HDD",
-  "b": "SEAGATE",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "ST4000NM0025"
-   ],
-   [
-    "Referencia",
-    "SGTS3.100036"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/4tb-7-2k-12gb-128mb-cache-3-5inch-enterprise-sas-hdd/"
- },
- {
-  "t": "1.8 TB 12G SAS 10K RPM SFF HDD (4K)",
-  "b": "CISCO",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "UCS-HD18TB10KS4K"
-   ],
-   [
-    "Referencia",
-    "CSCS2.100231"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/116423_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/1-8-tb-12g-sas-10k-rpm-sff-hdd-4k/"
- },
- {
-  "t": "4TB 7.2K 6Gb 3.5inch NL-SAS drive",
-  "b": "NETAPP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "X477A-R6"
-   ],
-   [
-    "Referencia",
-    "NTAS3.100012"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/4tb-7-2k-6gb-3-5inch-nl-sas-drive/"
- },
- {
-  "t": "Xeon Gold 6258R CPU (28 x 2.7GHz with HT, 4.00GHz Turbo, 38.5M Cache, 205W)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRGZF"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100694"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-6258r-cpu-28-x-2-7ghz-with-ht-4-00ghz-turbo-38-5m-cache-205w/"
- },
- {
-  "t": "Xeon Platinum 8260 CPU (24 x 2.4GHz + HT, 3.9GHz Turbo, 35.75M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRF9H"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100663"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-platinum-8260-cpu-24-x-2-4ghz-ht-3-9ghz-turbo-35-75m-cache/"
- },
- {
-  "t": "240GB 6Gb 2.5inch RI SFF SC SATA SSD, 5300P",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "P19935-B21"
-   ],
-   [
-    "Referencia",
-    "HLPSS.101696"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/240gb-6gb-2-5inch-ri-sff-sc-sata-ssd-5300p/"
- },
- {
-  "t": "Xeon Gold 6240R CPU (24 x 2.4Ghz + HT, 4.00GHz Turbo, 35.75M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRGZ8"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100615"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-6240r-cpu-24-x-2-4ghz-ht-4-00ghz-turbo-35-75m-cache/"
- },
- {
-  "t": "Xeon Gold 6326 CPU (16 x 2.6GHz, HT, 3.5GHz Turbo, 24M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRKXK"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100612"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-6326-cpu-16-x-2-6ghz-ht-3-5ghz-turbo-24m-cache/"
- },
- {
-  "t": "Xeon Silver 4215 CPU (8 x 2.5GHz + HT, 3.5GHz Turbo, 11M Cache, 85W)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRFBA"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100601"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-silver-4215-cpu-8-x-2-5ghz-ht-3-5ghz-turbo-11m-cache-85w/"
- },
- {
-  "t": "Xeon Gold 6242 CPU (16 x 2.8GHz + HT, 3.9GHz Turbo, 22M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRF8Y"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100584"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-6242-cpu-16-x-2-8ghz-ht-3-9ghz-turbo-22m-cache/"
- },
- {
-  "t": "Xeon Gold 6342 CPU (24 x 2.8GHz + HT, 3,5GHz Turbo, 36M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRKXA"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100561"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-6342-cpu-24-x-2-8ghz-ht-35ghz-turbo-36m-cache/"
- },
- {
-  "t": "Xeon Gold 6230 (20cores, 2.1GHz, 125W, 27.5M)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRF8W"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100550"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-6230-20cores-2-1ghz-125w-27-5m/"
- },
- {
-  "t": "Xeon E5-2695 v4 CPU (18 x 2.1GHz + HT, 3.3 GHz Turbo, 45M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SR2J1"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100538"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-e5-2695-v4-cpu-18-x-2-1ghz-ht-3-3-ghz-turbo-45m-cache/"
- },
- {
-  "t": "Xeon Silver 4210 CPU (10 x 2.2GHz + HT, 3.2GHz Turbo, 13.86M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRFBL"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100532"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-silver-4210-cpu-10-x-2-2ghz-ht-3-2ghz-turbo-13-86m-cache/"
- },
- {
-  "t": "XEON Gold 6248R CPU (24 x 3.00 GHz with HT, 4.00 GHz Turbo, 35.75M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRGZG"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100434"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-6248r-cpu-24-x-3-00-ghz-with-ht-4-00-ghz-turbo-35-75m-cache/"
- },
- {
-  "t": "200GB 6Gb SATA 2.5in MU PLP SC SSD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "804613-B21"
-   ],
-   [
-    "Referencia",
-    "HLPSS.100861"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/200gb-6gb-sata-2-5in-mu-plp-sc-ssd/"
- },
- {
-  "t": "200GB 6Gb SATA 2.5in MU PLP SC SSD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "804613-B21"
-   ],
-   [
-    "Referencia",
-    "HLPSS.100859"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/200gb-6gb-sata-2-5in-mu-plp-sc-ssd-2/"
- },
- {
-  "t": "480GB 6Gb SATA 2.5in RI PLP SC SSD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "804593-B21"
-   ],
-   [
-    "Referencia",
-    "HLPSS.101110"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/480gb-6gb-sata-2-5in-ri-plp-sc-ssd/"
- },
- {
-  "t": "480GB 6Gb SATA 2.5in RI PLP SC SSD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "804593-B21"
-   ],
-   [
-    "Referencia",
-    "HLPSS.101106"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/480gb-6gb-sata-2-5in-ri-plp-sc-ssd-2/"
- },
- {
-  "t": "Xeon Gold 5118 CPU (12 x 2.3GHz, HT, 3.2GHz Turbo, 16.5M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SR3GF"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100410"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-5118-cpu-12-x-2-3ghz-ht-3-2ghz-turbo-16-5m-cache/"
- },
- {
-  "t": "ML350 G10 8SFF Drive cage (Cage only)",
-  "b": "HP",
-  "cat": "server",
-  "type": "Accesorios",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "874978-001"
-   ],
-   [
-    "Referencia",
-    "HLPST.100316"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/servidores/accesorios/ml350-g10-8sff-drive-cage-cage-only/"
- },
- {
-  "t": "Xeon Gold 5218 CPU (16 x 2.3GHz + HT, 3.9GHz Turbo, 22M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRF8T"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100399"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-gold-5218-cpu-16-x-2-3ghz-ht-3-9ghz-turbo-22m-cache/"
- },
- {
-  "t": "32GB microSD RAID 1 USB Boot Drive",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "P21868-B21"
-   ],
-   [
-    "Referencia",
-    "HLPUB.100220"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/memorias-usb/32gb-microsd-raid-1-usb-boot-drive/"
- },
- {
-  "t": "Xeon Platinum 8280 CPU (28 x 2.7GHz with HT, 4.00 Ghz Turbo, 38.5M Cache)",
-  "b": "INTEL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "SRF9P"
-   ],
-   [
-    "Referencia",
-    "ITLCP.100295"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/procesadores/xeon-platinum-8280-cpu-28-x-2-7ghz-with-ht-4-00-ghz-turbo-38-5m-cache/"
  }
 ]
