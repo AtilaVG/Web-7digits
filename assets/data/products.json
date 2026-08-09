@@ -1,25 +1,5 @@
 [
  {
-  "t": "1GB FBWC for P420/P421 (Cache only, no battery)",
-  "b": "HP",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "Refurbished",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "633542-001"
-   ],
-   [
-    "Referencia",
-    "HLPRM.100009.REF"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/112653_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/memorias/1gb-fbwc-for-p420-p421-cache-only-no-battery/"
- },
- {
   "t": "Ethernet 1Gb 4-port 331FLR Adapter",
   "b": "HP",
   "cat": "network",
@@ -38,6 +18,166 @@
   ],
   "img": "https://www.7digits.es/wp-content/uploads/112652_1-1.jpg",
   "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/ethernet-1gb-4-port-331flr-adapter-4/"
+ },
+ {
+  "t": "0x2x16 G3 KVM Console Switch",
+  "b": "HP",
+  "cat": "network",
+  "type": "Redes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "AF652A"
+   ],
+   [
+    "Referencia",
+    "HLPKV.100033.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/switches-kvm/0x2x16-g3-kvm-console-switch/"
+ },
+ {
+  "t": "HPE DL360 G10+ GOLD 5320 4*32GB 800GB SSD 3*2TB HDD 2*480GB M.2",
+  "b": "HP",
+  "cat": "components",
+  "type": "Otros",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "DL360G10PLUS-8SFF-5320-128GB-800GB-3X2TB"
+   ],
+   [
+    "Referencia",
+    "997OT.52778"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/otros/hpe-dl360-g10-gold-5320-432gb-800gb-ssd-32tb-hdd-2480gb-m-2/"
+ },
+ {
+  "t": "Aruba 5400R 1100W PoE+ zl2 Power Supply",
+  "b": "HPE",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "J9829A"
+   ],
+   [
+    "Referencia",
+    "HPEPS.100261"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/aruba-5400r-1100w-poe-zl2-power-supply-2/"
+ },
+ {
+  "t": "5406R ZL2 switch Chassis",
+  "b": "HPE",
+  "cat": "network",
+  "type": "Otros",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "J9850A"
+   ],
+   [
+    "Referencia",
+    "HPENM.100264"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/otros-redes/5406r-zl2-switch-chassis-2/"
+ },
+ {
+  "t": "Aruba 5400R zl2 Management Module",
+  "b": "HPE",
+  "cat": "network",
+  "type": "Otros",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "J9827A"
+   ],
+   [
+    "Referencia",
+    "HPENM.100253"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/redes/otros-redes/aruba-5400r-zl2-management-module-2/"
+ },
+ {
+  "t": "Aruba 5406R zl2 Switch Fan Tray",
+  "b": "HPE",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "J9831A"
+   ],
+   [
+    "Referencia",
+    "HPEFN.100233"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/aruba-5406r-zl2-switch-fan-tray-2/"
+ },
+ {
+  "t": "1.92TB Small Form Factor (SFF), FE, Solid State Drive (SSD), Primera 600",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "P19587-001"
+   ],
+   [
+    "Referencia",
+    "HLPSS.101699"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/ssd-25/1-92tb-small-form-factor-sff-fe-solid-state-drive-ssd-primera-600/"
+ },
+ {
+  "t": "1GB FBWC for P420/P421 (Cache only, no battery)",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "633542-001"
+   ],
+   [
+    "Referencia",
+    "HLPRM.100009.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/112653_1-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/1gb-fbwc-for-p420-p421-cache-only-no-battery/"
  },
  {
   "t": "PSU backplane for DL380p G8, DL385p G8, DL388p G8, DL560 G8, DL560 G9",
@@ -2258,145 +2398,5 @@
   ],
   "img": "https://www.7digits.es/wp-content/uploads/108363_1.jpg",
   "url": "https://www.7digits.es/tienda/redes/otros-redes/10gb-stacking-module-for-62xx-m6220/"
- },
- {
-  "t": "2.5inch SFF SAS / SATA Caddy for PowerEdge Gen 11-13 and PowerVault,  (Plastic), with screws",
-  "b": "DELL",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "Refurbished",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "8FKXC"
-   ],
-   [
-    "Referencia",
-    "DELB2.100223.REF"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/118807_1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/2-5inch-sff-sas-sata-caddy-for-poweredge-gen-11-13-and-powervault-plastic-with-screws/"
- },
- {
-  "t": "Fan module for PE R320, R330, R420, R430",
-  "b": "DELL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "Refurbished",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "HR6C0"
-   ],
-   [
-    "Referencia",
-    "DELFN.100038.REF"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/116136_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/fan-module-for-pe-r320-r330-r420-r430/"
- },
- {
-  "t": "3.5inch Non Hot Swap caddy for PowerEdge R320, R420, R330, R430",
-  "b": "DELL",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "Refurbished",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "VCHJ6"
-   ],
-   [
-    "Referencia",
-    "DELB3.100054.REF"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/117365_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/3-5inch-non-hot-swap-caddy-for-poweredge-r320-r420-r330-r430/"
- },
- {
-  "t": "1Gb Dual Port Broadcom 5709 Network card for Blade",
-  "b": "DELL",
-  "cat": "network",
-  "type": "Redes",
-  "badge": "Refurbished",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "H093G"
-   ],
-   [
-    "Referencia",
-    "DELNE.100200.REF"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/109872_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/1gb-dual-port-broadcom-5709-network-card-for-blade/"
- },
- {
-  "t": "Cisco Catalyst Blade Switch 3020 for BladeSystem c-Class",
-  "b": "HP",
-  "cat": "server",
-  "type": "Chásis Blade",
-  "badge": "Refurbished",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "410916-B21"
-   ],
-   [
-    "Referencia",
-    "HLPBM.100011.REF"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/106624_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/servidores/chasis-blade/cisco-catalyst-blade-switch-3020-for-bladesystem-c-class/"
- },
- {
-  "t": "500GB 3G SATA 7.2k 3.5in MDL HDD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "Refurbished",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "458928-B21"
-   ],
-   [
-    "Referencia",
-    "HLPA3.100055.REF"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/116718_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sata-35/500gb-3g-sata-7-2k-3-5in-mdl-hdd-7/"
- },
- {
-  "t": "440W DC 100-240V AC PSU for Equallogic PS4000, PS5000, PS6000 series",
-  "b": "DELL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "Refurbished",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "64362-04E"
-   ],
-   [
-    "Referencia",
-    "DELPS.100440.REF"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/117796_1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/440w-dc-100-240v-ac-psu-for-equallogic-ps4000-ps5000-ps6000-series-3/"
  }
 ]
