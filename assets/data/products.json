@@ -1,5 +1,185 @@
 [
  {
+  "t": "2.5inch HDD Caddy for G14, G15, G16 PowerEdge servers",
+  "b": "DELL",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "Refurbished",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "DXD9H"
+   ],
+   [
+    "Referencia",
+    "DELB2.100220.REF"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros/2-5inch-hdd-caddy-for-g14-g15-g16-poweredge-servers-2/"
+ },
+ {
+  "t": "HPE DL360 G10+ GOLD 5320 4*32GB 800GB SSD 3*2TB HDD 2*480GB M.2",
+  "b": "HP",
+  "cat": "components",
+  "type": "Otros",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "DL360G10PLUS-8SFF-5320-128GB-800GB-3X2TB"
+   ],
+   [
+    "Referencia",
+    "997OT.53023"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/otros/hpe-dl360-g10-gold-5320-432gb-800gb-ssd-32tb-hdd-2480gb-m-2-2/"
+ },
+ {
+  "t": "580W Platinum AC PSU for MSA 1060 / 2060",
+  "b": "HPE",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "P49169-001"
+   ],
+   [
+    "Referencia",
+    "HPEPS.100329"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/fuentes-de-alimentacion/580w-platinum-ac-psu-for-msa-1060-2060/"
+ },
+ {
+  "t": "Xeon-Gold 5220R (2.2GHz/24-core/150W) Processor Kit for HPE ProLiant DL360 Gen10",
+  "b": "HPE",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "P15995-B21"
+   ],
+   [
+    "Referencia",
+    "HPECK.101634"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/kits-procesador/xeon-gold-5220r-2-2ghz-24-core-150w-processor-kit-for-hpe-proliant-dl360-gen10/"
+ },
+ {
+  "t": "MSA 2060 SFF Chassis",
+  "b": "HPE",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "P12942-001"
+   ],
+   [
+    "Referencia",
+    "HPEAR.100433"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/cabinas/msa-2060-sff-chassis/"
+ },
+ {
+  "t": "MSA 2060 iSCSI Controller",
+  "b": "HPE",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "P12949-001"
+   ],
+   [
+    "Referencia",
+    "HPEAC.100225"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/controladoras/msa-2060-iscsi-controller/"
+ },
+ {
+  "t": "72GB 3G SAS 15K 2.5in DP ENT HDD",
+  "b": "HP",
+  "cat": "storage",
+  "type": "Almacenamiento",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "418371-B21"
+   ],
+   [
+    "Referencia",
+    "HLPS2.100329"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/72gb-3g-sas-15k-2-5in-dp-ent-hdd-13/"
+ },
+ {
+  "t": "64MB Cache Module for E200",
+  "b": "HP",
+  "cat": "components",
+  "type": "Componentes",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "412800-001"
+   ],
+   [
+    "Referencia",
+    "HLPRM.100015"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/componentes/memorias/64mb-cache-module-for-e200/"
+ },
+ {
+  "t": "PowerEdge R470 CTO server",
+  "b": "DELL",
+  "cat": "server",
+  "type": "Servidores",
+  "badge": "En stock",
+  "grade": null,
+  "specs": [
+   [
+    "Part number",
+    "R470_CTO"
+   ],
+   [
+    "Referencia",
+    "DELRS.100241"
+   ]
+  ],
+  "img": "https://www.7digits.es/wp-content/uploads/NoPic-1.jpg",
+  "url": "https://www.7digits.es/tienda/servidores/servidores-enrackables/poweredge-r470-cto-server/"
+ },
+ {
   "t": "Ethernet 1Gb 4-port 331FLR Adapter",
   "b": "HP",
   "cat": "network",
@@ -2218,185 +2398,5 @@
   ],
   "img": "https://www.7digits.es/wp-content/uploads/118822_1-1.jpg",
   "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/300gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-8/"
- },
- {
-  "t": "300GB 6G SAS 10K 2.5in DP ENT SC HDD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "652564-B21"
-   ],
-   [
-    "Referencia",
-    "HLPS2.101009"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/118822_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/300gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-4/"
- },
- {
-  "t": "2TB 6G SAS 7.2K 3.5in DP MDL SC HDD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "652757-B21"
-   ],
-   [
-    "Referencia",
-    "HLPS3.100584"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/120584_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-35/2tb-6g-sas-7-2k-3-5in-dp-mdl-sc-hdd-7/"
- },
- {
-  "t": "300GB 6G SAS 10K 2.5in DP ENT SC HDD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "652564-B21"
-   ],
-   [
-    "Referencia",
-    "HLPS2.101069"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/118822_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/300gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-2/"
- },
- {
-  "t": "300GB 6G SAS 10K 2.5in DP ENT SC HDD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "652564-B21"
-   ],
-   [
-    "Referencia",
-    "HLPS2.101027"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/118822_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/300gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-3/"
- },
- {
-  "t": "300GB 6G SAS 10K 2.5in DP ENT SC HDD",
-  "b": "HP",
-  "cat": "storage",
-  "type": "Almacenamiento",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "652564-B21"
-   ],
-   [
-    "Referencia",
-    "HLPS2.101207"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/118822_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/almacenamiento/discos-duros-sas-25/300gb-6g-sas-10k-2-5in-dp-ent-sc-hdd-10/"
- },
- {
-  "t": "2U Ball Bearing rail kit for DL380 G8, G9, G10",
-  "b": "HP",
-  "cat": "server",
-  "type": "Accesorios",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "679365-001"
-   ],
-   [
-    "Referencia",
-    "HLPRK.100149"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/109063_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/servidores/accesorios/2u-ball-bearing-rail-kit-for-dl380-g8-g9-g10/"
- },
- {
-  "t": "2U Rail Kit for DL380, DL385, G8, G9 SFF, G10",
-  "b": "HP",
-  "cat": "server",
-  "type": "Accesorios",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "662535-001"
-   ],
-   [
-    "Referencia",
-    "HLPRK.100047"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/114584_1.jpg",
-  "url": "https://www.7digits.es/tienda/servidores/accesorios/2u-rail-kit-for-dl380-dl385-g8-g9-sff-g10/"
- },
- {
-  "t": "Ethernet 1Gb 4-port 366FLR Adapter",
-  "b": "HP",
-  "cat": "network",
-  "type": "Redes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "665240-B21"
-   ],
-   [
-    "Referencia",
-    "HLPNE.100060"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/120600_1.jpg",
-  "url": "https://www.7digits.es/tienda/redes/tarjetas-de-red/ethernet-1gb-4-port-366flr-adapter/"
- },
- {
-  "t": "Fan Assembly for PowerEdge R730, R730XD",
-  "b": "DELL",
-  "cat": "components",
-  "type": "Componentes",
-  "badge": "En stock",
-  "grade": null,
-  "specs": [
-   [
-    "Part number",
-    "HK9PH"
-   ],
-   [
-    "Referencia",
-    "DELFN.100092"
-   ]
-  ],
-  "img": "https://www.7digits.es/wp-content/uploads/120417_1-1.jpg",
-  "url": "https://www.7digits.es/tienda/componentes/refrigeracion/fan-assembly-for-poweredge-r730-r730xd-2/"
  }
 ]
